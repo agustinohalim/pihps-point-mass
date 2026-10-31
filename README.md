@@ -1,5 +1,7 @@
 # pihps-point-mass
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23840467.svg)](https://doi.org/10.5281/zenodo.23840467)
+
 Analysis code and aggregate logs for the manuscript *Holding the Last Price: A Point-Mass Mixture for
 Time-Series Foundation Models on Sticky Daily Food Prices* (in preparation).
 

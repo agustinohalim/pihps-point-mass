@@ -16,4 +16,5 @@ keywords:
   - price stickiness
   - point-mass mixture
   - forecast evaluation
+doi: 10.5281/zenodo.23840467
 repository-code: "https://github.com/agustinohalim/pihps-point-mass"
