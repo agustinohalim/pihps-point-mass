@@ -1,0 +1,63 @@
+arima: asal 1/142, 197 d
+arima: asal 11/142, 2657 d
+arima: asal 21/142, 5057 d
+== lanjut Wed, Oct 28, 2026  8:12:29 PM
+arima: asal 21/142, 114 d
+arima: asal 31/142, 1236 d
+arima: asal 41/142, 2380 d
+arima: asal 51/142, 3712 d
+Process SpawnProcess-283:
+Traceback (most recent call last):
+  File "C:\Users\agust\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\agust\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\agust\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\process.py", line 252, in _process_worker
+    call_item = call_queue.get(block=True)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\agust\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\queues.py", line 102, in get
+    with self._rlock:
+         ^^^^^^^^^^^
+  File "C:\Users\agust\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 6] The handle is invalid
+Traceback (most recent call last):
+  File "C:\Users\agust\Documents\UNOSO\Riset\Harga_Pangan\Uji_PIHPS\04_pembanding.py", line 154, in <module>
+    main()
+  File "C:\Users\agust\Documents\UNOSO\Riset\Harga_Pangan\Uji_PIHPS\04_pembanding.py", line 144, in main
+    out = statistik(Y, asal, model)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\agust\Documents\UNOSO\Riset\Harga_Pangan\Uji_PIHPS\04_pembanding.py", line 79, in statistik
+    f = StatsForecast(models=[m], freq=1, n_jobs=int(os.environ.get('PIHPS_JOBS', 8))).forecast(df=df, h=H, level=[80])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\agust\venv-gpu\Lib\site-packages\statsforecast\core.py", line 1787, in forecast
+    return super().forecast(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\agust\venv-gpu\Lib\site-packages\statsforecast\core.py", line 947, in forecast
+    res_fcsts = self._forecast_parallel(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\agust\venv-gpu\Lib\site-packages\statsforecast\core.py", line 1401, in _forecast_parallel
+    results[i] = future.result()
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\agust\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\agust\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+== lanjut Wed, Oct 28, 2026  9:28:16 PM, 4 pekerja
+arima: asal 51/142, 238 d
+arima: asal 61/142, 2298 d
+arima: asal 71/142, 4110 d
+== lanjut Wed, Oct 28, 2026 11:08:01 PM, 12 pekerja
+arima: asal 81/142, 99 d
+== lanjut Thu, Oct 29, 2026  7:16:07 AM, 12 pekerja (sesudah tidur laptop)
+arima: asal 81/142, 76 d
+arima: asal 91/142, 881 d
+arima: asal 101/142, 1643 d
+arima: asal 111/142, 2349 d
+arima: asal 121/142, 3037 d
+arima: asal 131/142, 3808 d
+arima: asal 141/142, 4542 d
+arima: selesai 4640 d; NaN kolom tengah 0

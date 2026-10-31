@@ -1,0 +1,27 @@
+
+h=7
+  zero-shot    lawan naif MASE +0.159 [+0.077; +0.213] MAPE -0.198 [-0.303; -0.111] | lawan zero-shot MASE +0.000 [+0.000; +0.000] MAPE +0.000 [+0.000; +0.000]
+  +kovariat    lawan naif MASE +0.227 [+0.121; +0.298] MAPE -0.173 [-0.317; -0.044] | lawan zero-shot MASE +0.068 [+0.021; +0.103] MAPE +0.025 [-0.040; +0.096]
+  dilatih      lawan naif MASE +0.285 [+0.201; +0.351] MAPE -0.218 [-0.318; -0.114] | lawan zero-shot MASE +0.127 [+0.086; +0.176] MAPE -0.020 [-0.053; +0.032]
+  dilatih+kov  lawan naif MASE +0.262 [+0.167; +0.329] MAPE -0.219 [-0.346; -0.089] | lawan zero-shot MASE +0.103 [+0.058; +0.145] MAPE -0.021 [-0.071; +0.051]
+  Idulfitri 2024-04-10 (6 asal) MAPE lawan naif: zero-shot -0.185 | +kovariat -0.236 | dilatih -0.342 | dilatih+kov -0.232
+  Idulfitri 2025-03-31 (5 asal) MAPE lawan naif: zero-shot -0.270 | +kovariat -0.217 | dilatih -0.058 | dilatih+kov -0.109
+  Idulfitri 2026-03-21 (5 asal) MAPE lawan naif: zero-shot +0.149 | +kovariat +0.339 | dilatih +0.226 | dilatih+kov +0.290
+
+h=14
+  zero-shot    lawan naif MASE +0.110 [-0.052; +0.213] MAPE -0.397 [-0.654; -0.202] | lawan zero-shot MASE +0.000 [+0.000; +0.000] MAPE +0.000 [+0.000; +0.000]
+  +kovariat    lawan naif MASE +0.212 [-0.006; +0.355] MAPE -0.364 [-0.764; -0.031] | lawan zero-shot MASE +0.102 [-0.007; +0.187] MAPE +0.033 [-0.154; +0.235]
+  dilatih      lawan naif MASE +0.103 [-0.034; +0.200] MAPE -0.510 [-0.738; -0.288] | lawan zero-shot MASE -0.007 [-0.078; +0.082] MAPE -0.113 [-0.158; -0.025]
+  dilatih+kov  lawan naif MASE +0.047 [-0.126; +0.167] MAPE -0.527 [-0.848; -0.226] | lawan zero-shot MASE -0.062 [-0.152; +0.027] MAPE -0.130 [-0.245; +0.034]
+  Idulfitri 2024-04-10 (5 asal) MAPE lawan naif: zero-shot -1.013 | +kovariat -1.052 | dilatih -1.357 | dilatih+kov -1.043
+  Idulfitri 2025-03-31 (5 asal) MAPE lawan naif: zero-shot -0.271 | +kovariat -0.526 | dilatih -0.245 | dilatih+kov -0.520
+  Idulfitri 2026-03-21 (6 asal) MAPE lawan naif: zero-shot +0.036 | +kovariat +0.134 | dilatih +0.145 | dilatih+kov +0.002
+
+h=28
+  zero-shot    lawan naif MASE +0.085 [-0.244; +0.313] MAPE -0.921 [-1.548; -0.520] | lawan zero-shot MASE +0.000 [+0.000; +0.000] MAPE +0.000 [+0.000; +0.000]
+  +kovariat    lawan naif MASE +0.408 [-0.033; +0.758] MAPE -0.754 [-1.574; -0.114] | lawan zero-shot MASE +0.323 [+0.100; +0.546] MAPE +0.168 [-0.163; +0.552]
+  dilatih      lawan naif MASE -0.182 [-0.469; +0.030] MAPE -1.107 [-1.647; -0.744] | lawan zero-shot MASE -0.267 [-0.441; -0.073] MAPE -0.186 [-0.295; -0.042]
+  dilatih+kov  lawan naif MASE -0.240 [-0.569; -0.004] MAPE -1.124 [-1.807; -0.596] | lawan zero-shot MASE -0.325 [-0.489; -0.150] MAPE -0.202 [-0.424; +0.077]
+  Idulfitri 2024-04-10 (5 asal) MAPE lawan naif: zero-shot -2.185 | +kovariat -1.926 | dilatih -2.250 | dilatih+kov -1.610
+  Idulfitri 2025-03-31 (5 asal) MAPE lawan naif: zero-shot +0.742 | +kovariat +0.404 | dilatih +0.639 | dilatih+kov +0.136
+  Idulfitri 2026-03-21 (6 asal) MAPE lawan naif: zero-shot -0.739 | +kovariat -1.148 | dilatih -0.667 | dilatih+kov -1.150

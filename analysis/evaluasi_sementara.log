@@ -1,0 +1,90 @@
+model: chronos2, chronosbolt, timesfm, moirai, naif, naifmusim, lgbm
+pasangan (deret, asal) berskala 0 dikeluarkan: 0 dari 43878
+
+h = 1: pasangan dinilai 43878; asal dengan sasaran di jendela Idulfitri 16
+pembanding terlatih terbaik (selain naif) pada h = 1: lgbm
+      model  MASE  sMAPE  MASE_idul  cakupan80                  d_naif               d_terbaik
+   chronos2 1.420  1.120      1.742      0.869 +0.491 [+0.452; +0.525] +0.277 [+0.229; +0.313]
+chronosbolt 1.650  1.252      2.011      0.897 +0.721 [+0.681; +0.765] +0.507 [+0.467; +0.548]
+    timesfm 1.131  1.011      1.419      0.902 +0.201 [+0.185; +0.218] -0.013 [-0.044; +0.014]
+     moirai 1.391  1.060      1.738      0.811 +0.462 [+0.425; +0.498] +0.248 [+0.197; +0.291]
+       naif 0.930  0.918      1.206        NaN                     NaN -0.214 [-0.242; -0.188]
+  naifmusim 3.466  3.436      3.948        NaN +2.536 [+2.311; +2.764] +2.322 [+2.104; +2.544]
+       lgbm 1.144  1.006      1.469        NaN +0.214 [+0.188; +0.242]                     NaN
+MASE per komoditas, h = 1:
+                      chronos2  chronosbolt  timesfm  moirai  naif  naifmusim  lgbm
+bawang_merah             1.333        1.538    1.195   1.259 1.051      4.111 1.173
+bawang_putih             1.290        1.514    1.110   1.251 0.943      3.215 1.070
+beras_medium_1           1.840        2.286    1.277   1.941 0.912      3.131 1.392
+cabai_merah_keriting     1.014        1.103    0.937   0.951 0.864      3.322 0.943
+cabai_rawit_merah        1.038        1.165    0.960   0.977 0.902      3.597 0.985
+daging_ayam_ras          1.053        1.176    0.952   0.995 0.848      3.331 0.913
+gula_pasir_lokal         1.860        2.212    1.250   1.950 0.907      3.356 1.334
+minyak_goreng_curah      2.121        2.414    1.421   2.069 1.042      3.604 1.429
+telur_ayam_ras           1.262        1.470    1.084   1.153 0.905      3.550 1.067
+
+h = 7: pasangan dinilai 43878; asal dengan sasaran di jendela Idulfitri 16
+pembanding terlatih terbaik (selain naif) pada h = 7: lgbm
+      model  MASE  sMAPE  MASE_idul  cakupan80                  d_naif               d_terbaik
+   chronos2 4.603  4.022      5.554      0.787 +0.175 [+0.106; +0.232] -0.383 [-0.556; -0.236]
+chronosbolt 4.860  4.139      5.758      0.804 +0.432 [+0.357; +0.497] -0.126 [-0.287; +0.012]
+    timesfm 4.430  3.963      5.320      0.807 +0.002 [-0.057; +0.053] -0.557 [-0.716; -0.414]
+     moirai 4.541  4.017      5.442      0.782 +0.113 [+0.053; +0.161] -0.446 [-0.604; -0.309]
+       naif 4.428  4.156      5.232        NaN                     NaN -0.559 [-0.716; -0.420]
+  naifmusim 5.937  5.496      6.908        NaN +1.509 [+1.342; +1.676] +0.950 [+0.679; +1.210]
+       lgbm 4.986  4.167      5.811        NaN +0.559 [+0.420; +0.716]                     NaN
+MASE per komoditas, h = 7:
+                      chronos2  chronosbolt  timesfm  moirai  naif  naifmusim  lgbm
+bawang_merah             4.801        4.980    4.701   4.760 5.220      7.139 4.884
+bawang_putih             4.126        4.300    4.050   4.095 4.015      5.144 4.360
+beras_medium_1           4.841        5.520    4.517   4.740 4.103      5.742 6.126
+cabai_merah_keriting     3.904        4.015    3.873   3.902 3.982      5.133 4.052
+cabai_rawit_merah        4.012        4.115    3.998   4.053 4.332      5.883 4.275
+daging_ayam_ras          3.976        4.096    3.908   3.975 4.071      5.247 4.045
+gula_pasir_lokal         5.335        5.758    4.840   5.167 4.480      6.097 5.943
+minyak_goreng_curah      5.867        6.259    5.460   5.604 5.022      6.852 6.469
+telur_ayam_ras           4.624        4.755    4.571   4.619 4.667      6.266 4.792
+
+h = 14: pasangan dinilai 43878; asal dengan sasaran di jendela Idulfitri 16
+pembanding terlatih terbaik (selain naif) pada h = 14: naifmusim
+      model  MASE  sMAPE  MASE_idul  cakupan80                  d_naif               d_terbaik
+   chronos2 7.309  6.092      8.348      0.778 +0.104 [-0.031; +0.214] -0.632 [-0.815; -0.464]
+chronosbolt 7.670  6.278      8.611      0.781 +0.465 [+0.315; +0.571] -0.271 [-0.474; -0.098]
+    timesfm 7.136  6.068      8.147      0.783 -0.069 [-0.183; +0.032] -0.805 [-0.982; -0.638]
+     moirai 7.205  6.131      8.145      0.774 -0.000 [-0.100; +0.078] -0.736 [-0.910; -0.572]
+       naif 7.205  6.368      7.990        NaN                     NaN -0.736 [-0.840; -0.626]
+  naifmusim 7.941  6.960      8.698        NaN +0.736 [+0.626; +0.840]                     NaN
+       lgbm 8.161  6.515      9.064        NaN +0.956 [+0.626; +1.346] +0.220 [-0.188; +0.667]
+MASE per komoditas, h = 14:
+                      chronos2  chronosbolt  timesfm  moirai  naif  naifmusim   lgbm
+bawang_merah             7.982        8.291    7.753   7.881 8.746      9.709  8.285
+bawang_putih             6.266        6.475    6.200   6.153 6.125      6.734  6.674
+beras_medium_1           8.028        8.883    7.692   7.809 7.287      8.210 10.693
+cabai_merah_keriting     5.589        5.788    5.625   5.630 5.761      6.209  6.229
+cabai_rawit_merah        6.212        6.411    6.325   6.423 6.825      7.456  6.751
+daging_ayam_ras          5.815        6.013    5.776   5.834 5.939      6.404  5.960
+gula_pasir_lokal         8.779        9.354    8.235   8.414 7.809      8.612  9.686
+minyak_goreng_curah      9.917       10.416    9.533   9.436 8.946     10.040 11.523
+telur_ayam_ras           7.324        7.524    7.221   7.390 7.525      8.234  7.820
+
+h = 28: pasangan dinilai 43878; asal dengan sasaran di jendela Idulfitri 16
+pembanding terlatih terbaik (selain naif) pada h = 28: naifmusim
+      model   MASE  sMAPE  MASE_idul  cakupan80                  d_naif               d_terbaik
+   chronos2 12.032  8.936     13.624      0.750 +0.080 [-0.175; +0.291] -0.562 [-0.838; -0.314]
+chronosbolt 12.514  9.165     13.521      0.739 +0.561 [+0.300; +0.780] -0.081 [-0.358; +0.162]
+    timesfm 11.771  9.007     13.322      0.757 -0.181 [-0.416; +0.023] -0.823 [-1.072; -0.592]
+     moirai 11.799  9.071     13.417      0.743 -0.154 [-0.324; -0.002] -0.796 [-1.014; -0.605]
+       naif 11.953  9.514     13.339        NaN                     NaN -0.642 [-0.745; -0.531]
+  naifmusim 12.595  9.920     14.109        NaN +0.642 [+0.531; +0.745]                     NaN
+       lgbm 13.393  9.765     14.029        NaN +1.440 [+0.812; +2.059] +0.798 [+0.092; +1.517]
+MASE per komoditas, h = 28:
+                      chronos2  chronosbolt  timesfm  moirai   naif  naifmusim   lgbm
+bawang_merah            12.970       13.555   12.716  12.814 14.214     14.928 13.628
+bawang_putih            10.321       10.514   10.059   9.988  9.974     10.524 10.633
+beras_medium_1          14.930       15.982   14.361  14.308 13.832     14.863 19.749
+cabai_merah_keriting     7.768        8.117    7.915   7.915  8.299      8.660  9.116
+cabai_rawit_merah        8.977        9.042    9.406   9.541 10.243     10.502 10.362
+daging_ayam_ras          8.141        8.312    8.093   8.188  8.444      8.858  8.277
+gula_pasir_lokal        15.638       16.621   14.608  14.852 14.182     15.125 16.148
+minyak_goreng_curah     18.486       19.013   17.768  17.532 17.026     18.124 21.063
+telur_ayam_ras          11.353       11.727   11.328  11.352 11.649     12.064 11.958

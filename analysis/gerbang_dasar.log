@@ -1,0 +1,18 @@
+deret nasional 9 ['Semua Provinsi']
+h=7 tanpa nasional: gerbang lawan naif MASE -0.140 [-0.184; -0.103] MAPE -0.237 [-0.323; -0.145]; peluang dasar lawan naif MASE -0.135 [-0.176; -0.100] MAPE -0.232 [-0.310; -0.148]
+h=14 tanpa nasional: gerbang lawan naif MASE -0.241 [-0.349; -0.156] MAPE -0.417 [-0.602; -0.228]; peluang dasar lawan naif MASE -0.240 [-0.342; -0.159] MAPE -0.419 [-0.599; -0.234]
+h=28 tanpa nasional: gerbang lawan naif MASE -0.364 [-0.627; -0.171] MAPE -0.754 [-1.221; -0.386]; peluang dasar lawan naif MASE -0.380 [-0.635; -0.188] MAPE -0.755 [-1.211; -0.394]
+
+===== 97 asal 2022-2023
+TimesFM h=7: peluang dasar lawan naif MASE -0.106 [-0.166; -0.047] MAPE -0.185 [-0.276; -0.075]
+   gerbang lawan peluang dasar MASE -0.004 [-0.017; +0.011] MAPE -0.004 [-0.014; +0.007]; peluang dasar lawan model MASE -0.196 [-0.242; -0.162] MAPE -0.039 [-0.063; -0.023]
+TimesFM h=14: peluang dasar lawan naif MASE -0.158 [-0.332; +0.003] MAPE -0.330 [-0.629; -0.068]
+   gerbang lawan peluang dasar MASE +0.009 [-0.018; +0.034] MAPE +0.008 [-0.008; +0.023]; peluang dasar lawan model MASE -0.312 [-0.393; -0.247] MAPE -0.041 [-0.070; -0.013]
+TimesFM h=28: peluang dasar lawan naif MASE -0.188 [-0.556; +0.196] MAPE -0.601 [-1.280; -0.065]
+   gerbang lawan peluang dasar MASE +0.030 [-0.016; +0.074] MAPE +0.007 [-0.013; +0.025]; peluang dasar lawan model MASE -0.406 [-0.555; -0.297] MAPE -0.043 [-0.075; -0.006]
+Moirai-2 h=7: peluang dasar lawan naif MASE -0.031 [-0.076; +0.030] MAPE -0.121 [-0.192; -0.047]
+   gerbang lawan peluang dasar MASE -0.023 [-0.065; +0.015] MAPE -0.002 [-0.010; +0.010]; peluang dasar lawan model MASE -0.489 [-0.812; -0.315] MAPE -0.060 [-0.093; -0.037]
+Moirai-2 h=14: peluang dasar lawan naif MASE -0.016 [-0.144; +0.156] MAPE -0.207 [-0.418; -0.025]
+   gerbang lawan peluang dasar MASE -0.015 [-0.077; +0.038] MAPE +0.004 [-0.011; +0.017]; peluang dasar lawan model MASE -0.531 [-0.938; -0.291] MAPE -0.057 [-0.101; -0.020]
+Moirai-2 h=28: peluang dasar lawan naif MASE +0.016 [-0.283; +0.391] MAPE -0.396 [-0.912; +0.012]
+   gerbang lawan peluang dasar MASE +0.040 [-0.002; +0.088] MAPE +0.011 [-0.001; +0.025]; peluang dasar lawan model MASE -0.586 [-0.919; -0.368] MAPE -0.058 [-0.094; -0.023]

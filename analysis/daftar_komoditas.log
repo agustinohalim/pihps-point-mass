@@ -1,0 +1,12 @@
+h=7: daftar vs naif MASE -0.141 [-0.214; -0.075] MAPE -0.243 [-0.380; -0.132]
+      kelengketan vs naif MASE -0.154 [-0.226; -0.096] MAPE -0.248 [-0.385; -0.140]
+      kelengketan - daftar MASE -0.013 [-0.036; +0.001] MAPE -0.005 [-0.015; +0.000]
+      daftar pakai TimesFM: bawang_m=1.00 bawang_p=0.17 beras_me=0.00 cabai_me=1.00 cabai_ra=1.00 daging_a=1.00 gula_pas=0.00 minyak_g=0.00 telur_ay=1.00
+h=14: daftar vs naif MASE -0.231 [-0.392; -0.085] MAPE -0.434 [-0.721; -0.220]
+      kelengketan vs naif MASE -0.230 [-0.387; -0.107] MAPE -0.431 [-0.718; -0.230]
+      kelengketan - daftar MASE +0.002 [-0.044; +0.029] MAPE +0.003 [-0.018; +0.014]
+      daftar pakai TimesFM: bawang_m=1.00 bawang_p=0.00 beras_me=0.00 cabai_me=1.00 cabai_ra=1.00 daging_a=1.00 gula_pas=0.00 minyak_g=0.00 telur_ay=1.00
+h=28: daftar vs naif MASE -0.255 [-0.616; +0.066] MAPE -0.721 [-1.391; -0.258]
+      kelengketan vs naif MASE -0.280 [-0.628; -0.005] MAPE -0.741 [-1.393; -0.289]
+      kelengketan - daftar MASE -0.026 [-0.102; +0.019] MAPE -0.019 [-0.044; +0.011]
+      daftar pakai TimesFM: bawang_m=1.00 bawang_p=0.19 beras_me=0.00 cabai_me=0.98 cabai_ra=1.00 daging_a=1.00 gula_pas=0.00 minyak_g=0.00 telur_ay=1.00

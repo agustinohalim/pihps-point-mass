@@ -1,0 +1,32 @@
+===== h=1, 142 asal
+  Chronos-2: saja lawan naif MASE +0.477 [+0.425; +0.518] MAPE +0.184 [+0.168; +0.203]
+    campuran lawan naif MASE +0.000 [-0.003; +0.002] MAPE +0.003 [-0.002; +0.008]; tepat 90.4 %
+  Chronos-Bolt: saja lawan naif MASE +0.703 [+0.656; +0.752] MAPE +0.315 [+0.294; +0.340]
+    campuran lawan naif MASE +0.008 [+0.005; +0.011] MAPE +0.020 [+0.013; +0.027]; tepat 89.2 %
+  TimesFM 2.5: saja lawan naif MASE +0.195 [+0.173; +0.215] MAPE +0.080 [+0.067; +0.095]
+    campuran lawan naif MASE -0.003 [-0.005; -0.001] MAPE -0.007 [-0.011; -0.004]; tepat 96.6 %
+  Moirai-2: saja lawan naif MASE +0.447 [+0.400; +0.485] MAPE +0.129 [+0.118; +0.143]
+    campuran lawan naif MASE -0.003 [-0.005; -0.001] MAPE -0.008 [-0.012; -0.004]; tepat 93.3 %
+  Chronos-2 dilatih: saja lawan naif MASE +0.841 [+0.758; +0.917] MAPE +0.338 [+0.314; +0.364]
+    campuran lawan naif MASE +0.022 [+0.019; +0.026] MAPE +0.045 [+0.034; +0.057]; tepat 86.6 %
+  Chronos-2 dilatih+kov: saja lawan naif MASE +0.820 [+0.736; +0.893] MAPE +0.328 [+0.310; +0.347]
+    campuran lawan naif MASE +0.021 [+0.018; +0.023] MAPE +0.045 [+0.038; +0.051]; tepat 84.7 %
+  ETS: saja lawan naif MASE +0.156 [+0.135; +0.179] MAPE +0.058 [+0.052; +0.066]
+    campuran lawan naif MASE +0.001 [-0.000; +0.003] MAPE +0.001 [-0.001; +0.003]; tepat 99.4 %
+  ARIMA: saja lawan naif MASE +0.235 [+0.209; +0.263] MAPE +0.104 [+0.091; +0.120]
+    campuran lawan naif MASE +0.003 [+0.001; +0.006] MAPE +0.002 [-0.003; +0.007]; tepat 96.0 %
+===== TimesFM h=7, kepekaan p
+  p latih lawan naif: MASE -0.146 [-0.188; -0.110] MAPE -0.240 [-0.320; -0.154]
+  p x 0,5: lawan naif MASE -0.155 [-0.207; -0.111] MAPE -0.249 [-0.338; -0.156]; lawan p latih MASE -0.009 [-0.027; +0.003] MAPE -0.009 [-0.019; +0.000]
+  p x 1,5: lawan naif MASE -0.130 [-0.166; -0.099] MAPE -0.224 [-0.296; -0.146]; lawan p latih MASE +0.016 [+0.010; +0.024] MAPE +0.016 [+0.008; +0.025]
+  p amatan: lawan naif MASE -0.143 [-0.183; -0.107] MAPE -0.238 [-0.317; -0.154]; lawan p latih MASE +0.003 [-0.000; +0.007] MAPE +0.002 [-0.001; +0.005]
+===== TimesFM h=14, kepekaan p
+  p latih lawan naif: MASE -0.255 [-0.363; -0.173] MAPE -0.427 [-0.608; -0.244]
+  p x 0,5: lawan naif MASE -0.237 [-0.355; -0.150] MAPE -0.431 [-0.622; -0.240]; lawan p latih MASE +0.019 [+0.001; +0.031] MAPE -0.004 [-0.016; +0.006]
+  p x 1,5: lawan naif MASE -0.247 [-0.343; -0.173] MAPE -0.415 [-0.587; -0.240]; lawan p latih MASE +0.008 [-0.004; +0.025] MAPE +0.012 [+0.002; +0.023]
+  p amatan: lawan naif MASE -0.256 [-0.362; -0.174] MAPE -0.425 [-0.605; -0.244]; lawan p latih MASE -0.000 [-0.007; +0.007] MAPE +0.002 [-0.003; +0.007]
+===== TimesFM h=28, kepekaan p
+  p latih lawan naif: MASE -0.387 [-0.649; -0.188] MAPE -0.751 [-1.220; -0.390]
+  p x 0,5: lawan naif MASE -0.351 [-0.626; -0.146] MAPE -0.753 [-1.232; -0.384]; lawan p latih MASE +0.037 [+0.007; +0.060] MAPE -0.001 [-0.014; +0.008]
+  p x 1,5: lawan naif MASE -0.397 [-0.649; -0.198] MAPE -0.745 [-1.204; -0.391]; lawan p latih MASE -0.009 [-0.026; +0.010] MAPE +0.006 [-0.003; +0.018]
+  p amatan: lawan naif MASE -0.406 [-0.664; -0.205] MAPE -0.751 [-1.214; -0.392]; lawan p latih MASE -0.018 [-0.032; -0.004] MAPE +0.001 [-0.007; +0.010]

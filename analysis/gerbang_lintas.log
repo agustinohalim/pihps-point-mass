@@ -1,0 +1,108 @@
+===== 142 asal 2024-2026, gerbang empat ciri dilatih pada 202 asal pra-2024
+h=7
+  Chronos-2
+    saja lawan naif:     MASE +0.159 [+0.079; +0.214] MAPE -0.198 [-0.303; -0.110]
+    bergerbang lawan naif:MASE -0.136 [-0.183; -0.102] MAPE -0.232 [-0.326; -0.153]
+    bergerbang lawan saja:MASE -0.294 [-0.330; -0.247] MAPE -0.034 [-0.045; -0.020]
+  Chronos-Bolt
+    saja lawan naif:     MASE +0.415 [+0.333; +0.486] MAPE -0.060 [-0.175; +0.043]
+    bergerbang lawan naif:MASE -0.078 [-0.125; -0.041] MAPE -0.142 [-0.249; -0.046]
+    bergerbang lawan saja:MASE -0.493 [-0.550; -0.434] MAPE -0.082 [-0.096; -0.068]
+  TimesFM 2.5
+    saja lawan naif:     MASE -0.012 [-0.076; +0.038] MAPE -0.232 [-0.327; -0.132]
+    bergerbang lawan naif:MASE -0.154 [-0.200; -0.115] MAPE -0.246 [-0.334; -0.153]
+    bergerbang lawan saja:MASE -0.142 [-0.171; -0.104] MAPE -0.014 [-0.025; -0.001]
+  Moirai-2
+    saja lawan naif:     MASE +0.100 [+0.036; +0.148] MAPE -0.195 [-0.284; -0.112]
+    bergerbang lawan naif:MASE -0.128 [-0.168; -0.097] MAPE -0.213 [-0.296; -0.137]
+    bergerbang lawan saja:MASE -0.227 [-0.270; -0.179] MAPE -0.018 [-0.030; -0.006]
+  Chronos-2 dilatih
+    saja lawan naif:     MASE +0.284 [+0.200; +0.349] MAPE -0.218 [-0.317; -0.115]
+    bergerbang lawan naif:MASE -0.157 [-0.207; -0.115] MAPE -0.271 [-0.360; -0.177]
+    bergerbang lawan saja:MASE -0.441 [-0.485; -0.385] MAPE -0.053 [-0.065; -0.040]
+  Chronos-2 dilatih+kov
+    saja lawan naif:     MASE +0.258 [+0.164; +0.325] MAPE -0.219 [-0.346; -0.086]
+    bergerbang lawan naif:MASE -0.162 [-0.219; -0.113] MAPE -0.267 [-0.382; -0.144]
+    bergerbang lawan saja:MASE -0.420 [-0.465; -0.358] MAPE -0.048 [-0.060; -0.032]
+h=14
+  Chronos-2
+    saja lawan naif:     MASE +0.110 [-0.051; +0.211] MAPE -0.397 [-0.660; -0.200]
+    bergerbang lawan naif:MASE -0.205 [-0.327; -0.128] MAPE -0.423 [-0.671; -0.237]
+    bergerbang lawan saja:MASE -0.315 [-0.365; -0.249] MAPE -0.026 [-0.041; -0.008]
+  Chronos-Bolt
+    saja lawan naif:     MASE +0.449 [+0.295; +0.569] MAPE -0.195 [-0.482; +0.036]
+    bergerbang lawan naif:MASE -0.089 [-0.207; -0.010] MAPE -0.266 [-0.545; -0.043]
+    bergerbang lawan saja:MASE -0.538 [-0.632; -0.444] MAPE -0.071 [-0.087; -0.055]
+  TimesFM 2.5
+    saja lawan naif:     MASE -0.079 [-0.211; +0.013] MAPE -0.415 [-0.618; -0.218]
+    bergerbang lawan naif:MASE -0.257 [-0.370; -0.173] MAPE -0.426 [-0.614; -0.240]
+    bergerbang lawan saja:MASE -0.179 [-0.203; -0.144] MAPE -0.011 [-0.026; +0.008]
+  Moirai-2
+    saja lawan naif:     MASE -0.001 [-0.099; +0.066] MAPE -0.374 [-0.567; -0.213]
+    bergerbang lawan naif:MASE -0.205 [-0.290; -0.147] MAPE -0.385 [-0.563; -0.234]
+    bergerbang lawan saja:MASE -0.204 [-0.255; -0.145] MAPE -0.010 [-0.025; +0.009]
+  Chronos-2 dilatih
+    saja lawan naif:     MASE +0.103 [-0.034; +0.200] MAPE -0.510 [-0.743; -0.284]
+    bergerbang lawan naif:MASE -0.294 [-0.406; -0.210] MAPE -0.539 [-0.754; -0.325]
+    bergerbang lawan saja:MASE -0.396 [-0.450; -0.330] MAPE -0.029 [-0.045; -0.008]
+  Chronos-2 dilatih+kov
+    saja lawan naif:     MASE +0.047 [-0.124; +0.167] MAPE -0.527 [-0.846; -0.214]
+    bergerbang lawan naif:MASE -0.332 [-0.475; -0.229] MAPE -0.552 [-0.853; -0.255]
+    bergerbang lawan saja:MASE -0.379 [-0.431; -0.310] MAPE -0.025 [-0.045; -0.002]
+h=28
+  Chronos-2
+    saja lawan naif:     MASE +0.085 [-0.239; +0.314] MAPE -0.921 [-1.562; -0.511]
+    bergerbang lawan naif:MASE -0.294 [-0.571; -0.133] MAPE -0.951 [-1.577; -0.553]
+    bergerbang lawan saja:MASE -0.379 [-0.511; -0.259] MAPE -0.030 [-0.048; -0.012]
+  Chronos-Bolt
+    saja lawan naif:     MASE +0.572 [+0.224; +0.848] MAPE -0.531 [-1.165; -0.091]
+    bergerbang lawan naif:MASE -0.006 [-0.279; +0.159] MAPE -0.591 [-1.220; -0.154]
+    bergerbang lawan saja:MASE -0.579 [-0.768; -0.420] MAPE -0.060 [-0.080; -0.040]
+  TimesFM 2.5
+    saja lawan naif:     MASE -0.187 [-0.483; +0.032] MAPE -0.737 [-1.229; -0.357]
+    bergerbang lawan naif:MASE -0.372 [-0.650; -0.168] MAPE -0.750 [-1.231; -0.381]
+    bergerbang lawan saja:MASE -0.185 [-0.241; -0.125] MAPE -0.013 [-0.028; +0.004]
+  Moirai-2
+    saja lawan naif:     MASE -0.161 [-0.362; -0.041] MAPE -0.761 [-1.208; -0.471]
+    bergerbang lawan naif:MASE -0.348 [-0.546; -0.241] MAPE -0.769 [-1.206; -0.487]
+    bergerbang lawan saja:MASE -0.187 [-0.264; -0.105] MAPE -0.008 [-0.020; +0.008]
+  Chronos-2 dilatih
+    saja lawan naif:     MASE -0.182 [-0.479; +0.027] MAPE -1.107 [-1.658; -0.734]
+    bergerbang lawan naif:MASE -0.511 [-0.767; -0.355] MAPE -1.122 [-1.656; -0.761]
+    bergerbang lawan saja:MASE -0.328 [-0.471; -0.210] MAPE -0.015 [-0.034; +0.008]
+  Chronos-2 dilatih+kov
+    saja lawan naif:     MASE -0.240 [-0.574; +0.000] MAPE -1.124 [-1.816; -0.603]
+    bergerbang lawan naif:MASE -0.581 [-0.886; -0.395] MAPE -1.137 [-1.816; -0.630]
+    bergerbang lawan saja:MASE -0.341 [-0.484; -0.219] MAPE -0.014 [-0.036; +0.010]
+
+===== 97 asal 2022-2023, gerbang empat ciri dilatih pada sasaran < 2022
+h=7
+  TimesFM 2.5
+    saja lawan naif:     MASE +0.091 [+0.015; +0.173] MAPE -0.145 [-0.246; -0.017]
+    bergerbang lawan naif:MASE -0.110 [-0.175; -0.041] MAPE -0.189 [-0.283; -0.072]
+    bergerbang lawan saja:MASE -0.201 [-0.238; -0.173] MAPE -0.043 [-0.059; -0.033]
+h=14
+  TimesFM 2.5
+    saja lawan naif:     MASE +0.154 [-0.035; +0.333] MAPE -0.289 [-0.602; +0.006]
+    bergerbang lawan naif:MASE -0.150 [-0.333; +0.031] MAPE -0.322 [-0.621; -0.044]
+    bergerbang lawan saja:MASE -0.303 [-0.384; -0.247] MAPE -0.033 [-0.051; -0.018]
+h=28
+  TimesFM 2.5
+    saja lawan naif:     MASE +0.218 [-0.183; +0.644] MAPE -0.558 [-1.238; +0.002]
+    bergerbang lawan naif:MASE -0.158 [-0.547; +0.242] MAPE -0.594 [-1.256; -0.053]
+    bergerbang lawan saja:MASE -0.376 [-0.518; -0.284] MAPE -0.036 [-0.058; -0.013]
+h=7
+  Moirai-2
+    saja lawan naif:     MASE +0.458 [+0.260; +0.826] MAPE -0.062 [-0.148; +0.036]
+    bergerbang lawan naif:MASE -0.054 [-0.103; +0.013] MAPE -0.123 [-0.199; -0.042]
+    bergerbang lawan saja:MASE -0.512 [-0.834; -0.328] MAPE -0.061 [-0.087; -0.045]
+h=14
+  Moirai-2
+    saja lawan naif:     MASE +0.515 [+0.196; +1.072] MAPE -0.149 [-0.387; +0.078]
+    bergerbang lawan naif:MASE -0.031 [-0.165; +0.149] MAPE -0.203 [-0.421; -0.001]
+    bergerbang lawan saja:MASE -0.545 [-0.965; -0.308] MAPE -0.053 [-0.089; -0.028]
+h=28
+  Moirai-2
+    saja lawan naif:     MASE +0.602 [+0.165; +1.243] MAPE -0.338 [-0.870; +0.095]
+    bergerbang lawan naif:MASE +0.056 [-0.248; +0.451] MAPE -0.386 [-0.898; +0.028]
+    bergerbang lawan saja:MASE -0.546 [-0.861; -0.349] MAPE -0.047 [-0.072; -0.022]

@@ -1,0 +1,88 @@
+
+===== kandidat timesfm
+h=7: diam pra 0.240, uji 0.260; AUC uji 0.880; Brier uji 0.1196 (dasar 0.1926)
+  TimesFM         lawan naif MASE -0.012 [-0.078; +0.040] MAPE -0.232 [-0.328; -0.130] | lengket MAPE +0.032
+  ditahan Rp 50   lawan naif MASE -0.119 [-0.183; -0.068] MAPE -0.243 [-0.340; -0.141] | lawan TimesFM MASE -0.107 [-0.120; -0.093] MAPE -0.011 [-0.013; -0.010] | lengket MAPE +0.002
+  gerbang keras   lawan naif MASE -0.104 [-0.167; -0.054] MAPE -0.241 [-0.337; -0.139] | lawan TimesFM MASE -0.092 [-0.101; -0.082] MAPE -0.009 [-0.010; -0.008] | lengket MAPE +0.009
+  gerbang rerata  lawan naif MASE -0.100 [-0.157; -0.054] MAPE -0.243 [-0.338; -0.142] | lawan TimesFM MASE -0.088 [-0.099; -0.073] MAPE -0.012 [-0.015; -0.008] | lengket MAPE +0.012
+  gerbang median  lawan naif MASE -0.160 [-0.210; -0.118] MAPE -0.250 [-0.341; -0.154] | lawan TimesFM MASE -0.148 [-0.172; -0.119] MAPE -0.018 [-0.028; -0.008] | lengket MAPE -0.005
+  kelengketan beku lawan naif MASE -0.146 [-0.197; -0.102] MAPE -0.245 [-0.340; -0.143] | lawan TimesFM MASE -0.133 [-0.163; -0.098] MAPE -0.014 [-0.020; -0.004] | lengket MAPE +0.002
+  daftar beku     lawan naif MASE -0.141 [-0.197; -0.093] MAPE -0.243 [-0.339; -0.140] | lawan TimesFM MASE -0.128 [-0.155; -0.099] MAPE -0.011 [-0.015; -0.006] | lengket MAPE +0.000
+  gerbang median - ditahan Rp 50: MASE -0.041 [-0.060; -0.018] MAPE -0.007 [-0.017; +0.003]
+  gerbang median - kelengketan beku: MASE -0.015 [-0.028; -0.000] MAPE -0.005 [-0.013; +0.002]
+  gerbang median - daftar beku: MASE -0.020 [-0.031; -0.006] MAPE -0.008 [-0.016; +0.001]
+  kepentingan (gain %): kelengketan=73 volatilitas=4 komoditas=2 Idulfitri=3 lebar=14 geser=4
+  interval asli: cakupan 0.807, lebar rel 6.33 %, skor interval 20.53; bawang=0.83 bawang=0.79 beras_=0.80 cabai_=0.82 cabai_=0.84 daging=0.81 gula_p=0.79 minyak=0.81 telur_=0.78
+  interval CQR: cakupan 0.836, lebar rel 6.84 %, skor interval 20.59; bawang=0.84 bawang=0.83 beras_=0.81 cabai_=0.83 cabai_=0.84 daging=0.82 gula_p=0.87 minyak=0.88 telur_=0.82
+h=14: diam pra 0.169, uji 0.182; AUC uji 0.873; Brier uji 0.1040 (dasar 0.1492)
+  TimesFM         lawan naif MASE -0.079 [-0.212; +0.014] MAPE -0.415 [-0.617; -0.216] | lengket MAPE +0.044
+  ditahan Rp 50   lawan naif MASE -0.178 [-0.308; -0.085] MAPE -0.424 [-0.626; -0.226] | lawan TimesFM MASE -0.099 [-0.110; -0.083] MAPE -0.009 [-0.011; -0.008] | lengket MAPE +0.017
+  gerbang keras   lawan naif MASE -0.131 [-0.262; -0.039] MAPE -0.419 [-0.620; -0.221] | lawan TimesFM MASE -0.052 [-0.059; -0.044] MAPE -0.004 [-0.005; -0.003] | lengket MAPE +0.033
+  gerbang rerata  lawan naif MASE -0.163 [-0.291; -0.072] MAPE -0.425 [-0.624; -0.229] | lawan TimesFM MASE -0.084 [-0.091; -0.074] MAPE -0.010 [-0.013; -0.007] | lengket MAPE +0.022
+  gerbang median  lawan naif MASE -0.256 [-0.371; -0.170] MAPE -0.434 [-0.625; -0.245] | lawan TimesFM MASE -0.177 [-0.200; -0.144] MAPE -0.019 [-0.031; -0.005] | lengket MAPE -0.004
+  kelengketan beku lawan naif MASE -0.236 [-0.351; -0.150] MAPE -0.426 [-0.623; -0.232] | lawan TimesFM MASE -0.157 [-0.186; -0.121] MAPE -0.011 [-0.021; +0.002] | lengket MAPE +0.005
+  daftar beku     lawan naif MASE -0.241 [-0.364; -0.147] MAPE -0.429 [-0.630; -0.232] | lawan TimesFM MASE -0.162 [-0.191; -0.124] MAPE -0.014 [-0.020; -0.009] | lengket MAPE +0.000
+  gerbang median - ditahan Rp 50: MASE -0.078 [-0.095; -0.054] MAPE -0.009 [-0.021; +0.004]
+  gerbang median - kelengketan beku: MASE -0.019 [-0.041; -0.000] MAPE -0.008 [-0.019; +0.004]
+  gerbang median - daftar beku: MASE -0.015 [-0.033; +0.005] MAPE -0.004 [-0.015; +0.009]
+  kepentingan (gain %): kelengketan=69 volatilitas=6 komoditas=2 Idulfitri=3 lebar=15 geser=5
+  interval asli: cakupan 0.783, lebar rel 9.22 %, skor interval 30.92; bawang=0.80 bawang=0.78 beras_=0.78 cabai_=0.80 cabai_=0.80 daging=0.78 gula_p=0.77 minyak=0.77 telur_=0.77
+  interval CQR: cakupan 0.837, lebar rel 10.33 %, skor interval 31.06; bawang=0.83 bawang=0.85 beras_=0.85 cabai_=0.81 cabai_=0.82 daging=0.78 gula_p=0.87 minyak=0.89 telur_=0.85
+h=28: diam pra 0.108, uji 0.110; AUC uji 0.853; Brier uji 0.0797 (dasar 0.0980)
+  TimesFM         lawan naif MASE -0.187 [-0.475; +0.028] MAPE -0.737 [-1.227; -0.365] | lengket MAPE +0.062
+  ditahan Rp 50   lawan naif MASE -0.261 [-0.545; -0.050] MAPE -0.744 [-1.234; -0.372] | lawan TimesFM MASE -0.074 [-0.087; -0.058] MAPE -0.006 [-0.008; -0.005] | lengket MAPE +0.043
+  gerbang keras   lawan naif MASE -0.207 [-0.492; +0.007] MAPE -0.739 [-1.229; -0.367] | lawan TimesFM MASE -0.020 [-0.027; -0.013] MAPE -0.001 [-0.002; -0.001] | lengket MAPE +0.058
+  gerbang rerata  lawan naif MASE -0.255 [-0.535; -0.047] MAPE -0.745 [-1.233; -0.376] | lawan TimesFM MASE -0.068 [-0.084; -0.051] MAPE -0.008 [-0.011; -0.004] | lengket MAPE +0.043
+  gerbang median  lawan naif MASE -0.371 [-0.638; -0.178] MAPE -0.757 [-1.236; -0.393] | lawan TimesFM MASE -0.184 [-0.240; -0.124] MAPE -0.020 [-0.032; -0.006] | lengket MAPE +0.009
+  kelengketan beku lawan naif MASE -0.350 [-0.608; -0.166] MAPE -0.739 [-1.220; -0.376] | lawan TimesFM MASE -0.163 [-0.231; -0.087] MAPE -0.001 [-0.020; +0.018] | lengket MAPE +0.017
+  daftar beku     lawan naif MASE -0.376 [-0.642; -0.168] MAPE -0.754 [-1.241; -0.388] | lawan TimesFM MASE -0.189 [-0.283; -0.098] MAPE -0.017 [-0.046; +0.013] | lengket MAPE +0.000
+  gerbang median - ditahan Rp 50: MASE -0.110 [-0.160; -0.060] MAPE -0.013 [-0.025; -0.000]
+  gerbang median - kelengketan beku: MASE -0.020 [-0.054; +0.008] MAPE -0.018 [-0.033; -0.003]
+  gerbang median - daftar beku: MASE +0.005 [-0.060; +0.067] MAPE -0.003 [-0.028; +0.024]
+  kepentingan (gain %): kelengketan=63 volatilitas=9 komoditas=4 Idulfitri=4 lebar=14 geser=7
+  interval asli: cakupan 0.760, lebar rel 13.25 %, skor interval 45.70; bawang=0.77 bawang=0.76 beras_=0.76 cabai_=0.77 cabai_=0.76 daging=0.77 gula_p=0.75 minyak=0.73 telur_=0.77
+  interval CQR: cakupan 0.848, lebar rel 16.14 %, skor interval 45.85; bawang=0.83 bawang=0.88 beras_=0.86 cabai_=0.79 cabai_=0.82 daging=0.79 gula_p=0.92 minyak=0.88 telur_=0.86
+
+===== kandidat moirai
+h=7: diam pra 0.240, uji 0.260; AUC uji 0.881; Brier uji 0.1193 (dasar 0.1926)
+  Moirai-2        lawan naif MASE +0.100 [+0.036; +0.149] MAPE -0.195 [-0.284; -0.112] | lengket MAPE +0.054
+  ditahan Rp 50   lawan naif MASE -0.064 [-0.120; -0.019] MAPE -0.210 [-0.301; -0.128] | lawan Moirai-2 MASE -0.164 [-0.182; -0.142] MAPE -0.016 [-0.018; -0.013] | lengket MAPE +0.011
+  gerbang keras   lawan naif MASE -0.059 [-0.115; -0.014] MAPE -0.210 [-0.300; -0.127] | lawan Moirai-2 MASE -0.159 [-0.172; -0.144] MAPE -0.015 [-0.017; -0.013] | lengket MAPE +0.016
+  gerbang rerata  lawan naif MASE -0.048 [-0.101; -0.009] MAPE -0.211 [-0.299; -0.129] | lawan Moirai-2 MASE -0.148 [-0.164; -0.130] MAPE -0.016 [-0.019; -0.013] | lengket MAPE +0.019
+  gerbang median  lawan naif MASE -0.138 [-0.179; -0.109] MAPE -0.217 [-0.301; -0.139] | lawan Moirai-2 MASE -0.238 [-0.277; -0.194] MAPE -0.022 [-0.032; -0.011] | lengket MAPE -0.005
+  kelengketan beku lawan naif MASE -0.117 [-0.158; -0.084] MAPE -0.213 [-0.300; -0.131] | lawan Moirai-2 MASE -0.216 [-0.259; -0.166] MAPE -0.018 [-0.026; -0.009] | lengket MAPE +0.001
+  daftar beku     lawan naif MASE -0.115 [-0.163; -0.077] MAPE -0.215 [-0.306; -0.130] | lawan Moirai-2 MASE -0.215 [-0.261; -0.166] MAPE -0.020 [-0.029; -0.011] | lengket MAPE +0.000
+  gerbang median - ditahan Rp 50: MASE -0.074 [-0.104; -0.044] MAPE -0.006 [-0.016; +0.004]
+  gerbang median - kelengketan beku: MASE -0.021 [-0.032; -0.012] MAPE -0.004 [-0.011; +0.003]
+  gerbang median - daftar beku: MASE -0.023 [-0.037; -0.009] MAPE -0.002 [-0.011; +0.007]
+  kepentingan (gain %): kelengketan=73 volatilitas=5 komoditas=2 Idulfitri=3 lebar=12 geser=5
+  interval asli: cakupan 0.783, lebar rel 6.02 %, skor interval 20.43; bawang=0.81 bawang=0.78 beras_=0.75 cabai_=0.80 cabai_=0.80 daging=0.79 gula_p=0.77 minyak=0.76 telur_=0.78
+  interval CQR: cakupan 0.835, lebar rel 6.96 %, skor interval 20.57; bawang=0.84 bawang=0.84 beras_=0.78 cabai_=0.85 cabai_=0.84 daging=0.82 gula_p=0.86 minyak=0.86 telur_=0.84
+h=14: diam pra 0.169, uji 0.182; AUC uji 0.872; Brier uji 0.1047 (dasar 0.1492)
+  Moirai-2        lawan naif MASE -0.001 [-0.101; +0.066] MAPE -0.374 [-0.566; -0.213] | lengket MAPE +0.047
+  ditahan Rp 50   lawan naif MASE -0.120 [-0.216; -0.058] MAPE -0.386 [-0.577; -0.225] | lawan Moirai-2 MASE -0.119 [-0.141; -0.095] MAPE -0.011 [-0.014; -0.009] | lengket MAPE +0.015
+  gerbang keras   lawan naif MASE -0.077 [-0.173; -0.014] MAPE -0.381 [-0.573; -0.220] | lawan Moirai-2 MASE -0.076 [-0.089; -0.062] MAPE -0.006 [-0.007; -0.005] | lengket MAPE +0.030
+  gerbang rerata  lawan naif MASE -0.110 [-0.203; -0.048] MAPE -0.385 [-0.575; -0.226] | lawan Moirai-2 MASE -0.109 [-0.126; -0.090] MAPE -0.011 [-0.014; -0.008] | lengket MAPE +0.020
+  gerbang median  lawan naif MASE -0.215 [-0.299; -0.158] MAPE -0.391 [-0.571; -0.237] | lawan Moirai-2 MASE -0.214 [-0.258; -0.161] MAPE -0.017 [-0.029; -0.001] | lengket MAPE -0.008
+  kelengketan beku lawan naif MASE -0.192 [-0.282; -0.131] MAPE -0.389 [-0.580; -0.230] | lawan Moirai-2 MASE -0.191 [-0.247; -0.126] MAPE -0.015 [-0.027; -0.002] | lengket MAPE +0.004
+  daftar beku     lawan naif MASE -0.189 [-0.285; -0.117] MAPE -0.391 [-0.583; -0.226] | lawan Moirai-2 MASE -0.188 [-0.249; -0.118] MAPE -0.016 [-0.028; -0.002] | lengket MAPE +0.000
+  gerbang median - ditahan Rp 50: MASE -0.094 [-0.129; -0.057] MAPE -0.005 [-0.017; +0.011]
+  gerbang median - kelengketan beku: MASE -0.023 [-0.043; -0.004] MAPE -0.002 [-0.013; +0.013]
+  gerbang median - daftar beku: MASE -0.026 [-0.054; -0.000] MAPE -0.000 [-0.014; +0.015]
+  kepentingan (gain %): kelengketan=70 volatilitas=6 komoditas=3 Idulfitri=3 lebar=12 geser=5
+  interval asli: cakupan 0.774, lebar rel 9.28 %, skor interval 31.70; bawang=0.79 bawang=0.79 beras_=0.77 cabai_=0.79 cabai_=0.77 daging=0.77 gula_p=0.76 minyak=0.75 telur_=0.77
+  interval CQR: cakupan 0.834, lebar rel 10.46 %, skor interval 31.82; bawang=0.83 bawang=0.87 beras_=0.83 cabai_=0.81 cabai_=0.82 daging=0.77 gula_p=0.86 minyak=0.87 telur_=0.84
+h=28: diam pra 0.108, uji 0.110; AUC uji 0.853; Brier uji 0.0798 (dasar 0.0980)
+  Moirai-2        lawan naif MASE -0.161 [-0.364; -0.040] MAPE -0.761 [-1.203; -0.478] | lengket MAPE +0.051
+  ditahan Rp 50   lawan naif MASE -0.230 [-0.429; -0.115] MAPE -0.768 [-1.210; -0.484] | lawan Moirai-2 MASE -0.069 [-0.093; -0.048] MAPE -0.007 [-0.009; -0.005] | lengket MAPE +0.033
+  gerbang keras   lawan naif MASE -0.199 [-0.397; -0.082] MAPE -0.764 [-1.206; -0.480] | lawan Moirai-2 MASE -0.038 [-0.057; -0.024] MAPE -0.002 [-0.003; -0.002] | lengket MAPE +0.044
+  gerbang rerata  lawan naif MASE -0.250 [-0.444; -0.138] MAPE -0.770 [-1.210; -0.487] | lawan Moirai-2 MASE -0.089 [-0.116; -0.061] MAPE -0.009 [-0.012; -0.005] | lengket MAPE +0.029
+  gerbang median  lawan naif MASE -0.357 [-0.549; -0.250] MAPE -0.779 [-1.213; -0.500] | lawan Moirai-2 MASE -0.196 [-0.267; -0.119] MAPE -0.017 [-0.029; -0.004] | lengket MAPE -0.000
+  kelengketan beku lawan naif MASE -0.348 [-0.540; -0.235] MAPE -0.772 [-1.212; -0.489] | lawan Moirai-2 MASE -0.187 [-0.261; -0.099] MAPE -0.010 [-0.022; +0.005] | lengket MAPE +0.007
+  daftar beku     lawan naif MASE -0.347 [-0.560; -0.220] MAPE -0.771 [-1.218; -0.483] | lawan Moirai-2 MASE -0.186 [-0.290; -0.079] MAPE -0.010 [-0.031; +0.014] | lengket MAPE +0.000
+  gerbang median - ditahan Rp 50: MASE -0.127 [-0.189; -0.063] MAPE -0.011 [-0.022; +0.002]
+  gerbang median - kelengketan beku: MASE -0.009 [-0.040; +0.015] MAPE -0.007 [-0.019; +0.004]
+  gerbang median - daftar beku: MASE -0.010 [-0.063; +0.040] MAPE -0.008 [-0.030; +0.015]
+  kepentingan (gain %): kelengketan=63 volatilitas=10 komoditas=6 Idulfitri=4 lebar=9 geser=7
+  interval asli: cakupan 0.746, lebar rel 13.18 %, skor interval 47.24; bawang=0.75 bawang=0.76 beras_=0.73 cabai_=0.76 cabai_=0.75 daging=0.76 gula_p=0.72 minyak=0.71 telur_=0.77
+  interval CQR: cakupan 0.845, lebar rel 16.39 %, skor interval 47.31; bawang=0.85 bawang=0.88 beras_=0.84 cabai_=0.81 cabai_=0.83 daging=0.78 gula_p=0.89 minyak=0.87 telur_=0.86

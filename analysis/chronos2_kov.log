@@ -1,0 +1,11 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights:  16%|#5        | 27/170 [00:00<00:00, 268.26it/s]Loading weights:  32%|###1      | 54/170 [00:00<00:00, 260.67it/s]Loading weights:  48%|####8     | 82/170 [00:00<00:00, 264.92it/s]Loading weights:  64%|######4   | 109/170 [00:00<00:00, 266.68it/s]Loading weights:  80%|########  | 136/170 [00:00<00:00, 254.17it/s]Loading weights: 100%|##########| 170/170 [00:00<00:00, 273.90it/s]
+kov: asal 1/142, 13 d
+kov: asal 21/142, 36 d
+kov: asal 41/142, 60 d
+kov: asal 61/142, 85 d
+kov: asal 81/142, 108 d
+kov: asal 101/142, 132 d
+kov: asal 121/142, 156 d
+kov: asal 141/142, 179 d
+kov: selesai; NaN 0

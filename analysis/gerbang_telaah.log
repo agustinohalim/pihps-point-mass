@@ -1,0 +1,273 @@
+deret nasional 0
+
+===== h=7: ambang TimesFM 0.7; daftar TimesFM ['bawang_merah', 'bawang_putih', 'cabai_merah_keriting', 'cabai_rawit_merah', 'daging_ayam_ras', 'telur_ayam_ras']
+(1)(2) peramal: rMAE saja | bergerbang; sMAPE saja | bergerbang; lawan naif MASE/MAPE untuk gerbang, pinjam ambang, pinjam daftar, peluang dasar
+  Chronos-2: rMAE 1.027 [1.015; 1.047] | 0.970 [0.959; 0.976]; sMAPE 3.984 | 3.945
+    gerbang:       MASE -0.136 [-0.185; -0.101] MAPE -0.232 [-0.330; -0.152]
+    pinjam ambang: MASE -0.114 [-0.170; -0.076] MAPE -0.227 [-0.332; -0.141]
+    pinjam daftar: MASE -0.105 [-0.164; -0.063] MAPE -0.221 [-0.328; -0.133]
+    peluang dasar: MASE -0.125 [-0.170; -0.093] MAPE -0.223 [-0.314; -0.149]
+    gerbang lawan pinjam daftar: MASE -0.031 [-0.042; -0.015] MAPE -0.012 [-0.021; +0.001]
+    gerbang lawan pinjam ambang: MASE -0.022 [-0.029; -0.012] MAPE -0.005 [-0.013; +0.005]
+    gerbang lawan peluang dasar: MASE -0.011 [-0.022; -0.003] MAPE -0.010 [-0.018; -0.002]
+  Chronos-Bolt: rMAE 1.087 [1.071; 1.118] | 0.984 [0.974; 0.993]; sMAPE 4.107 | 4.022
+    gerbang:       MASE -0.078 [-0.126; -0.041] MAPE -0.142 [-0.248; -0.044]
+    pinjam ambang: MASE -0.032 [-0.087; +0.009] MAPE -0.118 [-0.229; -0.016]
+    pinjam daftar: MASE -0.009 [-0.070; +0.039] MAPE -0.101 [-0.215; +0.006]
+    peluang dasar: MASE -0.070 [-0.117; -0.031] MAPE -0.142 [-0.243; -0.048]
+    gerbang lawan pinjam daftar: MASE -0.069 [-0.087; -0.049] MAPE -0.042 [-0.053; -0.030]
+    gerbang lawan pinjam ambang: MASE -0.046 [-0.058; -0.033] MAPE -0.024 [-0.032; -0.016]
+    gerbang lawan peluang dasar: MASE -0.008 [-0.020; +0.002] MAPE -0.000 [-0.007; +0.006]
+  TimesFM 2.5: rMAE 0.995 [0.985; 1.013] | 0.966 [0.957; 0.974]; sMAPE 3.936 | 3.917
+    gerbang:       MASE -0.154 [-0.202; -0.115] MAPE -0.246 [-0.335; -0.152]
+    pinjam ambang: MASE -0.146 [-0.199; -0.103] MAPE -0.245 [-0.340; -0.146]
+    pinjam daftar: MASE -0.141 [-0.198; -0.094] MAPE -0.243 [-0.339; -0.142]
+    peluang dasar: MASE -0.146 [-0.190; -0.110] MAPE -0.240 [-0.322; -0.155]
+    gerbang lawan pinjam daftar: MASE -0.014 [-0.025; +0.001] MAPE -0.003 [-0.013; +0.007]
+    gerbang lawan pinjam ambang: MASE -0.009 [-0.015; +0.001] MAPE -0.000 [-0.009; +0.008]
+    gerbang lawan peluang dasar: MASE -0.008 [-0.018; -0.001] MAPE -0.006 [-0.016; +0.004]
+  Moirai-2: rMAE 1.019 [1.009; 1.039] | 0.972 [0.963; 0.979]; sMAPE 3.981 | 3.957
+    gerbang:       MASE -0.128 [-0.169; -0.098] MAPE -0.213 [-0.297; -0.137]
+    pinjam ambang: MASE -0.115 [-0.162; -0.082] MAPE -0.217 [-0.308; -0.134]
+    pinjam daftar: MASE -0.108 [-0.156; -0.071] MAPE -0.213 [-0.303; -0.129]
+    peluang dasar: MASE -0.111 [-0.150; -0.081] MAPE -0.201 [-0.277; -0.131]
+    gerbang lawan pinjam daftar: MASE -0.020 [-0.032; -0.006] MAPE -0.001 [-0.010; +0.011]
+    gerbang lawan pinjam ambang: MASE -0.012 [-0.019; -0.004] MAPE +0.004 [-0.005; +0.014]
+    gerbang lawan peluang dasar: MASE -0.016 [-0.026; -0.010] MAPE -0.012 [-0.021; -0.005]
+  Chronos-2 dilatih: rMAE 1.054 [1.040; 1.084] | 0.965 [0.956; 0.975]; sMAPE 3.953 | 3.896
+    gerbang:       MASE -0.157 [-0.207; -0.113] MAPE -0.271 [-0.361; -0.175]
+    pinjam ambang: MASE -0.121 [-0.180; -0.074] MAPE -0.263 [-0.361; -0.159]
+    pinjam daftar: MASE -0.115 [-0.175; -0.066] MAPE -0.255 [-0.355; -0.150]
+    peluang dasar: MASE -0.146 [-0.190; -0.106] MAPE -0.263 [-0.345; -0.174]
+    gerbang lawan pinjam daftar: MASE -0.041 [-0.057; -0.022] MAPE -0.016 [-0.027; -0.004]
+    gerbang lawan pinjam ambang: MASE -0.036 [-0.047; -0.021] MAPE -0.008 [-0.018; +0.001]
+    gerbang lawan peluang dasar: MASE -0.011 [-0.025; -0.000] MAPE -0.008 [-0.017; +0.000]
+  Chronos-2 dilatih+kov: rMAE 1.047 [1.031; 1.077] | 0.964 [0.953; 0.975]; sMAPE 3.949 | 3.898
+    gerbang:       MASE -0.162 [-0.220; -0.112] MAPE -0.267 [-0.384; -0.141]
+    pinjam ambang: MASE -0.135 [-0.202; -0.081] MAPE -0.262 [-0.388; -0.128]
+    pinjam daftar: MASE -0.129 [-0.199; -0.071] MAPE -0.254 [-0.383; -0.120]
+    peluang dasar: MASE -0.157 [-0.210; -0.111] MAPE -0.262 [-0.371; -0.146]
+    gerbang lawan pinjam daftar: MASE -0.033 [-0.047; -0.014] MAPE -0.013 [-0.024; +0.001]
+    gerbang lawan pinjam ambang: MASE -0.027 [-0.038; -0.012] MAPE -0.005 [-0.014; +0.005]
+    gerbang lawan peluang dasar: MASE -0.005 [-0.017; +0.005] MAPE -0.005 [-0.015; +0.006]
+  ETS: rMAE 1.044 [1.034; 1.060] | 0.996 [0.991; 1.001]; sMAPE 4.121 | 4.094
+    gerbang:       MASE -0.022 [-0.045; +0.000] MAPE -0.047 [-0.075; -0.012]
+    pinjam ambang: MASE -0.006 [-0.032; +0.019] MAPE -0.041 [-0.073; -0.001]
+    pinjam daftar: MASE -0.011 [-0.036; +0.013] MAPE -0.041 [-0.073; -0.002]
+    peluang dasar: MASE -0.024 [-0.041; -0.004] MAPE -0.042 [-0.065; -0.012]
+    gerbang lawan pinjam daftar: MASE -0.011 [-0.021; +0.001] MAPE -0.006 [-0.012; +0.001]
+    gerbang lawan pinjam ambang: MASE -0.016 [-0.026; -0.006] MAPE -0.006 [-0.012; +0.001]
+    gerbang lawan peluang dasar: MASE +0.001 [-0.007; +0.008] MAPE -0.004 [-0.012; +0.002]
+  ARIMA: rMAE 1.082 [1.067; 1.110] | 0.997 [0.990; 1.003]; sMAPE 4.124 | 4.075
+    gerbang:       MASE -0.021 [-0.050; +0.014] MAPE -0.053 [-0.099; +0.013]
+    pinjam ambang: MASE +0.002 [-0.029; +0.037] MAPE -0.042 [-0.093; +0.029]
+    pinjam daftar: MASE -0.001 [-0.033; +0.037] MAPE -0.039 [-0.090; +0.032]
+    peluang dasar: MASE -0.023 [-0.049; +0.013] MAPE -0.055 [-0.095; +0.006]
+    gerbang lawan pinjam daftar: MASE -0.019 [-0.031; -0.009] MAPE -0.014 [-0.022; -0.006]
+    gerbang lawan pinjam ambang: MASE -0.022 [-0.032; -0.012] MAPE -0.010 [-0.018; -0.003]
+    gerbang lawan peluang dasar: MASE +0.002 [-0.010; +0.011] MAPE +0.002 [-0.006; +0.010]
+(3) dalam komoditas: AUC gerbang | AUC kelengketan saja | selisih kalibrasi rerata (ECE 10 desil)
+    bawang_merah             diam 0.065 AUC 0.791 | 0.793 | ECE 0.005
+    bawang_putih             diam 0.200 AUC 0.751 | 0.758 | ECE 0.025
+    beras_medium_1           diam 0.635 AUC 0.673 | 0.687 | ECE 0.023
+    cabai_merah_keriting     diam 0.041 AUC 0.819 | 0.823 | ECE 0.005
+    cabai_rawit_merah        diam 0.039 AUC 0.863 | 0.868 | ECE 0.011
+    daging_ayam_ras          diam 0.080 AUC 0.833 | 0.838 | ECE 0.011
+    gula_pasir_lokal         diam 0.554 AUC 0.652 | 0.667 | ECE 0.044
+    minyak_goreng_curah      diam 0.529 AUC 0.711 | 0.724 | ECE 0.068
+    telur_ayam_ras           diam 0.198 AUC 0.742 | 0.750 | ECE 0.022
+(4) cara gabung, TimesFM, 142 asal
+    keras: lawan naif MASE -0.110 [-0.167; -0.064] MAPE -0.240 [-0.336; -0.140]
+    rerata: lawan naif MASE -0.106 [-0.163; -0.062] MAPE -0.244 [-0.338; -0.146]
+    median: lawan naif MASE -0.154 [-0.202; -0.115] MAPE -0.246 [-0.335; -0.152]
+(5) per tahun asal dan tanpa nasional, gerbang TimesFM lawan naif
+    2024 (53 asal): MASE -0.143 [-0.190; -0.082] MAPE -0.242 [-0.342; -0.057]
+    2025 (52 asal): MASE -0.160 [-0.196; -0.069] MAPE -0.265 [-0.351; -0.089]
+    2026 (37 asal): MASE -0.160 [-0.226; -0.091] MAPE -0.223 [-0.332; -0.105]
+    tanpa nasional: MASE -0.154 [-0.202; -0.115] MAPE -0.246 [-0.335; -0.152]
+(6) blok 16: lawan naif MASE -0.154 [-0.194; -0.122] MAPE -0.246 [-0.318; -0.163] | lawan daftar MASE -0.014 [-0.024; -0.002] MAPE -0.003 [-0.010; +0.003]
+
+===== h=14: ambang TimesFM 0.7; daftar TimesFM ['bawang_merah', 'bawang_putih', 'cabai_merah_keriting', 'cabai_rawit_merah', 'daging_ayam_ras', 'telur_ayam_ras']
+(1)(2) peramal: rMAE saja | bergerbang; sMAPE saja | bergerbang; lawan naif MASE/MAPE untuk gerbang, pinjam ambang, pinjam daftar, peluang dasar
+  Chronos-2: rMAE 1.009 [0.991; 1.029] | 0.971 [0.956; 0.982]; sMAPE 6.088 | 6.055
+    gerbang:       MASE -0.205 [-0.327; -0.127] MAPE -0.423 [-0.663; -0.237]
+    pinjam ambang: MASE -0.189 [-0.310; -0.111] MAPE -0.423 [-0.672; -0.230]
+    pinjam daftar: MASE -0.190 [-0.317; -0.101] MAPE -0.423 [-0.676; -0.225]
+    peluang dasar: MASE -0.204 [-0.318; -0.126] MAPE -0.425 [-0.658; -0.243]
+    gerbang lawan pinjam daftar: MASE -0.015 [-0.036; +0.002] MAPE -0.000 [-0.014; +0.016]
+    gerbang lawan pinjam ambang: MASE -0.016 [-0.034; +0.001] MAPE +0.000 [-0.011; +0.015]
+    gerbang lawan peluang dasar: MASE -0.001 [-0.021; +0.013] MAPE +0.002 [-0.007; +0.009]
+  Chronos-Bolt: rMAE 1.057 [1.037; 1.085] | 0.990 [0.974; 1.001]; sMAPE 6.246 | 6.171
+    gerbang:       MASE -0.089 [-0.208; -0.012] MAPE -0.266 [-0.540; -0.044]
+    pinjam ambang: MASE -0.059 [-0.179; +0.019] MAPE -0.252 [-0.534; -0.022]
+    pinjam daftar: MASE -0.059 [-0.187; +0.032] MAPE -0.243 [-0.526; -0.010]
+    peluang dasar: MASE -0.099 [-0.211; -0.019] MAPE -0.273 [-0.540; -0.053]
+    gerbang lawan pinjam daftar: MASE -0.030 [-0.064; +0.004] MAPE -0.023 [-0.035; -0.010]
+    gerbang lawan pinjam ambang: MASE -0.030 [-0.046; -0.016] MAPE -0.014 [-0.024; -0.002]
+    gerbang lawan peluang dasar: MASE +0.010 [-0.020; +0.037] MAPE +0.007 [-0.002; +0.013]
+  TimesFM 2.5: rMAE 0.987 [0.973; 1.003] | 0.964 [0.951; 0.975]; sMAPE 6.036 | 6.018
+    gerbang:       MASE -0.257 [-0.370; -0.172] MAPE -0.426 [-0.613; -0.238]
+    pinjam ambang: MASE -0.236 [-0.351; -0.150] MAPE -0.426 [-0.623; -0.230]
+    pinjam daftar: MASE -0.241 [-0.365; -0.145] MAPE -0.429 [-0.630; -0.231]
+    peluang dasar: MASE -0.255 [-0.361; -0.172] MAPE -0.427 [-0.609; -0.244]
+    gerbang lawan pinjam daftar: MASE -0.017 [-0.033; +0.002] MAPE +0.004 [-0.010; +0.022]
+    gerbang lawan pinjam ambang: MASE -0.021 [-0.040; -0.002] MAPE -0.000 [-0.014; +0.017]
+    gerbang lawan peluang dasar: MASE -0.002 [-0.016; +0.007] MAPE +0.001 [-0.007; +0.008]
+  Moirai-2: rMAE 0.998 [0.985; 1.014] | 0.971 [0.961; 0.979]; sMAPE 6.115 | 6.097
+    gerbang:       MASE -0.205 [-0.290; -0.146] MAPE -0.385 [-0.559; -0.231]
+    pinjam ambang: MASE -0.192 [-0.281; -0.129] MAPE -0.389 [-0.577; -0.227]
+    pinjam daftar: MASE -0.182 [-0.279; -0.111] MAPE -0.390 [-0.579; -0.224]
+    peluang dasar: MASE -0.189 [-0.270; -0.131] MAPE -0.379 [-0.547; -0.229]
+    gerbang lawan pinjam daftar: MASE -0.023 [-0.044; -0.003] MAPE +0.005 [-0.009; +0.024]
+    gerbang lawan pinjam ambang: MASE -0.013 [-0.027; +0.000] MAPE +0.005 [-0.008; +0.022]
+    gerbang lawan peluang dasar: MASE -0.016 [-0.030; -0.008] MAPE -0.006 [-0.014; +0.001]
+  Chronos-2 dilatih: rMAE 1.007 [0.991; 1.032] | 0.959 [0.945; 0.970]; sMAPE 5.945 | 5.911
+    gerbang:       MASE -0.294 [-0.406; -0.208] MAPE -0.539 [-0.750; -0.324]
+    pinjam ambang: MASE -0.267 [-0.389; -0.174] MAPE -0.542 [-0.768; -0.316]
+    pinjam daftar: MASE -0.274 [-0.402; -0.168] MAPE -0.544 [-0.771; -0.315]
+    peluang dasar: MASE -0.286 [-0.391; -0.200] MAPE -0.537 [-0.740; -0.329]
+    gerbang lawan pinjam daftar: MASE -0.020 [-0.055; +0.011] MAPE +0.005 [-0.012; +0.026]
+    gerbang lawan pinjam ambang: MASE -0.027 [-0.047; -0.005] MAPE +0.004 [-0.011; +0.022]
+    gerbang lawan peluang dasar: MASE -0.007 [-0.028; +0.007] MAPE -0.002 [-0.012; +0.008]
+  Chronos-2 dilatih+kov: rMAE 0.997 [0.977; 1.025] | 0.952 [0.935; 0.966]; sMAPE 5.901 | 5.871
+    gerbang:       MASE -0.332 [-0.475; -0.227] MAPE -0.552 [-0.846; -0.252]
+    pinjam ambang: MASE -0.306 [-0.457; -0.199] MAPE -0.556 [-0.866; -0.242]
+    pinjam daftar: MASE -0.322 [-0.481; -0.202] MAPE -0.559 [-0.873; -0.245]
+    peluang dasar: MASE -0.332 [-0.468; -0.228] MAPE -0.552 [-0.838; -0.259]
+    gerbang lawan pinjam daftar: MASE -0.010 [-0.035; +0.015] MAPE +0.007 [-0.010; +0.029]
+    gerbang lawan pinjam ambang: MASE -0.026 [-0.042; -0.008] MAPE +0.004 [-0.012; +0.022]
+    gerbang lawan peluang dasar: MASE -0.000 [-0.017; +0.008] MAPE -0.000 [-0.011; +0.010]
+  ETS: rMAE 1.043 [1.032; 1.061] | 1.006 [0.999; 1.013]; sMAPE 6.406 | 6.370
+    gerbang:       MASE +0.045 [-0.011; +0.097] MAPE -0.031 [-0.091; +0.033]
+    pinjam ambang: MASE +0.038 [-0.014; +0.084] MAPE -0.028 [-0.093; +0.041]
+    pinjam daftar: MASE +0.023 [-0.027; +0.066] MAPE -0.028 [-0.093; +0.041]
+    peluang dasar: MASE +0.026 [-0.022; +0.069] MAPE -0.034 [-0.090; +0.025]
+    gerbang lawan pinjam daftar: MASE +0.023 [-0.011; +0.061] MAPE -0.003 [-0.012; +0.007]
+    gerbang lawan pinjam ambang: MASE +0.008 [-0.016; +0.033] MAPE -0.003 [-0.011; +0.006]
+    gerbang lawan peluang dasar: MASE +0.019 [-0.001; +0.044] MAPE +0.004 [-0.003; +0.011]
+  ARIMA: rMAE 1.077 [1.060; 1.111] | 1.008 [1.000; 1.015]; sMAPE 6.358 | 6.296
+    gerbang:       MASE +0.053 [-0.002; +0.116] MAPE -0.057 [-0.141; +0.067]
+    pinjam ambang: MASE +0.033 [-0.015; +0.093] MAPE -0.051 [-0.139; +0.080]
+    pinjam daftar: MASE +0.014 [-0.039; +0.082] MAPE -0.049 [-0.137; +0.081]
+    peluang dasar: MASE +0.027 [-0.023; +0.088] MAPE -0.062 [-0.141; +0.057]
+    gerbang lawan pinjam daftar: MASE +0.040 [-0.009; +0.088] MAPE -0.008 [-0.019; +0.002]
+    gerbang lawan pinjam ambang: MASE +0.020 [-0.007; +0.045] MAPE -0.006 [-0.015; +0.002]
+    gerbang lawan peluang dasar: MASE +0.027 [-0.002; +0.058] MAPE +0.004 [-0.003; +0.012]
+(3) dalam komoditas: AUC gerbang | AUC kelengketan saja | selisih kalibrasi rerata (ECE 10 desil)
+    bawang_merah             diam 0.027 AUC 0.760 | 0.770 | ECE 0.006
+    bawang_putih             diam 0.122 AUC 0.734 | 0.749 | ECE 0.022
+    beras_medium_1           diam 0.502 AUC 0.660 | 0.678 | ECE 0.042
+    cabai_merah_keriting     diam 0.026 AUC 0.808 | 0.832 | ECE 0.007
+    cabai_rawit_merah        diam 0.023 AUC 0.858 | 0.883 | ECE 0.008
+    daging_ayam_ras          diam 0.048 AUC 0.833 | 0.849 | ECE 0.005
+    gula_pasir_lokal         diam 0.393 AUC 0.649 | 0.668 | ECE 0.044
+    minyak_goreng_curah      diam 0.385 AUC 0.714 | 0.730 | ECE 0.075
+    telur_ayam_ras           diam 0.117 AUC 0.731 | 0.743 | ECE 0.032
+(4) cara gabung, TimesFM, 142 asal
+    keras: lawan naif MASE -0.156 [-0.287; -0.065] MAPE -0.421 [-0.622; -0.221]
+    rerata: lawan naif MASE -0.171 [-0.298; -0.082] MAPE -0.424 [-0.622; -0.227]
+    median: lawan naif MASE -0.257 [-0.370; -0.172] MAPE -0.426 [-0.613; -0.238]
+(5) per tahun asal dan tanpa nasional, gerbang TimesFM lawan naif
+    2024 (53 asal): MASE -0.255 [-0.361; -0.126] MAPE -0.419 [-0.625; -0.023]
+    2025 (52 asal): MASE -0.268 [-0.370; -0.047] MAPE -0.442 [-0.615; -0.097]
+    2026 (37 asal): MASE -0.247 [-0.482; -0.075] MAPE -0.414 [-0.863; -0.150]
+    tanpa nasional: MASE -0.257 [-0.370; -0.172] MAPE -0.426 [-0.613; -0.238]
+(6) blok 16: lawan naif MASE -0.257 [-0.350; -0.189] MAPE -0.426 [-0.571; -0.261] | lawan daftar MASE -0.017 [-0.034; -0.001] MAPE +0.004 [-0.009; +0.020]
+
+===== h=28: ambang TimesFM 0.7; daftar TimesFM ['bawang_merah', 'cabai_merah_keriting', 'cabai_rawit_merah', 'daging_ayam_ras', 'telur_ayam_ras']
+(1)(2) peramal: rMAE saja | bergerbang; sMAPE saja | bergerbang; lawan naif MASE/MAPE untuk gerbang, pinjam ambang, pinjam daftar, peluang dasar
+  Chronos-2: rMAE 0.992 [0.965; 1.019] | 0.967 [0.943; 0.983]; sMAPE 8.898 | 8.860
+    gerbang:       MASE -0.294 [-0.570; -0.130] MAPE -0.951 [-1.558; -0.565]
+    pinjam ambang: MASE -0.311 [-0.561; -0.158] MAPE -0.945 [-1.557; -0.556]
+    pinjam daftar: MASE -0.401 [-0.685; -0.216] MAPE -0.984 [-1.606; -0.579]
+    peluang dasar: MASE -0.321 [-0.600; -0.147] MAPE -0.961 [-1.555; -0.580]
+    gerbang lawan pinjam daftar: MASE +0.107 [+0.035; +0.168] MAPE +0.033 [+0.009; +0.060]
+    gerbang lawan pinjam ambang: MASE +0.018 [-0.040; +0.059] MAPE -0.007 [-0.024; +0.011]
+    gerbang lawan peluang dasar: MASE +0.028 [-0.013; +0.059] MAPE +0.009 [-0.004; +0.017]
+  Chronos-Bolt: rMAE 1.032 [1.003; 1.064] | 0.993 [0.969; 1.013]; sMAPE 9.141 | 9.077
+    gerbang:       MASE -0.006 [-0.275; +0.161] MAPE -0.591 [-1.211; -0.155]
+    pinjam ambang: MASE -0.122 [-0.353; +0.024] MAPE -0.594 [-1.220; -0.159]
+    pinjam daftar: MASE -0.215 [-0.466; -0.049] MAPE -0.634 [-1.263; -0.191]
+    peluang dasar: MASE -0.061 [-0.311; +0.092] MAPE -0.608 [-1.223; -0.177]
+    gerbang lawan pinjam daftar: MASE +0.209 [+0.062; +0.373] MAPE +0.043 [+0.008; +0.089]
+    gerbang lawan pinjam ambang: MASE +0.116 [+0.037; +0.172] MAPE +0.003 [-0.017; +0.021]
+    gerbang lawan peluang dasar: MASE +0.054 [-0.010; +0.131] MAPE +0.017 [+0.003; +0.031]
+  TimesFM 2.5: rMAE 0.976 [0.954; 0.997] | 0.962 [0.940; 0.978]; sMAPE 8.955 | 8.933
+    gerbang:       MASE -0.372 [-0.639; -0.171] MAPE -0.750 [-1.216; -0.386]
+    pinjam ambang: MASE -0.350 [-0.607; -0.157] MAPE -0.739 [-1.205; -0.373]
+    pinjam daftar: MASE -0.376 [-0.643; -0.156] MAPE -0.754 [-1.228; -0.383]
+    peluang dasar: MASE -0.387 [-0.645; -0.190] MAPE -0.751 [-1.208; -0.392]
+    gerbang lawan pinjam daftar: MASE +0.004 [-0.059; +0.064] MAPE +0.004 [-0.020; +0.030]
+    gerbang lawan pinjam ambang: MASE -0.021 [-0.056; +0.006] MAPE -0.011 [-0.027; +0.005]
+    gerbang lawan peluang dasar: MASE +0.016 [-0.003; +0.031] MAPE +0.001 [-0.010; +0.009]
+  Moirai-2: rMAE 0.978 [0.961; 0.991] | 0.964 [0.947; 0.974]; sMAPE 9.004 | 8.985
+    gerbang:       MASE -0.348 [-0.544; -0.241] MAPE -0.769 [-1.193; -0.498]
+    pinjam ambang: MASE -0.339 [-0.535; -0.226] MAPE -0.759 [-1.192; -0.485]
+    pinjam daftar: MASE -0.347 [-0.561; -0.221] MAPE -0.771 [-1.208; -0.490]
+    peluang dasar: MASE -0.337 [-0.536; -0.226] MAPE -0.763 [-1.176; -0.497]
+    gerbang lawan pinjam daftar: MASE -0.001 [-0.053; +0.044] MAPE +0.001 [-0.020; +0.025]
+    gerbang lawan pinjam ambang: MASE -0.009 [-0.052; +0.023] MAPE -0.011 [-0.028; +0.008]
+    gerbang lawan peluang dasar: MASE -0.011 [-0.041; +0.010] MAPE -0.007 [-0.018; +0.001]
+  Chronos-2 dilatih: rMAE 0.971 [0.948; 0.997] | 0.948 [0.927; 0.964]; sMAPE 8.605 | 8.583
+    gerbang:       MASE -0.511 [-0.764; -0.353] MAPE -1.122 [-1.650; -0.762]
+    pinjam ambang: MASE -0.486 [-0.744; -0.322] MAPE -1.122 [-1.665; -0.753]
+    pinjam daftar: MASE -0.587 [-0.852; -0.410] MAPE -1.163 [-1.700; -0.785]
+    peluang dasar: MASE -0.531 [-0.788; -0.364] MAPE -1.123 [-1.637; -0.770]
+    gerbang lawan pinjam daftar: MASE +0.077 [-0.016; +0.156] MAPE +0.041 [+0.011; +0.070]
+    gerbang lawan pinjam ambang: MASE -0.025 [-0.074; +0.025] MAPE -0.000 [-0.019; +0.022]
+    gerbang lawan peluang dasar: MASE +0.021 [-0.019; +0.057] MAPE +0.001 [-0.013; +0.009]
+  Chronos-2 dilatih+kov: rMAE 0.963 [0.936; 0.991] | 0.940 [0.915; 0.958]; sMAPE 8.552 | 8.531
+    gerbang:       MASE -0.581 [-0.880; -0.396] MAPE -1.137 [-1.797; -0.621]
+    pinjam ambang: MASE -0.552 [-0.847; -0.368] MAPE -1.131 [-1.801; -0.602]
+    pinjam daftar: MASE -0.629 [-0.925; -0.426] MAPE -1.163 [-1.826; -0.634]
+    peluang dasar: MASE -0.607 [-0.906; -0.414] MAPE -1.137 [-1.782; -0.629]
+    gerbang lawan pinjam daftar: MASE +0.048 [-0.045; +0.115] MAPE +0.025 [-0.011; +0.054]
+    gerbang lawan pinjam ambang: MASE -0.029 [-0.069; +0.011] MAPE -0.007 [-0.024; +0.011]
+    gerbang lawan peluang dasar: MASE +0.026 [-0.008; +0.052] MAPE +0.000 [-0.015; +0.011]
+  ETS: rMAE 1.051 [1.036; 1.073] | 1.031 [1.019; 1.043]; sMAPE 9.751 | 9.708
+    gerbang:       MASE +0.409 [+0.245; +0.603] MAPE +0.254 [+0.124; +0.374]
+    pinjam ambang: MASE +0.273 [+0.153; +0.395] MAPE +0.249 [+0.118; +0.367]
+    pinjam daftar: MASE +0.193 [+0.088; +0.288] MAPE +0.235 [+0.101; +0.358]
+    peluang dasar: MASE +0.345 [+0.198; +0.505] MAPE +0.240 [+0.114; +0.355]
+    gerbang lawan pinjam daftar: MASE +0.216 [+0.096; +0.376] MAPE +0.019 [+0.001; +0.045]
+    gerbang lawan pinjam ambang: MASE +0.136 [+0.062; +0.234] MAPE +0.006 [-0.002; +0.016]
+    gerbang lawan peluang dasar: MASE +0.064 [+0.030; +0.116] MAPE +0.014 [+0.007; +0.022]
+  ARIMA: rMAE 1.077 [1.055; 1.114] | 1.031 [1.017; 1.046]; sMAPE 9.579 | 9.505
+    gerbang:       MASE +0.422 [+0.237; +0.636] MAPE +0.098 [-0.102; +0.286]
+    pinjam ambang: MASE +0.227 [+0.112; +0.349] MAPE +0.089 [-0.116; +0.281]
+    pinjam daftar: MASE +0.105 [-0.004; +0.205] MAPE +0.059 [-0.149; +0.253]
+    peluang dasar: MASE +0.359 [+0.201; +0.541] MAPE +0.078 [-0.120; +0.263]
+    gerbang lawan pinjam daftar: MASE +0.317 [+0.156; +0.529] MAPE +0.039 [+0.011; +0.074]
+    gerbang lawan pinjam ambang: MASE +0.195 [+0.097; +0.317] MAPE +0.010 [-0.005; +0.023]
+    gerbang lawan peluang dasar: MASE +0.063 [+0.008; +0.125] MAPE +0.020 [+0.011; +0.031]
+(3) dalam komoditas: AUC gerbang | AUC kelengketan saja | selisih kalibrasi rerata (ECE 10 desil)
+    bawang_merah             diam 0.015 AUC 0.752 | 0.747 | ECE 0.003
+    bawang_putih             diam 0.062 AUC 0.737 | 0.746 | ECE 0.022
+    beras_medium_1           diam 0.323 AUC 0.640 | 0.677 | ECE 0.050
+    cabai_merah_keriting     diam 0.018 AUC 0.783 | 0.842 | ECE 0.005
+    cabai_rawit_merah        diam 0.016 AUC 0.867 | 0.848 | ECE 0.008
+    daging_ayam_ras          diam 0.026 AUC 0.801 | 0.797 | ECE 0.005
+    gula_pasir_lokal         diam 0.235 AUC 0.643 | 0.684 | ECE 0.044
+    minyak_goreng_curah      diam 0.241 AUC 0.695 | 0.711 | ECE 0.065
+    telur_ayam_ras           diam 0.059 AUC 0.731 | 0.752 | ECE 0.029
+(4) cara gabung, TimesFM, 142 asal
+    keras: lawan naif MASE -0.218 [-0.503; -0.004] MAPE -0.740 [-1.219; -0.366]
+    rerata: lawan naif MASE -0.264 [-0.542; -0.054] MAPE -0.744 [-1.220; -0.373]
+    median: lawan naif MASE -0.372 [-0.639; -0.171] MAPE -0.750 [-1.216; -0.386]
+(5) per tahun asal dan tanpa nasional, gerbang TimesFM lawan naif
+    2024 (53 asal): MASE -0.487 [-0.824; -0.192] MAPE -0.755 [-1.308; -0.034]
+    2025 (52 asal): MASE -0.312 [-0.548; +0.245] MAPE -0.721 [-1.139; +0.050]
+    2026 (37 asal): MASE -0.291 [-0.831; +0.003] MAPE -0.784 [-1.907; -0.198]
+    tanpa nasional: MASE -0.372 [-0.639; -0.171] MAPE -0.750 [-1.216; -0.386]
+(6) blok 16: lawan naif MASE -0.372 [-0.629; -0.204] MAPE -0.750 [-1.185; -0.440] | lawan daftar MASE +0.004 [-0.070; +0.069] MAPE +0.004 [-0.019; +0.028]
+
+===== (4) cara gabung, 97 asal 2022-2023, TimesFM
+  h=7 keras: lawan naif MASE -0.048 [-0.125; +0.034] MAPE -0.159 [-0.262; -0.028]
+  h=7 rerata: lawan naif MASE -0.039 [-0.112; +0.039] MAPE -0.168 [-0.268; -0.041]
+  h=7 median: lawan naif MASE -0.110 [-0.175; -0.041] MAPE -0.189 [-0.284; -0.070]
+  h=14 keras: lawan naif MASE -0.016 [-0.220; +0.173] MAPE -0.298 [-0.611; -0.004]
+  h=14 rerata: lawan naif MASE -0.025 [-0.216; +0.155] MAPE -0.309 [-0.619; -0.019]
+  h=14 median: lawan naif MASE -0.150 [-0.333; +0.026] MAPE -0.322 [-0.623; -0.044]
+  h=28 keras: lawan naif MASE +0.068 [-0.332; +0.515] MAPE -0.561 [-1.230; -0.003]
+  h=28 rerata: lawan naif MASE +0.031 [-0.357; +0.461] MAPE -0.575 [-1.240; -0.024]
+  h=28 median: lawan naif MASE -0.158 [-0.529; +0.251] MAPE -0.594 [-1.244; -0.055]

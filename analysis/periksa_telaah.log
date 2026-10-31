@@ -1,0 +1,46 @@
+(1) tanggal 2286, Senin-Jumat dalam rentang 2303, hilang 17
+    tanggal cuti Lebaran yang ada di kalender: 16 dari 16
+    bagian perubahan nol pada tanggal itu 0.905; seluruh evaluasi 0.591
+    kelipatan Rp 50 di Y: 1.00000
+
+(2) h = 7: rerata |galat| % harga per komoditas; selisih rupiah terhadap naif; skala % harga
+komoditas                naif%    tfm%    moi%    ets%  d_tfm_Rp  skala%
+bawang_merah             5.727   5.137   5.214   5.596    -246.1   1.198
+bawang_putih             1.904   1.915   1.931   1.932       4.7   0.530
+beras_medium_1           0.419   0.453   0.472   0.478       5.4   0.120
+cabai_merah_keriting    11.449  11.144  11.171  11.456    -160.6   3.240
+cabai_rawit_merah       12.804  11.738  11.886  12.588    -579.1   3.443
+daging_ayam_ras          3.204   3.045   3.093   3.191     -58.2   0.856
+gula_pasir_lokal         0.449   0.477   0.509   0.523       5.0   0.128
+minyak_goreng_curah      0.645   0.687   0.701   0.692       8.0   0.179
+telur_ayam_ras           1.523   1.480   1.496   1.538     -12.7   0.364
+SEMUA                    4.188   3.966   4.009   4.174    -111.5   1.104
+    selisih APE % vs naif, blok 4: timesfm -0.222 [-0.320; -0.122] | moirai -0.179 [-0.261; -0.100] | chronos2 -0.179 [-0.276; -0.094]
+    selisih APE % vs naif, blok 6: timesfm -0.222 [-0.323; -0.122] | moirai -0.179 [-0.272; -0.102] | chronos2 -0.179 [-0.283; -0.095]
+    selisih APE % vs naif, blok 8: timesfm -0.222 [-0.329; -0.121] | moirai -0.179 [-0.269; -0.097] | chronos2 -0.179 [-0.283; -0.093]
+    selisih APE % vs naif, blok 12: timesfm -0.222 [-0.316; -0.133] | moirai -0.179 [-0.265; -0.104] | chronos2 -0.179 [-0.283; -0.102]
+    selisih MASE vs naif, blok 4: timesfm +0.002 [-0.058; +0.050] | moirai +0.113 [+0.053; +0.159]
+    selisih MASE vs naif, blok 6: timesfm +0.002 [-0.060; +0.054] | moirai +0.113 [+0.051; +0.160]
+    selisih MASE vs naif, blok 8: timesfm +0.002 [-0.052; +0.052] | moirai +0.113 [+0.056; +0.166]
+    selisih MASE vs naif, blok 12: timesfm +0.002 [-0.051; +0.047] | moirai +0.113 [+0.053; +0.167]
+
+(2) h = 28: rerata |galat| % harga per komoditas; selisih rupiah terhadap naif; skala % harga
+komoditas                naif%    tfm%    moi%    ets%  d_tfm_Rp  skala%
+bawang_merah            16.022  13.958  14.163  16.830    -726.3   1.198
+bawang_putih             4.482   4.491   4.433   4.592       3.7   0.530
+beras_medium_1           1.306   1.356   1.346   1.463       7.8   0.120
+cabai_merah_keriting    23.595  22.264  21.903  23.792    -563.7   3.240
+cabai_rawit_merah       30.836  27.511  27.537  31.613   -1700.1   3.443
+daging_ayam_ras          6.181   5.811   5.873   6.245    -127.1   0.856
+gula_pasir_lokal         1.364   1.402   1.416   1.495       7.2   0.128
+minyak_goreng_curah      1.962   2.063   2.024   2.101      18.8   0.179
+telur_ayam_ras           3.675   3.505   3.538   3.828     -50.2   0.364
+SEMUA                    9.810   9.042   9.027  10.089    -338.2   1.104
+    selisih APE % vs naif, blok 4: timesfm -0.769 [-1.121; -0.394] | moirai -0.783 [-1.124; -0.465] | chronos2 -0.978 [-1.451; -0.517]
+    selisih APE % vs naif, blok 6: timesfm -0.769 [-1.180; -0.406] | moirai -0.783 [-1.151; -0.468] | chronos2 -0.978 [-1.558; -0.537]
+    selisih APE % vs naif, blok 8: timesfm -0.769 [-1.200; -0.397] | moirai -0.783 [-1.169; -0.479] | chronos2 -0.978 [-1.525; -0.517]
+    selisih APE % vs naif, blok 12: timesfm -0.769 [-1.174; -0.469] | moirai -0.783 [-1.157; -0.526] | chronos2 -0.978 [-1.523; -0.606]
+    selisih MASE vs naif, blok 4: timesfm -0.181 [-0.409; +0.007] | moirai -0.154 [-0.336; -0.019]
+    selisih MASE vs naif, blok 6: timesfm -0.181 [-0.430; +0.037] | moirai -0.154 [-0.332; -0.000]
+    selisih MASE vs naif, blok 8: timesfm -0.181 [-0.445; +0.035] | moirai -0.154 [-0.339; -0.035]
+    selisih MASE vs naif, blok 12: timesfm -0.181 [-0.413; +0.001] | moirai -0.154 [-0.305; -0.061]

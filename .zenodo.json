@@ -1,0 +1,24 @@
+{
+  "title": "pihps-point-mass: a point-mass mixture for time-series foundation models on sticky daily food prices (PIHPS, Indonesia)",
+  "upload_type": "software",
+  "description": "Analysis code and aggregate logs for a study of daily food prices in Indonesian provinces from Bank Indonesia's PIHPS (309 series, nine commodities). Pretrained time-series foundation models (Chronos-2, Chronos-Bolt, TimesFM 2.5, Moirai-2) are evaluated zero-shot against the naive forecast and trained baselines. A point mass at the last price is added to each model's quantile distribution, with the mass set per commodity and horizon from the share of unchanged windows in past data, and the median of the mixture is forecast without retraining the model. A LightGBM stay-or-move classifier, a commodity list, fine-tuning, and a calendar covariate are the comparators. Price data are not included; logs hold aggregate results only.",
+  "creators": [
+    {
+      "name": "Halim, Agustino",
+      "orcid": "0009-0008-4388-1174",
+      "affiliation": "Universitas OSO"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "time-series foundation models",
+    "food prices",
+    "price stickiness",
+    "point-mass mixture",
+    "naive forecast",
+    "forecast evaluation",
+    "PIHPS",
+    "Indonesia"
+  ],
+  "version": "1.0.0"
+}

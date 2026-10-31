@@ -1,0 +1,104 @@
+
+===== (A) periode lebih awal: latih sasaran < 2022, uji asal >= 2022
+timesfm h=7: latih 103 asal, uji 97 asal, ambang 0.8; daftar ['bawang_merah', 'bawang_putih', 'cabai_merah_keriting', 'cabai_rawit_merah', 'daging_ayam_ras', 'telur_ayam_ras']
+  AUC 0.872
+  model lawan naif:   MASE +0.091 [+0.016; +0.173] MAPE -0.145 [-0.247; -0.015]
+  gerbang lawan naif: MASE -0.095 [-0.163; -0.023] MAPE -0.182 [-0.278; -0.060]
+  gerbang lawan model:MASE -0.186 [-0.222; -0.157] MAPE -0.036 [-0.048; -0.027]
+  kelengketan lawan naif: MASE -0.075 [-0.148; +0.010] MAPE -0.169 [-0.270; -0.038]
+  daftar lawan naif:  MASE -0.076 [-0.145; +0.004] MAPE -0.163 [-0.263; -0.034]
+  gerbang lawan kelengketan: MASE -0.021 [-0.042; +0.002] MAPE -0.013 [-0.025; -0.004]
+  gerbang lawan daftar: MASE -0.019 [-0.040; -0.003] MAPE -0.018 [-0.031; -0.009]
+timesfm h=14: latih 102 asal, uji 97 asal, ambang 0.8; daftar ['bawang_merah', 'bawang_putih', 'cabai_merah_keriting', 'cabai_rawit_merah', 'daging_ayam_ras', 'gula_pasir_lokal', 'telur_ayam_ras']
+  AUC 0.871
+  model lawan naif:   MASE +0.154 [-0.033; +0.332] MAPE -0.289 [-0.616; +0.006]
+  gerbang lawan naif: MASE -0.125 [-0.316; +0.055] MAPE -0.320 [-0.633; -0.036]
+  gerbang lawan model:MASE -0.279 [-0.355; -0.232] MAPE -0.031 [-0.046; -0.017]
+  kelengketan lawan naif: MASE -0.121 [-0.316; +0.074] MAPE -0.308 [-0.633; -0.014]
+  daftar lawan naif:  MASE -0.054 [-0.250; +0.151] MAPE -0.305 [-0.626; -0.010]
+  gerbang lawan kelengketan: MASE -0.004 [-0.037; +0.027] MAPE -0.011 [-0.024; +0.001]
+  gerbang lawan daftar: MASE -0.071 [-0.128; -0.021] MAPE -0.015 [-0.035; +0.000]
+timesfm h=28: latih 99 asal, uji 97 asal, ambang 0.8; daftar ['bawang_merah', 'bawang_putih', 'cabai_merah_keriting', 'cabai_rawit_merah', 'daging_ayam_ras', 'gula_pasir_lokal', 'telur_ayam_ras']
+  AUC 0.859
+  model lawan naif:   MASE +0.218 [-0.180; +0.644] MAPE -0.558 [-1.259; -0.002]
+  gerbang lawan naif: MASE -0.089 [-0.486; +0.328] MAPE -0.592 [-1.277; -0.052]
+  gerbang lawan model:MASE -0.307 [-0.432; -0.232] MAPE -0.034 [-0.054; -0.017]
+  kelengketan lawan naif: MASE -0.159 [-0.551; +0.263] MAPE -0.584 [-1.272; -0.041]
+  daftar lawan naif:  MASE -0.077 [-0.465; +0.392] MAPE -0.584 [-1.267; -0.032]
+  gerbang lawan kelengketan: MASE +0.070 [+0.024; +0.121] MAPE -0.008 [-0.029; +0.012]
+  gerbang lawan daftar: MASE -0.012 [-0.114; +0.053] MAPE -0.008 [-0.032; +0.007]
+moirai h=7: latih 103 asal, uji 97 asal, ambang 0.8; daftar ['bawang_merah', 'bawang_putih', 'cabai_merah_keriting', 'cabai_rawit_merah', 'daging_ayam_ras', 'gula_pasir_lokal', 'telur_ayam_ras']
+  AUC 0.872
+  model lawan naif:   MASE +0.458 [+0.260; +0.827] MAPE -0.062 [-0.149; +0.039]
+  gerbang lawan naif: MASE +0.012 [-0.055; +0.121] MAPE -0.116 [-0.194; -0.029]
+  gerbang lawan model:MASE -0.446 [-0.731; -0.297] MAPE -0.055 [-0.077; -0.041]
+  kelengketan lawan naif: MASE +0.006 [-0.059; +0.101] MAPE -0.099 [-0.182; -0.005]
+  daftar lawan naif:  MASE +0.053 [-0.002; +0.159] MAPE -0.093 [-0.177; +0.003]
+  gerbang lawan kelengketan: MASE +0.006 [-0.036; +0.062] MAPE -0.017 [-0.027; -0.010]
+  gerbang lawan daftar: MASE -0.041 [-0.093; +0.000] MAPE -0.023 [-0.036; -0.015]
+moirai h=14: latih 102 asal, uji 97 asal, ambang 0.8; daftar ['bawang_merah', 'bawang_putih', 'cabai_merah_keriting', 'cabai_rawit_merah', 'daging_ayam_ras', 'gula_pasir_lokal', 'telur_ayam_ras']
+  AUC 0.868
+  model lawan naif:   MASE +0.515 [+0.197; +1.078] MAPE -0.149 [-0.391; +0.067]
+  gerbang lawan naif: MASE +0.055 [-0.106; +0.282] MAPE -0.197 [-0.424; -0.002]
+  gerbang lawan model:MASE -0.460 [-0.838; -0.265] MAPE -0.048 [-0.079; -0.024]
+  kelengketan lawan naif: MASE -0.009 [-0.157; +0.189] MAPE -0.185 [-0.423; +0.022]
+  daftar lawan naif:  MASE +0.052 [-0.104; +0.281] MAPE -0.187 [-0.430; +0.028]
+  gerbang lawan kelengketan: MASE +0.064 [-0.005; +0.148] MAPE -0.012 [-0.027; +0.003]
+  gerbang lawan daftar: MASE +0.002 [-0.084; +0.079] MAPE -0.010 [-0.035; +0.011]
+moirai h=28: latih 99 asal, uji 97 asal, ambang 0.8; daftar ['bawang_merah', 'bawang_putih', 'cabai_merah_keriting', 'cabai_rawit_merah', 'daging_ayam_ras', 'gula_pasir_lokal', 'telur_ayam_ras']
+  AUC 0.862
+  model lawan naif:   MASE +0.602 [+0.150; +1.252] MAPE -0.338 [-0.875; +0.085]
+  gerbang lawan naif: MASE +0.134 [-0.211; +0.572] MAPE -0.377 [-0.904; +0.034]
+  gerbang lawan model:MASE -0.468 [-0.740; -0.315] MAPE -0.039 [-0.055; -0.024]
+  kelengketan lawan naif: MASE -0.016 [-0.336; +0.382] MAPE -0.387 [-0.907; +0.021]
+  daftar lawan naif:  MASE +0.101 [-0.261; +0.551] MAPE -0.387 [-0.930; +0.039]
+  gerbang lawan kelengketan: MASE +0.149 [+0.062; +0.240] MAPE +0.010 [-0.003; +0.022]
+  gerbang lawan daftar: MASE +0.033 [-0.088; +0.133] MAPE +0.010 [-0.017; +0.035]
+
+===== h=7
+(B) ablasi
+  tanpa ciri model: AUC 0.875; lawan naif MASE -0.154 [-0.200; -0.114] MAPE -0.246 [-0.333; -0.153]; penuh dikurangi ini MASE -0.006 [-0.018; +0.003] MAPE -0.004 [-0.009; -0.001]
+  hanya ciri model: AUC 0.849; lawan naif MASE -0.146 [-0.197; -0.104] MAPE -0.243 [-0.329; -0.154]; penuh dikurangi ini MASE -0.014 [-0.025; -0.004] MAPE -0.007 [-0.014; +0.000]
+(C) kalibrasi per desil p (rerata p / frekuensi diam)
+  0.00/0.01 0.01/0.02 0.03/0.03 0.05/0.05 0.09/0.09 0.17/0.18 0.30/0.32 0.46/0.50 0.61/0.63 0.77/0.77
+(D) lawan Chronos-2 dilatih
+  gerbang lawan dilatih: MASE -0.446 [-0.506; -0.376] MAPE -0.032 [-0.078; +0.018]
+  gerbang lawan dilatih+kov: MASE -0.422 [-0.472; -0.350] MAPE -0.031 [-0.090; +0.034]
+(E) kelompok
+  bergerak: tepat di harga asal 16.6 %; lawan naif MAPE -0.663 [-0.932; -0.377] MASE -0.332 [-0.463; -0.213]; lawan TimesFM MAPE -0.003 [-0.024; +0.018]
+  lengket: tepat di harga asal 96.1 %; lawan naif MAPE -0.005 [-0.014; +0.001] MASE -0.016 [-0.049; +0.010]; lawan TimesFM MAPE -0.038 [-0.047; -0.029]
+  semua: tepat di harga asal 55.5 %
+(F) lima benih, lawan naif
+  MASE -0.162 s.d. -0.160; MAPE -0.251 s.d. -0.250
+
+===== h=14
+(B) ablasi
+  tanpa ciri model: AUC 0.867; lawan naif MASE -0.257 [-0.369; -0.171] MAPE -0.426 [-0.613; -0.236]; penuh dikurangi ini MASE +0.002 [-0.007; +0.011] MAPE -0.008 [-0.015; -0.002]
+  hanya ciri model: AUC 0.844; lawan naif MASE -0.241 [-0.353; -0.154] MAPE -0.429 [-0.618; -0.242]; penuh dikurangi ini MASE -0.014 [-0.028; -0.003] MAPE -0.005 [-0.011; +0.001]
+(C) kalibrasi per desil p (rerata p / frekuensi diam)
+  0.00/0.00 0.01/0.01 0.01/0.01 0.02/0.03 0.04/0.04 0.08/0.11 0.16/0.18 0.30/0.34 0.45/0.46 0.65/0.63
+(D) lawan Chronos-2 dilatih
+  gerbang lawan dilatih: MASE -0.359 [-0.453; -0.248] MAPE +0.076 [-0.016; +0.175]
+  gerbang lawan dilatih+kov: MASE -0.303 [-0.385; -0.187] MAPE +0.093 [-0.054; +0.259]
+(E) kelompok
+  bergerak: tepat di harga asal 9.5 %; lawan naif MAPE -1.196 [-1.770; -0.623] MASE -0.596 [-0.893; -0.356]; lawan TimesFM MAPE +0.010 [-0.018; +0.040]
+  lengket: tepat di harga asal 89.8 %; lawan naif MAPE -0.004 [-0.016; +0.007] MASE +0.008 [-0.042; +0.050]; lawan TimesFM MAPE -0.047 [-0.058; -0.037]
+  semua: tepat di harga asal 44.3 %
+(F) lima benih, lawan naif
+  MASE -0.256 s.d. -0.255; MAPE -0.434 s.d. -0.432
+
+===== h=28
+(B) ablasi
+  tanpa ciri model: AUC 0.849; lawan naif MASE -0.372 [-0.641; -0.171] MAPE -0.750 [-1.225; -0.380]; penuh dikurangi ini MASE +0.001 [-0.008; +0.010] MAPE -0.007 [-0.012; -0.003]
+  hanya ciri model: AUC 0.822; lawan naif MASE -0.359 [-0.626; -0.161] MAPE -0.747 [-1.212; -0.382]; penuh dikurangi ini MASE -0.011 [-0.037; +0.015] MAPE -0.010 [-0.023; +0.002]
+(C) kalibrasi per desil p (rerata p / frekuensi diam)
+  0.00/0.00 0.00/0.01 0.01/0.01 0.01/0.01 0.02/0.03 0.03/0.04 0.07/0.10 0.15/0.20 0.26/0.26 0.48/0.43
+(D) lawan Chronos-2 dilatih
+  gerbang lawan dilatih: MASE -0.189 [-0.430; +0.051] MAPE +0.350 [+0.187; +0.594]
+  gerbang lawan dilatih+kov: MASE -0.131 [-0.332; +0.088] MAPE +0.367 [+0.107; +0.694]
+(E) kelompok
+  bergerak: tepat di harga asal 4.7 %; lawan naif MAPE -2.069 [-3.486; -0.954] MASE -0.870 [-1.607; -0.264]; lawan TimesFM MAPE +0.013 [-0.009; +0.043]
+  lengket: tepat di harga asal 78.0 %; lawan naif MAPE +0.009 [-0.011; +0.030] MASE +0.069 [-0.046; +0.177]; lawan TimesFM MAPE -0.054 [-0.075; -0.034]
+  semua: tepat di harga asal 32.6 %
+(F) lima benih, lawan naif
+  MASE -0.371 s.d. -0.367; MAPE -0.759 s.d. -0.756
