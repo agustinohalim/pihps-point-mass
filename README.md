@@ -69,6 +69,13 @@ manuscript reports it as a comparator.
 | `24_campuran_dasar.py` | `campuran.log`, `campuran_rincian.json` | **Main method and main results** |
 | `25_gambar_campuran.py` | — | Fig. 1 of the manuscript |
 | `26_periksa_campuran.py` | `periksa_campuran.log` | One-day horizon and sensitivity to the mass |
+| `27_telaah_akhir.py` | `telaah_akhir.log`, `fondasi_timesfm_baru.log` | Global mass, tuned shrinkage, dead band; commodity groups; five later origins, 21 September to 19 October 2026 |
+
+## Versions
+
+- 1.1.0: adds `27_telaah_akhir.py` and its logs, and labels two commodities on Fig. 1. The method and the
+  numbers from earlier scripts are unchanged.
+- 1.0.0: first release.
 
 ## Licence
 

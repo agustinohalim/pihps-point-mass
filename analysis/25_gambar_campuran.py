@@ -34,6 +34,9 @@ def main():
         x = [k[h]['latih'][c] for c in k[h]['latih']]
         y = [k[h]['uji'][c] for c in k[h]['latih']]
         a.scatter(x, y, s=16, marker=tanda, color=warna, label=f'{h} days', zorder=3)
+    for c, label, dx, dy in (('beras_medium_1', 'Rice', -.02, -.07), ('minyak_goreng_curah', 'Cooking oil', .02, .05)):
+        a.annotate(f'{label}, 28 days', (k['28']['latih'][c], k['28']['uji'][c]), xytext=(k['28']['latih'][c] + dx, k['28']['uji'][c] + dy),
+                   fontsize=7, arrowprops=dict(arrowstyle='-', color='#52514e', lw=.6))
     a.set_xlabel('Share of unchanged windows, 2019–2023')
     a.set_ylabel('Share, 2024–2026')
     a.set_title('(a) Commodity mass by horizon', loc='left', fontsize=9)
