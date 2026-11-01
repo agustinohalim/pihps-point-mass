@@ -2,8 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23840467.svg)](https://doi.org/10.5281/zenodo.23840467)
 
-Analysis code and aggregate logs for the manuscript *Holding the Last Price: A Point-Mass Mixture for
-Time-Series Foundation Models on Sticky Daily Food Prices* (in preparation).
+Analysis code and aggregate logs for the manuscript *Holding the Last Price: Zero-Shot Foundation
+Models and a Point-Mass Correction on Sticky Daily Food Prices* (in preparation).
 
 Daily food prices in Indonesian provinces often stay unchanged, so pretrained time-series foundation
 models can lose to the no-change (naive) forecast on flat series. The method adds a point mass at the
@@ -70,9 +70,11 @@ manuscript reports it as a comparator.
 | `25_gambar_campuran.py` | — | Fig. 1 of the manuscript |
 | `26_periksa_campuran.py` | `periksa_campuran.log` | One-day horizon and sensitivity to the mass |
 | `27_telaah_akhir.py` | `telaah_akhir.log`, `fondasi_timesfm_baru.log` | Global mass, tuned shrinkage, dead band; commodity groups; five later origins, 21 September to 19 October 2026 |
+| `28_rupiah_selang.py` | `rupiah_selang.log` | Intervals for rupiah differences by commodity group; sMAPE of naive |
 
 ## Versions
 
+- 1.2.0: adds `28_rupiah_selang.py` and its log. The method and the numbers from earlier scripts are unchanged.
 - 1.1.0: adds `27_telaah_akhir.py` and its logs, and labels two commodities on Fig. 1. The method and the
   numbers from earlier scripts are unchanged.
 - 1.0.0: first release.
