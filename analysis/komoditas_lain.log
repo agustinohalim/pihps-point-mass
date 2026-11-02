@@ -1,0 +1,187 @@
+C:\Users\agust\Documents\UNOSO\Riset\Harga_Pangan\Uji_PIHPS\16_gerbang.py:37: RuntimeWarning: Mean of empty slice
+  z[:, k] = np.nanmean(np.where(np.isfinite(d), d == 0, np.nan), axis=1)
+C:\Users\agust\Documents\UNOSO\Riset\Harga_Pangan\Uji_PIHPS\16_gerbang.py:38: RuntimeWarning: Mean of empty slice
+  v[:, k] = np.nanmean(np.abs(np.diff(np.log(Y[:, j]), axis=1)), axis=1)
+C:\Users\agust\Documents\UNOSO\Riset\Harga_Pangan\Uji_PIHPS\18_periksa_gerbang.py:54: RuntimeWarning: Mean of empty slice
+  return f'MASE {G.ci(np.nanmean(d / sk, 0), idx)} MAPE {G.ci(np.nanmean(d / y * 100, 0), idx)}'
+C:\Users\agust\Documents\UNOSO\Riset\Harga_Pangan\Uji_PIHPS\22_gerbang_telaah.py:38: RuntimeWarning: divide by zero encountered in divide
+  f = lambda v, w: np.exp(np.nanmean(np.log(np.nanmean(v, 1) / np.nanmean(w, 1))))
+C:\Users\agust\venv-gpu\Lib\site-packages\numpy\lib\_function_base_impl.py:4609: RuntimeWarning: invalid value encountered in scalar subtract
+  diff_b_a = b - a
+C:\Users\agust\Documents\UNOSO\Riset\Harga_Pangan\Uji_PIHPS\22_gerbang_telaah.py:38: RuntimeWarning: invalid value encountered in divide
+  f = lambda v, w: np.exp(np.nanmean(np.log(np.nanmean(v, 1) / np.nanmean(w, 1))))
+deret 398; komoditas ['beras_bawah_1', 'beras_bawah_2', 'beras_medium_2', 'beras_super_1', 'beras_super_2', 'cabai_merah_besar', 'cabai_rawit_hijau', 'daging_sapi_1', 'daging_sapi_2', 'gula_pasir_premium', 'minyak_goreng_kemasan_1', 'minyak_goreng_kemasan_2']
+
+===== h=7, 142 asal, pasangan dinilai 52406
+  p latih -> amat: beras_bawah_1=0.715>0.642 beras_bawah_2=0.711>0.653 beras_medium_2=0.723>0.636 beras_super_1=0.692>0.628 beras_super_2=0.697>0.639 cabai_merah_besar=0.038>0.044 cabai_rawit_hijau=0.066>0.058 daging_sapi_1=0.697>0.709 daging_sapi_2=0.704>0.730 gula_pasir_premium=0.648>0.707 minyak_goreng_kemasan_1=0.493>0.610 minyak_goreng_kemasan_2=0.501>0.631
+  H1/H2/H3: per model
+  Chronos-2
+    saja lawan naif:     MASE +0.682 [+0.547; +0.787] MAPE +0.018 [-0.024; +0.051]
+    campuran lawan naif: MASE -0.014 [-0.027; -0.005] MAPE -0.038 [-0.068; -0.014]
+    campuran lawan saja: MASE -0.696 [-0.802; -0.562] MAPE -0.056 [-0.068; -0.040]
+    rMAE 1.156 [1.133; nan] -> 0.996 [0.993; 0.998]
+  Chronos-Bolt
+    saja lawan naif:     MASE +1.115 [+0.966; +1.252] MAPE +0.102 [+0.064; +0.134]
+    campuran lawan naif: MASE -0.000 [-0.012; +0.008] MAPE -0.009 [-0.039; +0.015]
+    campuran lawan saja: MASE -1.115 [-1.253; -0.969] MAPE -0.112 [-0.127; -0.097]
+    rMAE 1.273 [1.231; nan] -> 1.000 [0.997; 1.002]
+  TimesFM 2.5
+    saja lawan naif:     MASE +0.353 [+0.279; +0.423] MAPE -0.010 [-0.042; +0.017]
+    campuran lawan naif: MASE -0.016 [-0.027; -0.009] MAPE -0.044 [-0.068; -0.025]
+    campuran lawan saja: MASE -0.369 [-0.440; -0.297] MAPE -0.034 [-0.044; -0.022]
+    rMAE 1.085 [1.070; nan] -> 0.996 [0.993; 0.998]
+  Moirai-2
+    saja lawan naif:     MASE +0.533 [+0.443; +0.595] MAPE -0.002 [-0.032; +0.022]
+    campuran lawan naif: MASE -0.015 [-0.024; -0.009] MAPE -0.043 [-0.064; -0.026]
+    campuran lawan saja: MASE -0.549 [-0.611; -0.460] MAPE -0.041 [-0.051; -0.029]
+    rMAE 1.129 [1.107; nan] -> 0.996 [0.994; 0.998]
+  H4 TimesFM: k [10, 7, 10, 5, 8, 5, 20, 20, 20, 12, 16, 11]; w [0.0, 0.0, 0.0, 0.0, 0.0, 0.7000000000000001, 0.7000000000000001, 0.8, 0.8500000000000001, 0.0, 0.0, 0.0]; p global 0.567; daftar pakai model ['cabai_merah_besar', 'cabai_rawit_hijau']; ambang 0.6
+    campuran dikurangi naif: MASE -0.016 [-0.027; -0.009] MAPE -0.044 [-0.068; -0.025]
+    campuran dikurangi TimesFM: MASE -0.369 [-0.440; -0.297] MAPE -0.034 [-0.044; -0.022]
+    campuran dikurangi susut: MASE -0.052 [-0.099; -0.007] MAPE +0.001 [-0.005; +0.007]
+    campuran dikurangi zona mati: MASE -0.013 [-0.057; +0.029] MAPE -0.002 [-0.011; +0.007]
+    campuran dikurangi p global: MASE -0.016 [-0.027; -0.009] MAPE -0.044 [-0.068; -0.025]
+    campuran dikurangi daftar: MASE -0.002 [-0.005; +0.001] MAPE -0.003 [-0.010; +0.004]
+    campuran dikurangi kelengketan: MASE -0.000 [-0.008; +0.007] MAPE -0.003 [-0.012; +0.003]
+    daftar dikurangi naif: MASE -0.014 [-0.027; -0.005] MAPE -0.041 [-0.071; -0.016]
+    kelengketan dikurangi naif: MASE -0.016 [-0.028; -0.006] MAPE -0.041 [-0.067; -0.017]
+    susut dikurangi naif: MASE +0.036 [-0.011; +0.082] MAPE -0.045 [-0.067; -0.026]
+    zona mati dikurangi naif: MASE -0.004 [-0.049; +0.040] MAPE -0.042 [-0.072; -0.016]
+  tepat di harga asal: 89.2 %
+  kelompok: lawan naif MASE TimesFM | campuran; campuran-TimesFM MASE, MAPE; MAE Rp naif / TimesFM / campuran
+    beras                        MASE +0.415 [+0.347; +0.489] | MASE +0.000 [+0.000; +0.000]; MASE -0.415 [-0.489; -0.347] MAPE -0.038 [-0.049; -0.030]; Rp 64 / 70 / 64
+    minyak dan gula              MASE +0.473 [+0.397; +0.560] | MASE +0.001 [-0.001; +0.005]; MASE -0.472 [-0.559; -0.396] MAPE -0.043 [-0.052; -0.033]; Rp 82 / 91 / 82
+    cabai                        MASE -0.096 [-0.183; -0.034] | MASE -0.113 [-0.186; -0.064]; MASE -0.017 [-0.035; +0.002] MAPE -0.021 [-0.068; +0.026]; Rp 4741 / 4629 / 4610
+    daging sapi (kategori baru)  MASE +0.407 [+0.081; +0.749] | MASE +0.000 [+0.000; +0.000]; MASE -0.407 [-0.749; -0.081] MAPE -0.019 [-0.051; +0.019]; Rp 576 / 604 / 576
+    beras_bawah_1                MASE +0.416 [+0.334; +0.506] | MASE +0.000 [+0.000; +0.000]; MASE -0.416 [-0.506; -0.334] MAPE -0.047 [-0.061; -0.037]; Rp 64 / 71 / 64
+    beras_bawah_2                MASE +0.428 [+0.333; +0.493] | MASE +0.000 [+0.000; +0.000]; MASE -0.428 [-0.493; -0.333] MAPE -0.041 [-0.052; -0.029]; Rp 64 / 70 / 64
+    beras_medium_2               MASE +0.427 [+0.335; +0.538] | MASE +0.000 [+0.000; +0.000]; MASE -0.427 [-0.538; -0.335] MAPE -0.041 [-0.054; -0.030]; Rp 64 / 70 / 64
+    beras_super_1                MASE +0.408 [+0.331; +0.502] | MASE +0.000 [+0.000; +0.000]; MASE -0.408 [-0.502; -0.331] MAPE -0.033 [-0.046; -0.024]; Rp 66 / 72 / 66
+    beras_super_2                MASE +0.397 [+0.327; +0.476] | MASE +0.000 [+0.000; +0.000]; MASE -0.397 [-0.476; -0.327] MAPE -0.030 [-0.042; -0.022]; Rp 64 / 69 / 64
+    cabai_merah_besar            MASE -0.087 [-0.234; +0.018] | MASE -0.108 [-0.235; -0.018]; MASE -0.021 [-0.040; +0.001] MAPE -0.032 [-0.085; +0.031]; Rp 5041 / 4923 / 4898
+    cabai_rawit_hijau            MASE -0.104 [-0.195; -0.023] | MASE -0.117 [-0.189; -0.060]; MASE -0.013 [-0.040; +0.012] MAPE -0.012 [-0.076; +0.042]; Rp 4488 / 4380 / 4367
+    daging_sapi_1                MASE +0.443 [+0.097; +0.810] | MASE +0.000 [+0.000; +0.000]; MASE -0.443 [-0.810; -0.097] MAPE -0.018 [-0.046; +0.016]; Rp 576 / 603 / 576
+    daging_sapi_2                MASE +0.368 [+0.036; +0.716] | MASE +0.000 [+0.000; +0.000]; MASE -0.368 [-0.716; -0.036] MAPE -0.020 [-0.059; +0.023]; Rp 575 / 605 / 575
+    gula_pasir_premium           MASE +0.584 [+0.480; +0.704] | MASE +0.000 [+0.000; +0.000]; MASE -0.584 [-0.704; -0.480] MAPE -0.043 [-0.054; -0.033]; Rp 59 / 68 / 59
+    minyak_goreng_kemasan_1      MASE +0.399 [+0.304; +0.508] | MASE +0.004 [-0.003; +0.015]; MASE -0.396 [-0.503; -0.303] MAPE -0.041 [-0.054; -0.028]; Rp 95 / 104 / 95
+    minyak_goreng_kemasan_2      MASE +0.447 [+0.320; +0.573] | MASE +0.000 [+0.000; +0.000]; MASE -0.447 [-0.573; -0.320] MAPE -0.045 [-0.057; -0.028]; Rp 89 / 99 / 89
+  per tahun asal, campuran lawan TimesFM | lawan naif
+    2024: MASE -0.354 [-0.446; -0.275] MAPE -0.038 [-0.057; -0.028] | MASE -0.012 [-0.019; +0.002] MAPE -0.031 [-0.049; +0.008]
+    2025: MASE -0.269 [-0.338; -0.177] MAPE -0.023 [-0.038; -0.001] | MASE -0.019 [-0.028; -0.006] MAPE -0.052 [-0.072; -0.019]
+    2026: MASE -0.533 [-0.678; -0.428] MAPE -0.043 [-0.057; -0.030] | MASE -0.019 [-0.042; +0.000] MAPE -0.051 [-0.094; -0.009]
+
+===== h=14, 142 asal, pasangan dinilai 49255
+  p latih -> amat: beras_bawah_1=0.596>0.495 beras_bawah_2=0.601>0.519 beras_medium_2=0.596>0.495 beras_super_1=0.558>0.485 beras_super_2=0.574>0.508 cabai_merah_besar=0.021>0.027 cabai_rawit_hijau=0.040>0.035 daging_sapi_1=0.593>0.620 daging_sapi_2=0.612>0.648 gula_pasir_premium=0.515>0.588 minyak_goreng_kemasan_1=0.346>0.469 minyak_goreng_kemasan_2=0.351>0.482
+  H1/H2/H3: per model
+  Chronos-2
+    saja lawan naif:     MASE +0.790 [+0.625; +0.932] MAPE -0.012 [-0.105; +0.061]
+    campuran lawan naif: MASE -0.027 [-0.065; -0.004] MAPE -0.077 [-0.157; -0.016]
+    campuran lawan saja: MASE -0.817 [-0.959; -0.663] MAPE -0.065 [-0.084; -0.045]
+    rMAE 1.105 [1.078; nan] -> 0.995 [0.989; 0.999]
+  Chronos-Bolt
+    saja lawan naif:     MASE +1.325 [+1.050; +1.593] MAPE +0.111 [+0.019; +0.184]
+    campuran lawan naif: MASE +0.001 [-0.040; +0.023] MAPE -0.018 [-0.104; +0.045]
+    campuran lawan saja: MASE -1.325 [-1.601; -1.056] MAPE -0.129 [-0.159; -0.105]
+    rMAE 1.195 [1.151; nan] -> 0.999 [0.993; 1.003]
+  TimesFM 2.5
+    saja lawan naif:     MASE +0.458 [+0.348; +0.551] MAPE -0.034 [-0.101; +0.025]
+    campuran lawan naif: MASE -0.029 [-0.055; -0.012] MAPE -0.073 [-0.131; -0.023]
+    campuran lawan saja: MASE -0.487 [-0.582; -0.384] MAPE -0.039 [-0.052; -0.026]
+    rMAE 1.062 [1.045; nan] -> 0.995 [0.991; 0.998]
+  Moirai-2
+    saja lawan naif:     MASE +0.486 [+0.353; +0.589] MAPE -0.037 [-0.106; +0.018]
+    campuran lawan naif: MASE -0.026 [-0.055; -0.008] MAPE -0.077 [-0.138; -0.030]
+    campuran lawan saja: MASE -0.512 [-0.618; -0.382] MAPE -0.040 [-0.053; -0.028]
+    rMAE 1.071 [1.051; nan] -> 0.995 [0.991; 0.998]
+  H4 TimesFM: k [10, 13, 15, 3, 12, 12, 11, 20, 20, 14, 19, 6]; w [0.0, 0.0, 0.0, 0.0, 0.0, 0.75, 0.75, 0.65, 0.65, 0.0, 0.1, 0.2]; p global 0.458; daftar pakai model ['cabai_merah_besar', 'cabai_rawit_hijau']; ambang 0.6
+    campuran dikurangi naif: MASE -0.029 [-0.055; -0.012] MAPE -0.073 [-0.131; -0.023]
+    campuran dikurangi TimesFM: MASE -0.487 [-0.582; -0.384] MAPE -0.039 [-0.052; -0.026]
+    campuran dikurangi susut: MASE -0.086 [-0.144; -0.037] MAPE -0.002 [-0.011; +0.006]
+    campuran dikurangi zona mati: MASE -0.069 [-0.142; -0.011] MAPE -0.002 [-0.012; +0.007]
+    campuran dikurangi p global: MASE -0.037 [-0.066; -0.017] MAPE -0.072 [-0.129; -0.022]
+    campuran dikurangi daftar: MASE -0.001 [-0.007; +0.005] MAPE +0.001 [-0.007; +0.010]
+    campuran dikurangi kelengketan: MASE -0.004 [-0.022; +0.013] MAPE -0.003 [-0.014; +0.005]
+    daftar dikurangi naif: MASE -0.028 [-0.058; -0.007] MAPE -0.075 [-0.140; -0.016]
+    kelengketan dikurangi naif: MASE -0.025 [-0.056; -0.000] MAPE -0.071 [-0.128; -0.016]
+    susut dikurangi naif: MASE +0.057 [+0.000; +0.112] MAPE -0.071 [-0.123; -0.027]
+    zona mati dikurangi naif: MASE +0.040 [-0.025; +0.109] MAPE -0.071 [-0.135; -0.015]
+  tepat di harga asal: 87.0 %
+  kelompok: lawan naif MASE TimesFM | campuran; campuran-TimesFM MASE, MAPE; MAE Rp naif / TimesFM / campuran
+    beras                        MASE +0.499 [+0.383; +0.594] | MASE +0.000 [+0.000; +0.000]; MASE -0.499 [-0.594; -0.383] MAPE -0.046 [-0.062; -0.029]; Rp 109 / 116 / 109
+    minyak dan gula              MASE +0.569 [+0.482; +0.673] | MASE -0.002 [-0.017; +0.011]; MASE -0.571 [-0.670; -0.493] MAPE -0.053 [-0.062; -0.045]; Rp 137 / 148 / 137
+    cabai                        MASE -0.190 [-0.393; -0.048] | MASE -0.193 [-0.373; -0.070]; MASE -0.003 [-0.027; +0.022] MAPE +0.012 [-0.045; +0.069]; Rp 7201 / 6991 / 6986
+    daging sapi (kategori baru)  MASE +0.753 [+0.295; +1.270] | MASE +0.000 [+0.000; +0.000]; MASE -0.753 [-1.270; -0.295] MAPE -0.046 [-0.083; -0.007]; Rp 818 / 884 / 818
+    beras_bawah_1                MASE +0.506 [+0.366; +0.621] | MASE +0.000 [+0.000; +0.000]; MASE -0.506 [-0.621; -0.366] MAPE -0.054 [-0.072; -0.038]; Rp 111 / 119 / 111
+    beras_bawah_2                MASE +0.521 [+0.364; +0.632] | MASE +0.000 [+0.000; +0.000]; MASE -0.521 [-0.632; -0.364] MAPE -0.050 [-0.068; -0.029]; Rp 109 / 116 / 109
+    beras_medium_2               MASE +0.468 [+0.312; +0.624] | MASE +0.000 [+0.000; +0.000]; MASE -0.468 [-0.624; -0.312] MAPE -0.046 [-0.067; -0.024]; Rp 110 / 118 / 110
+    beras_super_1                MASE +0.492 [+0.360; +0.605] | MASE +0.000 [+0.000; +0.000]; MASE -0.492 [-0.605; -0.360] MAPE -0.039 [-0.057; -0.023]; Rp 113 / 120 / 113
+    beras_super_2                MASE +0.509 [+0.392; +0.611] | MASE +0.000 [+0.000; +0.000]; MASE -0.509 [-0.611; -0.392] MAPE -0.039 [-0.058; -0.022]; Rp 102 / 109 / 102
+    cabai_merah_besar            MASE -0.082 [-0.356; +0.095] | MASE -0.093 [-0.348; +0.070]; MASE -0.011 [-0.029; +0.012] MAPE -0.012 [-0.067; +0.049]; Rp 7369 / 7250 / 7235
+    cabai_rawit_hijau            MASE -0.281 [-0.519; -0.081] | MASE -0.277 [-0.480; -0.112]; MASE +0.004 [-0.036; +0.042] MAPE +0.033 [-0.050; +0.109]; Rp 7060 / 6772 / 6777
+    daging_sapi_1                MASE +0.729 [+0.272; +1.197] | MASE +0.000 [+0.000; +0.000]; MASE -0.729 [-1.197; -0.272] MAPE -0.040 [-0.077; +0.000]; Rp 837 / 897 / 837
+    daging_sapi_2                MASE +0.778 [+0.207; +1.449] | MASE +0.000 [+0.000; +0.000]; MASE -0.778 [-1.449; -0.207] MAPE -0.052 [-0.093; -0.010]; Rp 797 / 871 / 797
+    gula_pasir_premium           MASE +0.668 [+0.535; +0.780] | MASE +0.000 [+0.000; +0.000]; MASE -0.668 [-0.780; -0.535] MAPE -0.046 [-0.056; -0.034]; Rp 100 / 110 / 100
+    minyak_goreng_kemasan_1      MASE +0.504 [+0.403; +0.647] | MASE +0.001 [-0.020; +0.024]; MASE -0.503 [-0.632; -0.416] MAPE -0.055 [-0.067; -0.045]; Rp 160 / 171 / 159
+    minyak_goreng_kemasan_2      MASE +0.542 [+0.418; +0.691] | MASE -0.007 [-0.040; +0.020]; MASE -0.549 [-0.691; -0.439] MAPE -0.058 [-0.072; -0.046]; Rp 149 / 161 / 149
+  per tahun asal, campuran lawan TimesFM | lawan naif
+    2024: MASE -0.382 [-0.517; -0.227] MAPE -0.035 [-0.068; -0.008] | MASE -0.033 [-0.054; +0.008] MAPE -0.059 [-0.115; +0.061]
+    2025: MASE -0.391 [-0.441; -0.338] MAPE -0.036 [-0.045; -0.021] | MASE -0.023 [-0.054; -0.002] MAPE -0.073 [-0.137; -0.013]
+    2026: MASE -0.764 [-0.926; -0.610] MAPE -0.049 [-0.067; -0.029] | MASE -0.031 [-0.102; +0.013] MAPE -0.095 [-0.233; +0.001]
+
+===== h=28, 142 asal, pasangan dinilai 51214
+  p latih -> amat: beras_bawah_1=0.440>0.318 beras_bawah_2=0.445>0.342 beras_medium_2=0.433>0.324 beras_super_1=0.404>0.310 beras_super_2=0.432>0.329 cabai_merah_besar=0.014>0.018 cabai_rawit_hijau=0.027>0.013 daging_sapi_1=0.477>0.496 daging_sapi_2=0.500>0.528 gula_pasir_premium=0.357>0.424 minyak_goreng_kemasan_1=0.201>0.301 minyak_goreng_kemasan_2=0.211>0.322
+  H1/H2/H3: per model
+  Chronos-2
+    saja lawan naif:     MASE +1.155 [+0.775; +1.663] MAPE -0.122 [-0.383; +0.070]
+    campuran lawan naif: MASE +0.012 [-0.097; +0.073] MAPE -0.218 [-0.455; -0.062]
+    campuran lawan saja: MASE -1.143 [-1.647; -0.799] MAPE -0.097 [-0.157; -0.052]
+    rMAE 1.085 [1.048; nan] -> 0.994 [0.982; nan]
+  Chronos-Bolt
+    saja lawan naif:     MASE +1.690 [+1.189; +2.313] MAPE +0.129 [-0.112; +0.307]
+    campuran lawan naif: MASE +0.072 [-0.031; +0.134] MAPE -0.030 [-0.268; +0.133]
+    campuran lawan saja: MASE -1.618 [-2.243; -1.165] MAPE -0.160 [-0.222; -0.115]
+    rMAE 1.140 [1.096; nan] -> 1.004 [0.992; nan]
+  TimesFM 2.5
+    saja lawan naif:     MASE +0.574 [+0.388; +0.733] MAPE -0.125 [-0.294; +0.004]
+    campuran lawan naif: MASE -0.047 [-0.129; +0.007] MAPE -0.176 [-0.331; -0.058]
+    campuran lawan saja: MASE -0.622 [-0.759; -0.476] MAPE -0.052 [-0.071; -0.030]
+    rMAE 1.041 [1.024; nan] -> 0.991 [0.982; nan]
+  Moirai-2
+    saja lawan naif:     MASE +0.452 [+0.273; +0.618] MAPE -0.136 [-0.309; -0.014]
+    campuran lawan naif: MASE -0.045 [-0.123; -0.006] MAPE -0.175 [-0.335; -0.067]
+    campuran lawan saja: MASE -0.496 [-0.670; -0.343] MAPE -0.039 [-0.058; -0.019]
+    rMAE 1.036 [1.020; nan] -> 0.993 [0.984; nan]
+  H4 TimesFM: k [11, 17, 17, 6, 17, 5, 8, 20, 19, 17, 20, 20]; w [0.0, 0.0, 0.0, 0.0, 0.0, 0.8, 0.9, 0.6000000000000001, 0.65, 0.0, 0.30000000000000004, 0.4]; p global 0.334; daftar pakai model ['cabai_merah_besar', 'cabai_rawit_hijau']; ambang 0.6
+    campuran dikurangi naif: MASE -0.047 [-0.129; +0.007] MAPE -0.176 [-0.331; -0.058]
+    campuran dikurangi TimesFM: MASE -0.622 [-0.759; -0.476] MAPE -0.052 [-0.071; -0.030]
+    campuran dikurangi susut: MASE -0.097 [-0.166; -0.030] MAPE -0.003 [-0.019; +0.011]
+    campuran dikurangi zona mati: MASE -0.072 [-0.181; +0.026] MAPE +0.000 [-0.012; +0.018]
+    campuran dikurangi p global: MASE -0.064 [-0.137; -0.020] MAPE -0.155 [-0.298; -0.041]
+    campuran dikurangi daftar: MASE +0.019 [-0.012; +0.064] MAPE +0.001 [-0.008; +0.013]
+    campuran dikurangi kelengketan: MASE +0.000 [-0.055; +0.056] MAPE -0.016 [-0.034; -0.001]
+    daftar dikurangi naif: MASE -0.066 [-0.136; -0.026] MAPE -0.178 [-0.343; -0.050]
+    kelengketan dikurangi naif: MASE -0.047 [-0.119; +0.004] MAPE -0.161 [-0.311; -0.044]
+    susut dikurangi naif: MASE +0.050 [-0.068; +0.140] MAPE -0.173 [-0.317; -0.063]
+    zona mati dikurangi naif: MASE +0.025 [-0.126; +0.161] MAPE -0.177 [-0.344; -0.049]
+  tepat di harga asal: 84.0 %
+  kelompok: lawan naif MASE TimesFM | campuran; campuran-TimesFM MASE, MAPE; MAE Rp naif / TimesFM / campuran
+    beras                        MASE +0.693 [+0.471; +0.939] | MASE +0.000 [-0.004; +0.004]; MASE -0.692 [-0.935; -0.473] MAPE -0.070 [-0.111; -0.035]; Rp 201 / 212 / 201
+    minyak dan gula              MASE +0.684 [+0.527; +0.857] | MASE +0.016 [-0.026; +0.060]; MASE -0.668 [-0.817; -0.522] MAPE -0.068 [-0.081; -0.054]; Rp 235 / 250 / 235
+    cabai                        MASE -0.447 [-0.914; -0.174] | MASE -0.449 [-0.884; -0.195]; MASE -0.002 [-0.024; +0.033] MAPE +0.021 [-0.042; +0.105]; Rp 10510 / 9974 / 9972
+    daging sapi (kategori baru)  MASE +1.003 [+0.189; +1.922] | MASE +0.088 [-0.079; +0.314]; MASE -0.915 [-1.674; -0.205] MAPE -0.048 [-0.095; +0.009]; Rp 1296 / 1356 / 1285
+    beras_bawah_1                MASE +0.706 [+0.423; +1.030] | MASE +0.008 [-0.003; +0.025]; MASE -0.699 [-1.017; -0.420] MAPE -0.080 [-0.131; -0.039]; Rp 203 / 215 / 203
+    beras_bawah_2                MASE +0.875 [+0.626; +1.125] | MASE +0.001 [-0.004; +0.006]; MASE -0.874 [-1.123; -0.625] MAPE -0.092 [-0.134; -0.054]; Rp 200 / 213 / 200
+    beras_medium_2               MASE +0.574 [+0.315; +0.901] | MASE -0.006 [-0.019; +0.000]; MASE -0.579 [-0.911; -0.325] MAPE -0.059 [-0.107; -0.019]; Rp 207 / 215 / 207
+    beras_super_1                MASE +0.666 [+0.389; +0.914] | MASE +0.002 [-0.005; +0.008]; MASE -0.664 [-0.915; -0.387] MAPE -0.059 [-0.098; -0.023]; Rp 208 / 218 / 208
+    beras_super_2                MASE +0.649 [+0.389; +0.913] | MASE -0.003 [-0.011; +0.001]; MASE -0.653 [-0.917; -0.393] MAPE -0.060 [-0.102; -0.024]; Rp 189 / 198 / 188
+    cabai_merah_besar            MASE -0.280 [-0.882; +0.057] | MASE -0.288 [-0.860; +0.029]; MASE -0.008 [-0.029; +0.026] MAPE +0.003 [-0.070; +0.097]; Rp 10516 / 10112 / 10104
+    cabai_rawit_hijau            MASE -0.589 [-1.127; -0.247] | MASE -0.585 [-1.077; -0.275]; MASE +0.004 [-0.033; +0.053] MAPE +0.037 [-0.048; +0.144]; Rp 10505 / 9857 / 9860
+    daging_sapi_1                MASE +0.909 [+0.213; +1.606] | MASE +0.089 [-0.123; +0.355]; MASE -0.820 [-1.367; -0.242] MAPE -0.043 [-0.092; +0.011]; Rp 1293 / 1347 / 1282
+    daging_sapi_2                MASE +1.102 [+0.049; +2.368] | MASE +0.087 [-0.092; +0.349]; MASE -1.015 [-2.075; -0.104] MAPE -0.052 [-0.102; +0.010]; Rp 1300 / 1364 / 1288
+    gula_pasir_premium           MASE +0.743 [+0.468; +1.004] | MASE -0.004 [-0.019; +0.010]; MASE -0.748 [-1.005; -0.468] MAPE -0.058 [-0.079; -0.033]; Rp 177 / 188 / 177
+    minyak_goreng_kemasan_1      MASE +0.672 [+0.511; +0.881] | MASE +0.041 [-0.012; +0.101]; MASE -0.631 [-0.794; -0.509] MAPE -0.073 [-0.089; -0.057]; Rp 268 / 283 / 267
+    minyak_goreng_kemasan_2      MASE +0.643 [+0.420; +0.937] | MASE +0.010 [-0.070; +0.083]; MASE -0.633 [-0.881; -0.444] MAPE -0.072 [-0.096; -0.052]; Rp 257 / 273 / 257
+  per tahun asal, campuran lawan TimesFM | lawan naif
+    2024: MASE -0.504 [-0.772; -0.287] MAPE -0.055 [-0.098; -0.009] | MASE -0.049 [-0.136; +0.030] MAPE -0.115 [-0.366; +0.129]
+    2025: MASE -0.480 [-0.635; -0.316] MAPE -0.039 [-0.068; -0.013] | MASE -0.120 [-0.185; -0.036] MAPE -0.243 [-0.383; -0.050]
+    2026: MASE -0.983 [-1.075; -0.837] MAPE -0.065 [-0.086; -0.041] | MASE +0.056 [-0.188; +0.210] MAPE -0.170 [-0.507; +0.041]

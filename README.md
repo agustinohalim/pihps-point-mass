@@ -2,8 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23840467.svg)](https://doi.org/10.5281/zenodo.23840467)
 
-Analysis code and aggregate logs for the manuscript *Holding the Last Price: Zero-Shot Foundation
-Models and a Point-Mass Correction on Sticky Daily Food Prices* (in preparation).
+Analysis code and aggregate logs for the manuscript *Sticky Food Prices: Zero-Shot Foundation
+Models Should Defer to Naive* (in preparation).
 
 Daily food prices in Indonesian provinces often stay unchanged, so pretrained time-series foundation
 models can lose to the no-change (naive) forecast on flat series. The method adds a point mass at the
@@ -14,7 +14,8 @@ retrained. The method is `median_campuran` in `analysis/16_gerbang.py`; the mass
 
 **No data are included.** The PIHPS data belong to Bank Indonesia and are publicly viewable at
 https://www.bi.go.id/hargapangan. `01_unduh.py` downloads them; the manuscript uses one download made on
-28 October 2026, and values may have been revised since. The logs hold aggregate results only.
+28 October 2026, and a second download on 2 November 2026 for twelve further commodities (cut at
+28 October); values may have been revised since. The logs hold aggregate results only.
 
 ## Requirements
 
@@ -71,9 +72,15 @@ manuscript reports it as a comparator.
 | `26_periksa_campuran.py` | `periksa_campuran.log` | One-day horizon and sensitivity to the mass |
 | `27_telaah_akhir.py` | `telaah_akhir.log`, `fondasi_timesfm_baru.log` | Global mass, tuned shrinkage, dead band; commodity groups; five later origins, 21 September to 19 October 2026 |
 | `28_rupiah_selang.py` | `rupiah_selang.log` | Intervals for rupiah differences by commodity group; sMAPE of naive |
+| `29a_siapkan_lain.py` | `unduh_lain.log`, `siapkan_lain_02.log`, `siapkan_lain.log`, `fondasi_lain_*.log` | Twelve untouched commodities: download (`01_unduh.py` with `PIHPS_KOMODITAS=lain`), cleaning, same calendar and origins as the main data, zero-shot forecasts |
+| `29_komoditas_lain.py` | `komoditas_lain.log` | Confirmatory test of the frozen procedure on the twelve untouched commodities, 142 origins 2024–2026 |
+| `30_lain_2022.py` | `lain_2022.log` | Same commodities on the 97 origins of 2022–2023 (TimesFM), and correlation of daily changes with the development chillies |
 
 ## Versions
 
+- 1.3.0: adds the test on twelve untouched PIHPS commodities (`29a_siapkan_lain.py`, `29_komoditas_lain.py`,
+  `30_lain_2022.py`, their logs, and the `PIHPS_KOMODITAS=lain` switch in `01_unduh.py`). The method and the
+  numbers from earlier scripts are unchanged.
 - 1.2.0: adds `28_rupiah_selang.py` and its log. The method and the numbers from earlier scripts are unchanged.
 - 1.1.0: adds `27_telaah_akhir.py` and its logs, and labels two commodities on Fig. 1. The method and the
   numbers from earlier scripts are unchanged.

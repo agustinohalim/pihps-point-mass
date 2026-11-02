@@ -27,6 +27,13 @@ KEPALA = {'User-Agent': 'Mozilla/5.0 (research; Universitas OSO)', 'X-Requested-
 KOMODITAS = {'com_3': 'beras_medium_1', 'com_11': 'bawang_merah', 'com_12': 'bawang_putih',
              'com_14': 'cabai_merah_keriting', 'com_16': 'cabai_rawit_merah', 'com_7': 'daging_ayam_ras',
              'com_10': 'telur_ayam_ras', 'com_17': 'minyak_goreng_curah', 'com_21': 'gula_pasir_lokal'}
+# Uji komoditas tak tersentuh (skrip 29, 2 Nov 2026): PIHPS_KOMODITAS=lain PIHPS_DATA=C:/Data/PIHPS_lain
+LAIN = {'com_1': 'beras_bawah_1', 'com_2': 'beras_bawah_2', 'com_4': 'beras_medium_2', 'com_5': 'beras_super_1',
+        'com_6': 'beras_super_2', 'com_8': 'daging_sapi_1', 'com_9': 'daging_sapi_2', 'com_13': 'cabai_merah_besar',
+        'com_15': 'cabai_rawit_hijau', 'com_18': 'minyak_goreng_kemasan_1', 'com_19': 'minyak_goreng_kemasan_2',
+        'com_20': 'gula_pasir_premium'}
+if os.environ.get('PIHPS_KOMODITAS') == 'lain':
+    KOMODITAS = LAIN
 AWAL, AKHIR = date(2018, 1, 1), date(2026, 10, 31)
 
 
