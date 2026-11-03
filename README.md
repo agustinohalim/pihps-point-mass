@@ -75,9 +75,12 @@ manuscript reports it as a comparator.
 | `29a_siapkan_lain.py` | `unduh_lain.log`, `siapkan_lain_02.log`, `siapkan_lain.log`, `fondasi_lain_*.log` | Twelve untouched commodities: download (`01_unduh.py` with `PIHPS_KOMODITAS=lain`), cleaning, same calendar and origins as the main data, zero-shot forecasts |
 | `29_komoditas_lain.py` | `komoditas_lain.log` | Confirmatory test of the frozen procedure on the twelve untouched commodities, 142 origins 2024–2026 |
 | `30_lain_2022.py` | `lain_2022.log` | Same commodities on the 97 origins of 2022–2023 (TimesFM), and correlation of daily changes with the development chillies |
+| `31_mekanisme.py` | `mekanisme.log`, `mekanisme_lain.log` | Splits each model's error minus naive into windows whose target equals the origin price and the rest, for the four foundation models and trained comparators, on the main and the untouched commodities |
 
 ## Versions
 
+- 1.3.1: adds `31_mekanisme.py` and its logs (descriptive decomposition). The method and the numbers from
+  earlier scripts are unchanged.
 - 1.3.0: adds the test on twelve untouched PIHPS commodities (`29a_siapkan_lain.py`, `29_komoditas_lain.py`,
   `30_lain_2022.py`, their logs, and the `PIHPS_KOMODITAS=lain` switch in `01_unduh.py`). The method and the
   numbers from earlier scripts are unchanged.
