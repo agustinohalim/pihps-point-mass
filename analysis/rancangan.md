@@ -1,4 +1,4 @@
-# Written test designs (rancangan) for scripts 32–34
+# Written test designs (rancangan) for scripts 32–35
 
 Each design below was written and committed in the authors' working notes (`Hasil_Uji_PIHPS.md`, a private
 repository) before the script it describes was run. The text is copied verbatim, in Indonesian, from the commit
@@ -136,3 +136,37 @@ Aturan untuk naskah: **terkonfirmasi** bila K1 dan K2 lulus; naskah boleh menuli
 **Gagal** bila keduanya gagal: klaim peringatan tidak dipakai sebagai temuan utama naskah. Hasil apa pun dilaporkan.
 Batas: kejadian di komoditas lain hampir seluruhnya di dua cabai (cabai merah besar, cabai rawit hijau); beras, gula, minyak kemasan
 hampir tanpa kejadian, jadi uji ini terutama menguji cabai di provinsi yang sama.
+
+---
+
+Commit `8e1f555`, 2026-11-04 08:29:53 +0700
+
+## Rancangan skrip 35: apakah keunggulan TimesFM atas momentum hanya efek volatilitas atau provinsi? (ditulis 4 Nov 2026, SEBELUM dijalankan)
+
+Alasan: telaah `2026-11-04d-PIHPS-IJCCS`, kritis konsensus (DA X1 + metode X1): momentum dikumpulkan lintas provinsi, tanpa suku
+provinsi dan tanpa tingkat volatilitas (z-score membagi volatilitas keluar), padahal peluang lonjakan TimesFM naik dengan lebar selang.
+Margin konfirmatori atas momentum bisa jadi efek "deret mana yang bergejolak", yang bisa ditiru aturan per deret tanpa model fondasi.
+Pengguna 3 Nov: "saya mau naskah ini yang di perbaiki hingga ready"; 4 Nov: "go". Jujur: data uji kedua set sudah dilihat untuk tugas
+peringatan (skrip 33 dan 34), jadi skrip ini bukan uji tak tersentuh; yang dikunci sekarang adalah pembanding, metrik, dan aturan.
+
+Prosedur: semua dari `33_peringatan.py` (kejadian, okmask, fitur, latih sasaran < indeks 1548, isotonik dari asal_pra, bootstrap blok
+2.000 dengan indeks dan benih sama), hanya h 14, ambang 20 %, kedua set (sembilan komoditas; 12 komoditas lewat PIHPS_DATA). Pembanding baru,
+disetel pada data latih seperti momentum:
+- **klimatologi per deret**: laju lonjakan tiap deret (komoditas × wilayah) pada data latih, tanpa penyusutan.
+- **momentum + volatilitas**: regresi logistik momentum (boneka komoditas, perubahan log 5 dan 20 hari, z-score 90 hari) ditambah log
+  simpangan baku perubahan log harian 60 dan 250 hari terakhir dan logit klimatologi per deret (dipotong ke [1e-4, 1 − 1e-4]).
+Metrik baru: **AUPRC di dalam deret** = rerata AUPRC per deret, berbobot jumlah kejadian uji, hanya deret dengan ≥ 1 kejadian dan ≥ 1
+bukan-kejadian; bootstrap dengan indeks asal sama. Deskriptif: jumlah episode (rangkaian asal uji berurutan dengan kejadian pada deret yang
+sama; dan per komoditas, episode lintas provinsi yang asalnya berselang ≤ 2 asal digabung).
+
+Hipotesis (dikunci sekarang; TimesFM 2.5 terkalibrasi, h 14, 20 %, AUPRC; "lulus" = lulus di KEDUA set):
+- V1 (utama): TimesFM − momentum + volatilitas, AUPRC gabungan, CI95 > 0.
+- V2: TimesFM − klimatologi per deret, AUPRC gabungan, CI95 > 0.
+- V3: TimesFM − momentum + volatilitas, AUPRC di dalam deret, CI95 > 0.
+- Dilaporkan tanpa arah: LightGBM dan momentum asli pada kedua metrik; TimesFM mentah.
+
+Aturan untuk naskah: **bertahan** bila V1 lulus: naskah boleh menulis bahwa TimesFM unggul atas aturan murah termasuk yang tahu volatilitas
+deret. **Menyempit** bila V1 gagal di salah satu set: klaim konfirmatori atas momentum dilaporkan bersama catatan bahwa aturan murah yang
+tahu volatilitas deret tidak jelas tertinggal; judul dan abstrak tidak lagi menyebut TimesFM lebih baik daripada aturan murah tanpa batasan.
+V2 dan V3 dilaporkan apa adanya; V3 gagal berarti naskah tidak boleh membaca margin sebagai keterampilan waktu di dalam deret. Hasil apa pun
+dilaporkan.

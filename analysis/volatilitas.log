@@ -1,0 +1,27 @@
+h=14, ambang 20%: pasangan uji 38264, kejadian 2044 (0.053); latih 297743
+episode per deret (asal uji berurutan dengan kejadian): 1004; deret dengan kejadian: 130
+episode lintas provinsi per komoditas (awal berselang <= 2 asal digabung): 63
+deret yang masuk AUPRC di dalam deret: 130
+  metode: AUPRC gabungan [CI95] | AUPRC di dalam deret [CI95]
+    klimatologi                +0.195 [+0.139; +0.247] | +0.185 [+0.143; +0.238]
+    klimatologi per deret      +0.223 [+0.160; +0.280] | +0.185 [+0.143; +0.238]
+    momentum                   +0.266 [+0.184; +0.332] | +0.297 [+0.260; +0.383]
+    momentum + volatilitas     +0.268 [+0.189; +0.335] | +0.303 [+0.264; +0.390]
+    LightGBM                   +0.346 [+0.223; +0.438] | +0.385 [+0.311; +0.503]
+    TimesFM 2.5 mentah         +0.309 [+0.218; +0.391] | +0.332 [+0.290; +0.431]
+    TimesFM 2.5 terkalibrasi   +0.311 [+0.218; +0.395] | +0.335 [+0.293; +0.434]
+  selisih dengan CI95 (indeks bootstrap sama): gabungan | di dalam deret
+    TimesFM 2.5 terkalibrasi − momentum + volatilitas: +0.043 [+0.011; +0.076] | +0.032 [-0.002; +0.072]
+    TimesFM 2.5 mentah − momentum + volatilitas: +0.041 [+0.008; +0.075] | +0.029 [-0.005; +0.069]
+    TimesFM 2.5 terkalibrasi − klimatologi per deret: +0.088 [+0.047; +0.126] | +0.150 [+0.137; +0.209]
+    TimesFM 2.5 mentah − klimatologi per deret: +0.087 [+0.045; +0.124] | +0.147 [+0.134; +0.208]
+    TimesFM 2.5 terkalibrasi − momentum: +0.045 [+0.011; +0.081] | +0.038 [+0.003; +0.077]
+    TimesFM 2.5 mentah − momentum: +0.043 [+0.008; +0.079] | +0.034 [-0.001; +0.075]
+    TimesFM 2.5 terkalibrasi − LightGBM: -0.035 [-0.087; +0.023] | -0.050 [-0.099; +0.003]
+    TimesFM 2.5 mentah − LightGBM: -0.036 [-0.090; +0.022] | -0.054 [-0.102; -0.001]
+    TimesFM 2.5 terkalibrasi − klimatologi: +0.115 [+0.074; +0.155] | +0.150 [+0.137; +0.209]
+    TimesFM 2.5 mentah − klimatologi: +0.114 [+0.073; +0.152] | +0.147 [+0.134; +0.208]
+
+[V1] gabungan − momentum + volatilitas: batas bawah +0.011 LULUS
+[V2] gabungan − klimatologi per deret: batas bawah +0.047 LULUS
+[V3] di dalam deret − momentum + volatilitas: batas bawah -0.002 GAGAL

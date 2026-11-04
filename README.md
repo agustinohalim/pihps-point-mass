@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23840467.svg)](https://doi.org/10.5281/zenodo.23840467)
 
-Analysis code and aggregate logs for the manuscript *Zero-Shot Forecast Quantiles as Warnings of
+Analysis code and aggregate logs for the manuscript *Zero-Shot TimesFM Quantiles as Warnings of
 Indonesian Food Price Spikes* (in preparation). Earlier versions of this repository accompanied an
 earlier draft on point forecasts, *Sticky Food Prices: Zero-Shot Foundation Models Should Defer to Naive*.
 
@@ -39,7 +39,7 @@ relative to their own folder. Figures are in `analysis/gambar/`. Each script's d
 Comments and log text are in Indonesian (*asal* = forecast origin, *naif* = naive, *deret* = series,
 *campuran* = mixture, *gerbang* = stay-or-move gate, *komoditas* = commodity). Docstrings mention working
 notes (`Artikel_PIHPS_Rencana.md`, `Hasil_Uji_PIHPS.md`) that are not part of this repository; the written
-designs of scripts 32 to 34, recorded there before each was run, are copied into `analysis/rancangan.md`.
+designs of scripts 32 to 35, recorded there before each was run, are copied into `analysis/rancangan.md`.
 
 Scripts 16 to 23 come from an earlier version of the method, a trained stay-or-move classifier; the
 manuscript reports it as a comparator.
@@ -81,9 +81,11 @@ manuscript reports it as a comparator.
 | `32_penanganan_celah.py` | `penanganan_celah.log` | Does the handling of dates without a survey (clean targets, values as published, interpolation) change the evaluation |
 | `33_peringatan.py` | `peringatan.log`, `fondasi_*_d9.log` | **Spike warning**: probability of a rise of 20 % (and 10 %) within 7, 14, or 28 days read from nine decile forecasts (`03_model_fondasi.py` with `PIHPS_KUANTIL=9`), isotonic calibration on 2022–2023 origins, against climatology, a momentum logistic regression, and LightGBM; AUPRC, Brier skill, interval coverage by regime, block bootstrap |
 | `33_peringatan.py` (script 34) | `peringatan_lain.log`, `fondasi_lain_*_d9.log` | Confirmatory test of the frozen spike-warning procedure on the twelve untouched commodities: `33_peringatan.py` run unchanged with `PIHPS_DATA` set to their folder |
+| `35_volatilitas.py` | `volatilitas.log`, `volatilitas_lain.log` | Spike warning against per-series climatology and momentum with series volatility, AUPRC within series, episode counts, on both commodity sets |
 
 ## Versions
 
+- 1.4.2: adds `35_volatilitas.py`, its logs, and its design in `analysis/rancangan.md`. Earlier code and logs unchanged.
 - 1.4.1: adds `analysis/rancangan.md`, the written designs of scripts 32 to 34. Code and logs unchanged.
 - 1.4.0: adds the spike-warning analysis (`33_peringatan.py`, its logs, and the `PIHPS_KUANTIL=9` switch
   in `03_model_fondasi.py` for decile forecasts), its confirmatory run on the twelve untouched commodities,

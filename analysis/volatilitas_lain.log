@@ -1,0 +1,31 @@
+C:\Users\agust\Documents\UNOSO\Riset\Harga_Pangan\Uji_PIHPS\33_peringatan.py:48: RuntimeWarning: Mean of empty slice
+  diam = np.nanmean(np.where(np.isfinite(d), d == 0, np.nan), 2)
+C:\Users\agust\venv-gpu\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+h=14, ambang 20%: pasangan uji 49280, kejadian 1118 (0.023); latih 383213
+episode per deret (asal uji berurutan dengan kejadian): 551; deret dengan kejadian: 63
+episode lintas provinsi per komoditas (awal berselang <= 2 asal digabung): 32
+deret yang masuk AUPRC di dalam deret: 63
+  metode: AUPRC gabungan [CI95] | AUPRC di dalam deret [CI95]
+    klimatologi                +0.152 [+0.107; +0.199] | +0.173 [+0.138; +0.230]
+    klimatologi per deret      +0.181 [+0.130; +0.233] | +0.173 [+0.138; +0.230]
+    momentum                   +0.204 [+0.128; +0.286] | +0.278 [+0.212; +0.395]
+    momentum + volatilitas     +0.212 [+0.147; +0.278] | +0.265 [+0.210; +0.371]
+    LightGBM                   +0.310 [+0.193; +0.406] | +0.406 [+0.314; +0.524]
+    TimesFM 2.5 mentah         +0.273 [+0.179; +0.356] | +0.319 [+0.264; +0.425]
+    TimesFM 2.5 terkalibrasi   +0.271 [+0.180; +0.351] | +0.319 [+0.269; +0.424]
+  selisih dengan CI95 (indeks bootstrap sama): gabungan | di dalam deret
+    TimesFM 2.5 terkalibrasi − momentum + volatilitas: +0.058 [+0.027; +0.095] | +0.054 [+0.025; +0.095]
+    TimesFM 2.5 mentah − momentum + volatilitas: +0.060 [+0.026; +0.101] | +0.053 [+0.024; +0.093]
+    TimesFM 2.5 terkalibrasi − klimatologi per deret: +0.090 [+0.040; +0.136] | +0.146 [+0.123; +0.208]
+    TimesFM 2.5 mentah − klimatologi per deret: +0.092 [+0.038; +0.144] | +0.146 [+0.118; +0.209]
+    TimesFM 2.5 terkalibrasi − momentum: +0.067 [+0.034; +0.095] | +0.041 [+0.006; +0.081]
+    TimesFM 2.5 mentah − momentum: +0.069 [+0.036; +0.100] | +0.041 [+0.006; +0.078]
+    TimesFM 2.5 terkalibrasi − LightGBM: -0.039 [-0.085; +0.009] | -0.088 [-0.136; -0.019]
+    TimesFM 2.5 mentah − LightGBM: -0.037 [-0.082; +0.011] | -0.088 [-0.135; -0.024]
+    TimesFM 2.5 terkalibrasi − klimatologi: +0.119 [+0.070; +0.163] | +0.146 [+0.123; +0.208]
+    TimesFM 2.5 mentah − klimatologi: +0.121 [+0.068; +0.168] | +0.146 [+0.118; +0.209]
+
+[V1] gabungan − momentum + volatilitas: batas bawah +0.027 LULUS
+[V2] gabungan − klimatologi per deret: batas bawah +0.040 LULUS
+[V3] di dalam deret − momentum + volatilitas: batas bawah +0.025 LULUS
