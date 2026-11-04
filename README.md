@@ -38,7 +38,8 @@ Scripts, logs, and the JSON the figures read sit together in `analysis/`, becaus
 relative to their own folder. Figures are in `analysis/gambar/`. Each script's docstring gives its usage.
 Comments and log text are in Indonesian (*asal* = forecast origin, *naif* = naive, *deret* = series,
 *campuran* = mixture, *gerbang* = stay-or-move gate, *komoditas* = commodity). Docstrings mention working
-notes (`Artikel_PIHPS_Rencana.md`, `Hasil_Uji_PIHPS.md`) that are not part of this repository.
+notes (`Artikel_PIHPS_Rencana.md`, `Hasil_Uji_PIHPS.md`) that are not part of this repository; the written
+designs of scripts 32 to 34, recorded there before each was run, are copied into `analysis/rancangan.md`.
 
 Scripts 16 to 23 come from an earlier version of the method, a trained stay-or-move classifier; the
 manuscript reports it as a comparator.
@@ -83,6 +84,7 @@ manuscript reports it as a comparator.
 
 ## Versions
 
+- 1.4.1: adds `analysis/rancangan.md`, the written designs of scripts 32 to 34. Code and logs unchanged.
 - 1.4.0: adds the spike-warning analysis (`33_peringatan.py`, its logs, and the `PIHPS_KUANTIL=9` switch
   in `03_model_fondasi.py` for decile forecasts), its confirmatory run on the twelve untouched commodities,
   and `32_penanganan_celah.py` with its log. Median forecasts are unchanged (checked in `peringatan.log`),
