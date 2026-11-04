@@ -2,8 +2,9 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23840467.svg)](https://doi.org/10.5281/zenodo.23840467)
 
-Analysis code and aggregate logs for the manuscript *Sticky Food Prices: Zero-Shot Foundation
-Models Should Defer to Naive* (in preparation).
+Analysis code and aggregate logs for the manuscript *Zero-Shot Forecast Quantiles as Warnings of
+Indonesian Food Price Spikes* (in preparation). Earlier versions of this repository accompanied an
+earlier draft on point forecasts, *Sticky Food Prices: Zero-Shot Foundation Models Should Defer to Naive*.
 
 Daily food prices in Indonesian provinces often stay unchanged, so pretrained time-series foundation
 models can lose to the no-change (naive) forecast on flat series. The method adds a point mass at the
@@ -20,7 +21,7 @@ https://www.bi.go.id/hargapangan. `01_unduh.py` downloads them; the manuscript u
 ## Requirements
 
 Python 3.12.10 with NumPy 2.5.4, pandas 2.3.3, SciPy 1.18.1, requests 2.34.2, matplotlib 3.11.2,
-LightGBM 4.7.0, statsforecast 2.1.1, PyTorch 2.14.0 (CUDA), transformers 5.21.0, chronos-forecasting 2.3.2,
+LightGBM 4.7.0, scikit-learn 1.9.1, statsforecast 2.1.1, PyTorch 2.14.0 (CUDA), transformers 5.21.0, chronos-forecasting 2.3.2,
 and timesfm 3.0.2. Moirai-2 runs in a separate CPU environment: NumPy 1.26.4, pandas 2.1.4, PyTorch 2.4.1,
 gluonts 0.14.4, uni2ts 2.0.0.
 
@@ -76,9 +77,16 @@ manuscript reports it as a comparator.
 | `29_komoditas_lain.py` | `komoditas_lain.log` | Confirmatory test of the frozen procedure on the twelve untouched commodities, 142 origins 2024–2026 |
 | `30_lain_2022.py` | `lain_2022.log` | Same commodities on the 97 origins of 2022–2023 (TimesFM), and correlation of daily changes with the development chillies |
 | `31_mekanisme.py` | `mekanisme.log`, `mekanisme_lain.log` | Splits each model's error minus naive into windows whose target equals the origin price and the rest, for the four foundation models and trained comparators, on the main and the untouched commodities |
+| `32_penanganan_celah.py` | `penanganan_celah.log` | Does the handling of dates without a survey (clean targets, values as published, interpolation) change the evaluation |
+| `33_peringatan.py` | `peringatan.log`, `fondasi_*_d9.log` | **Spike warning**: probability of a rise of 20 % (and 10 %) within 7, 14, or 28 days read from nine decile forecasts (`03_model_fondasi.py` with `PIHPS_KUANTIL=9`), isotonic calibration on 2022–2023 origins, against climatology, a momentum logistic regression, and LightGBM; AUPRC, Brier skill, interval coverage by regime, block bootstrap |
+| `33_peringatan.py` (script 34) | `peringatan_lain.log`, `fondasi_lain_*_d9.log` | Confirmatory test of the frozen spike-warning procedure on the twelve untouched commodities: `33_peringatan.py` run unchanged with `PIHPS_DATA` set to their folder |
 
 ## Versions
 
+- 1.4.0: adds the spike-warning analysis (`33_peringatan.py`, its logs, and the `PIHPS_KUANTIL=9` switch
+  in `03_model_fondasi.py` for decile forecasts), its confirmatory run on the twelve untouched commodities,
+  and `32_penanganan_celah.py` with its log. Median forecasts are unchanged (checked in `peringatan.log`),
+  and so are the numbers from earlier scripts.
 - 1.3.1: adds `31_mekanisme.py` and its logs (descriptive decomposition). The method and the numbers from
   earlier scripts are unchanged.
 - 1.3.0: adds the test on twelve untouched PIHPS commodities (`29a_siapkan_lain.py`, `29_komoditas_lain.py`,

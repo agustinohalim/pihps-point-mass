@@ -16,6 +16,7 @@ Keluaran: C:/Data/PIHPS/turunan/pred_<model>.npy, bentuk (deret, asal, 28, 3) = 
 Pakai: <python venv> 03_model_fondasi.py <model> > fondasi_<model>.log
 Uji kepekaan konteks (sesudah telaah 30 Okt 2026): PIHPS_KONTEKS=256, keluaran pred_<model>_k256.npy.
 Uji periode sebelum 2024 (sesudah telaah 31 Okt 2026): PIHPS_ASAL=pra, asal dari asal_pra.csv, keluaran pred_<model>_pra.npy.
+Peringatan lonjakan (skrip 33, 3 Nov 2026): PIHPS_KUANTIL=9, kuantil 0,1..0,9, keluaran pred_<model>[_pra]_d9.npy.
 """
 import os
 import sys
@@ -28,6 +29,8 @@ D = os.environ.get('PIHPS_DATA', 'C:/Data/PIHPS')
 T = os.path.join(D, 'turunan')
 KONTEKS, H = int(os.environ.get('PIHPS_KONTEKS', 512)), 28
 PERIODE = os.environ.get('PIHPS_ASAL', '')
+DESIL = os.environ.get('PIHPS_KUANTIL') == '9'
+LEVEL = [round(0.1 * k, 1) for k in range(1, 10)] if DESIL else [0.1, 0.5, 0.9]
 BOBOT = {'chronos2': 'amazon/chronos-2', 'chronosbolt': 'amazon/chronos-bolt-base',
          'timesfm': 'google/timesfm-2.5-200m-pytorch', 'moirai': 'Salesforce/moirai-2.0-R-small'}
 
@@ -41,7 +44,7 @@ def peramal(nama):
 
         def f(ctx):
             q, _ = p.predict_quantiles([torch.tensor(c) for c in ctx], prediction_length=H,
-                                       quantile_levels=[0.1, 0.5, 0.9])
+                                       quantile_levels=LEVEL)
             q = torch.stack([x.squeeze(0) for x in q]) if isinstance(q, list) else q
             return q.numpy()
         return f
@@ -54,7 +57,7 @@ def peramal(nama):
 
         def f(ctx):
             _, q = m.forecast(horizon=H, inputs=[c.astype(np.float64) for c in ctx])
-            return q[:, :, [1, 5, 9]]  # indeks 0 = rerata, 1..9 = kuantil 0,1..0,9
+            return q[:, :, list(range(1, 10)) if DESIL else [1, 5, 9]]  # indeks 0 = rerata, 1..9 = kuantil 0,1..0,9
         return f
     if nama == 'moirai':
         from uni2ts.model.moirai2 import Moirai2Forecast, Moirai2Module
@@ -62,7 +65,7 @@ def peramal(nama):
                             context_length=KONTEKS, target_dim=1, feat_dynamic_real_dim=0,
                             past_feat_dynamic_real_dim=0)
         ql = list(m.module.quantile_levels)
-        j = [ql.index(0.1), ql.index(0.5), ql.index(0.9)]
+        j = [min(range(len(ql)), key=lambda i: abs(ql[i] - v)) for v in LEVEL]
 
         def f(ctx):
             return m.predict(ctx)[:, j, :].transpose(0, 2, 1)
@@ -75,14 +78,14 @@ def main():
     Y = np.load(os.path.join(T, 'Y.npy'))
     asal = pd.read_csv(os.path.join(T, f'asal{"_" + PERIODE if PERIODE else ""}.csv')).indeks.to_numpy()
     f = peramal(nama)
-    out = np.full((Y.shape[0], len(asal), H, 3), np.nan, dtype=np.float32)
+    out = np.full((Y.shape[0], len(asal), H, len(LEVEL)), np.nan, dtype=np.float32)
     t0 = time.time()
     for k, o in enumerate(asal):
         ctx = [Y[i, o - KONTEKS + 1:o + 1].astype(np.float32) for i in range(Y.shape[0])]
         out[:, k] = f(ctx)
         if k % 20 == 0:
             print(f'{nama}: asal {k + 1}/{len(asal)}, {time.time() - t0:.0f} d', flush=True)
-    akhiran = ('' if KONTEKS == 512 else f'_k{KONTEKS}') + (f'_{PERIODE}' if PERIODE else '')
+    akhiran = ('' if KONTEKS == 512 else f'_k{KONTEKS}') + (f'_{PERIODE}' if PERIODE else '') + ('_d9' if DESIL else '')
     np.save(os.path.join(T, f'pred_{nama}{akhiran}.npy'), out)
     print(f'{nama}: selesai {time.time() - t0:.0f} d; NaN {int(np.isnan(out).sum())}')
 

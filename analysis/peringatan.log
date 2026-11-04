@@ -1,0 +1,274 @@
+periksa median d9 lawan pred lama chronos2: selisih maksimum 0.0000, relatif 0.00e+00
+periksa median d9 lawan pred lama chronosbolt: selisih maksimum 0.0000, relatif 0.00e+00
+periksa median d9 lawan pred lama timesfm: selisih maksimum 0.0000, relatif 0.00e+00
+periksa median d9 lawan pred lama moirai: selisih maksimum 0.0000, relatif 0.00e+00
+
+===== h=14, ambang 20%: pasangan uji 38264, kejadian 0.053; latih 297743 (0.063), pra 59178 (0.061)
+  metode: AUPRC [CI95] | BSS terhadap klimatologi | pada ambang F1 latih: presisi, recall, laju alarm palsu
+    klimatologi                  +0.195 [+0.139; +0.247] | +0.000 | 0.195, 0.790, 0.184
+    momentum                     +0.266 [+0.184; +0.332] | +0.023 | 0.211, 0.687, 0.145
+    LightGBM                     +0.346 [+0.223; +0.438] | +0.024 | 0.365, 0.328, 0.032
+    Chronos-2 mentah             +0.302 [+0.214; +0.387] | +0.040 | 0.259, 0.571, 0.092
+    Chronos-2 terkalibrasi       +0.303 [+0.215; +0.389] | +0.042 | 0.250, 0.610, 0.104
+    Chronos-Bolt mentah          +0.300 [+0.197; +0.394] | +0.029 | 0.247, 0.569, 0.098
+    Chronos-Bolt terkalibrasi    +0.302 [+0.197; +0.400] | +0.036 | 0.262, 0.517, 0.082
+    TimesFM 2.5 mentah           +0.309 [+0.218; +0.391] | +0.055 | 0.272, 0.583, 0.088
+    TimesFM 2.5 terkalibrasi     +0.311 [+0.218; +0.395] | +0.058 | 0.272, 0.576, 0.087
+    Moirai-2 mentah              +0.287 [+0.207; +0.362] | +0.032 | 0.239, 0.650, 0.117
+    Moirai-2 terkalibrasi        +0.287 [+0.208; +0.362] | +0.036 | 0.236, 0.665, 0.122
+    LightGBM + TimesFM           +0.360 [+0.239; +0.447] | +0.053 | 0.423, 0.284, 0.022
+    LightGBM (latih pra)         +0.356 [+0.232; +0.445] | +0.046 | 0.407, 0.282, 0.023
+  selisih (AUPRC; BSS) dengan CI95, indeks bootstrap sama:
+    TimesFM 2.5 terkalibrasi − LightGBM: AUPRC -0.035 [-0.087; +0.023]; BSS +0.033 [-0.027; +0.094]
+    TimesFM 2.5 terkalibrasi − momentum: AUPRC +0.045 [+0.011; +0.081]; BSS +0.035 [+0.019; +0.055]
+    TimesFM 2.5 terkalibrasi − klimatologi: AUPRC +0.115 [+0.074; +0.155]; BSS +0.058 [+0.038; +0.078]
+    LightGBM + TimesFM − LightGBM (latih pra): AUPRC +0.004 [-0.006; +0.017]; BSS +0.008 [-0.001; +0.022]
+    LightGBM + TimesFM − LightGBM: AUPRC +0.015 [+0.001; +0.031]; BSS +0.029 [+0.009; +0.056]
+    Chronos-2 terkalibrasi − LightGBM: AUPRC -0.042 [-0.103; +0.024]; BSS +0.017 [-0.048; +0.088]
+    Chronos-Bolt terkalibrasi − LightGBM: AUPRC -0.043 [-0.103; +0.021]; BSS +0.012 [-0.046; +0.078]
+    Moirai-2 terkalibrasi − LightGBM: AUPRC -0.059 [-0.120; +0.017]; BSS +0.011 [-0.060; +0.083]
+    Chronos-2 terkalibrasi − momentum: AUPRC +0.037 [+0.010; +0.072]; BSS +0.019 [+0.004; +0.044]
+    Chronos-Bolt terkalibrasi − momentum: AUPRC +0.037 [-0.016; +0.093]; BSS +0.013 [-0.010; +0.048]
+    Moirai-2 terkalibrasi − momentum: AUPRC +0.021 [+0.002; +0.047]; BSS +0.013 [+0.002; +0.032]
+    Chronos-2 terkalibrasi − Chronos-2 mentah: AUPRC +0.001 [-0.003; +0.005]; BSS +0.002 [-0.007; +0.009]
+    Chronos-Bolt terkalibrasi − Chronos-Bolt mentah: AUPRC +0.003 [-0.002; +0.008]; BSS +0.008 [-0.012; +0.030]
+    TimesFM 2.5 terkalibrasi − TimesFM 2.5 mentah: AUPRC +0.002 [-0.002; +0.006]; BSS +0.002 [-0.004; +0.012]
+    Moirai-2 terkalibrasi − Moirai-2 mentah: AUPRC -0.000 [-0.004; +0.003]; BSS +0.004 [-0.010; +0.012]
+  AUPRC per komoditas (kejadian uji):
+    bawang_merah           kejadian 363 (0.084): klimatologi 0.084, momentum 0.134, LightGBM 0.148, TimesFM 2.5 terkalibrasi 0.195, Chronos-2 terkalibrasi 0.112, LightGBM + TimesFM 0.169
+    bawang_putih           kejadian 27 (0.006): klimatologi 0.006, momentum 0.018, LightGBM 0.009, TimesFM 2.5 terkalibrasi 0.011, Chronos-2 terkalibrasi 0.008, LightGBM + TimesFM 0.011
+    beras_medium_1         kejadian 0: terlalu sedikit
+    cabai_merah_keriting   kejadian 746 (0.172): klimatologi 0.172, momentum 0.201, LightGBM 0.293, TimesFM 2.5 terkalibrasi 0.240, Chronos-2 terkalibrasi 0.249, LightGBM + TimesFM 0.308
+    cabai_rawit_merah      kejadian 869 (0.219): klimatologi 0.219, momentum 0.359, LightGBM 0.492, TimesFM 2.5 terkalibrasi 0.411, Chronos-2 terkalibrasi 0.423, LightGBM + TimesFM 0.491
+    daging_ayam_ras        kejadian 31 (0.007): klimatologi 0.007, momentum 0.018, LightGBM 0.037, TimesFM 2.5 terkalibrasi 0.094, Chronos-2 terkalibrasi 0.097, LightGBM + TimesFM 0.066
+    gula_pasir_lokal       kejadian 0: terlalu sedikit
+    minyak_goreng_curah    kejadian 2: terlalu sedikit
+    telur_ayam_ras         kejadian 6 (0.001): klimatologi 0.001, momentum 0.005, LightGBM 0.005, TimesFM 2.5 terkalibrasi 0.002, Chronos-2 terkalibrasi 0.002, LightGBM + TimesFM 0.005
+  [utama] TimesFM terkal − LightGBM CI (np.float64(-0.08717199971808386), np.float64(0.0227064754451312)); LightGBM+TimesFM − LightGBM(pra) CI (np.float64(-0.00616524172934917), np.float64(0.016916487965201392)); TimesFM terkal − momentum CI (np.float64(0.010592973670507284), np.float64(0.08109390957747085))
+
+===== h=14, ambang 10%: pasangan uji 38264, kejadian 0.100; latih 297743 (0.125), pra 59178 (0.123)
+  metode: AUPRC [CI95] | BSS terhadap klimatologi | pada ambang F1 latih: presisi, recall, laju alarm palsu
+    klimatologi                  +0.285 [+0.222; +0.337] | +0.000 | 0.260, 0.856, 0.272
+    momentum                     +0.347 [+0.266; +0.404] | +0.019 | 0.303, 0.727, 0.186
+    LightGBM                     +0.414 [+0.313; +0.491] | +0.031 | 0.386, 0.433, 0.077
+    Chronos-2 mentah             +0.390 [+0.312; +0.464] | +0.052 | 0.327, 0.654, 0.150
+    Chronos-2 terkalibrasi       +0.391 [+0.313; +0.466] | +0.051 | 0.330, 0.646, 0.146
+    Chronos-Bolt mentah          +0.371 [+0.288; +0.449] | +0.028 | 0.309, 0.667, 0.166
+    Chronos-Bolt terkalibrasi    +0.375 [+0.290; +0.453] | +0.036 | 0.304, 0.686, 0.175
+    TimesFM 2.5 mentah           +0.394 [+0.317; +0.464] | +0.064 | 0.357, 0.629, 0.126
+    TimesFM 2.5 terkalibrasi     +0.396 [+0.316; +0.466] | +0.064 | 0.330, 0.711, 0.160
+    Moirai-2 mentah              +0.375 [+0.302; +0.443] | +0.048 | 0.316, 0.715, 0.173
+    Moirai-2 terkalibrasi        +0.379 [+0.306; +0.446] | +0.048 | 0.319, 0.704, 0.167
+    LightGBM + TimesFM           +0.422 [+0.323; +0.495] | +0.050 | 0.402, 0.388, 0.064
+    LightGBM (latih pra)         +0.414 [+0.310; +0.492] | +0.035 | 0.403, 0.371, 0.061
+  selisih (AUPRC; BSS) dengan CI95, indeks bootstrap sama:
+    TimesFM 2.5 terkalibrasi − LightGBM: AUPRC -0.018 [-0.064; +0.034]; BSS +0.033 [-0.012; +0.079]
+    TimesFM 2.5 terkalibrasi − momentum: AUPRC +0.048 [+0.023; +0.086]; BSS +0.045 [+0.032; +0.065]
+    TimesFM 2.5 terkalibrasi − klimatologi: AUPRC +0.111 [+0.078; +0.145]; BSS +0.064 [+0.048; +0.085]
+    LightGBM + TimesFM − LightGBM (latih pra): AUPRC +0.008 [-0.004; +0.026]; BSS +0.015 [-0.002; +0.039]
+    LightGBM + TimesFM − LightGBM: AUPRC +0.008 [-0.008; +0.027]; BSS +0.019 [-0.004; +0.048]
+    Chronos-2 terkalibrasi − LightGBM: AUPRC -0.023 [-0.070; +0.035]; BSS +0.020 [-0.027; +0.074]
+    Chronos-Bolt terkalibrasi − LightGBM: AUPRC -0.039 [-0.076; +0.006]; BSS +0.005 [-0.035; +0.053]
+    Moirai-2 terkalibrasi − LightGBM: AUPRC -0.035 [-0.086; +0.024]; BSS +0.017 [-0.033; +0.067]
+    Chronos-2 terkalibrasi − momentum: AUPRC +0.044 [+0.026; +0.079]; BSS +0.032 [+0.017; +0.058]
+    Chronos-Bolt terkalibrasi − momentum: AUPRC +0.027 [-0.006; +0.076]; BSS +0.017 [-0.003; +0.052]
+    Moirai-2 terkalibrasi − momentum: AUPRC +0.031 [+0.014; +0.061]; BSS +0.029 [+0.019; +0.048]
+    Chronos-2 terkalibrasi − Chronos-2 mentah: AUPRC +0.001 [-0.002; +0.004]; BSS -0.001 [-0.011; +0.007]
+    Chronos-Bolt terkalibrasi − Chronos-Bolt mentah: AUPRC +0.004 [+0.000; +0.006]; BSS +0.008 [-0.009; +0.027]
+    TimesFM 2.5 terkalibrasi − TimesFM 2.5 mentah: AUPRC +0.002 [-0.003; +0.006]; BSS -0.000 [-0.008; +0.009]
+    Moirai-2 terkalibrasi − Moirai-2 mentah: AUPRC +0.004 [-0.001; +0.008]; BSS +0.000 [-0.011; +0.009]
+  AUPRC per komoditas (kejadian uji):
+    bawang_merah           kejadian 780 (0.180): klimatologi 0.180, momentum 0.284, LightGBM 0.313, TimesFM 2.5 terkalibrasi 0.321, Chronos-2 terkalibrasi 0.247, LightGBM + TimesFM 0.360
+    bawang_putih           kejadian 110 (0.025): klimatologi 0.025, momentum 0.049, LightGBM 0.026, TimesFM 2.5 terkalibrasi 0.033, Chronos-2 terkalibrasi 0.029, LightGBM + TimesFM 0.032
+    beras_medium_1         kejadian 6 (0.001): klimatologi 0.001, momentum 0.003, LightGBM 0.006, TimesFM 2.5 terkalibrasi 0.009, Chronos-2 terkalibrasi 0.009, LightGBM + TimesFM 0.007
+    cabai_merah_keriting   kejadian 1205 (0.278): klimatologi 0.278, momentum 0.308, LightGBM 0.420, TimesFM 2.5 terkalibrasi 0.350, Chronos-2 terkalibrasi 0.361, LightGBM + TimesFM 0.418
+    cabai_rawit_merah      kejadian 1294 (0.327): klimatologi 0.327, momentum 0.463, LightGBM 0.582, TimesFM 2.5 terkalibrasi 0.521, Chronos-2 terkalibrasi 0.542, LightGBM + TimesFM 0.574
+    daging_ayam_ras        kejadian 324 (0.075): klimatologi 0.075, momentum 0.096, LightGBM 0.119, TimesFM 2.5 terkalibrasi 0.220, Chronos-2 terkalibrasi 0.226, LightGBM + TimesFM 0.132
+    gula_pasir_lokal       kejadian 5 (0.001): klimatologi 0.001, momentum 0.041, LightGBM 0.002, TimesFM 2.5 terkalibrasi 0.124, Chronos-2 terkalibrasi 0.017, LightGBM + TimesFM 0.002
+    minyak_goreng_curah    kejadian 24 (0.006): klimatologi 0.006, momentum 0.017, LightGBM 0.031, TimesFM 2.5 terkalibrasi 0.164, Chronos-2 terkalibrasi 0.231, LightGBM + TimesFM 0.043
+    telur_ayam_ras         kejadian 84 (0.019): klimatologi 0.019, momentum 0.027, LightGBM 0.049, TimesFM 2.5 terkalibrasi 0.068, Chronos-2 terkalibrasi 0.062, LightGBM + TimesFM 0.077
+  cakupan selang 80 % (q0,1–q0,9) dan lebar relatif median, h=14: datar | lonjakan 20 % | lainnya
+    Chronos-2     0.992 / 0.026 (n 6974) | 0.350 / 0.515 (n 2044) | 0.757 / 0.113 (n 29246)
+    Chronos-Bolt  0.984 / 0.027 (n 6974) | 0.349 / 0.503 (n 2044) | 0.764 / 0.112 (n 29246)
+    TimesFM 2.5   0.993 / 0.022 (n 6974) | 0.406 / 0.548 (n 2044) | 0.760 / 0.111 (n 29246)
+    Moirai-2      0.980 / 0.022 (n 6974) | 0.327 / 0.508 (n 2044) | 0.756 / 0.113 (n 29246)
+
+===== h=7, ambang 20%: pasangan uji 40711, kejadian 0.026; latih 299904 (0.034), pra 58886 (0.036)
+  metode: AUPRC [CI95] | BSS terhadap klimatologi | pada ambang F1 latih: presisi, recall, laju alarm palsu
+    klimatologi                  +0.107 [+0.078; +0.141] | +0.000 | 0.101, 0.857, 0.200
+    momentum                     +0.161 [+0.108; +0.222] | +0.018 | 0.162, 0.454, 0.062
+    LightGBM                     +0.213 [+0.128; +0.310] | +0.011 | 0.249, 0.226, 0.018
+    Chronos-2 mentah             +0.206 [+0.149; +0.281] | +0.043 | 0.181, 0.522, 0.062
+    Chronos-2 terkalibrasi       +0.206 [+0.150; +0.279] | +0.038 | 0.187, 0.482, 0.055
+    Chronos-Bolt mentah          +0.196 [+0.133; +0.270] | +0.027 | 0.161, 0.517, 0.071
+    Chronos-Bolt terkalibrasi    +0.196 [+0.133; +0.269] | +0.036 | 0.163, 0.484, 0.066
+    TimesFM 2.5 mentah           +0.225 [+0.155; +0.313] | +0.045 | 0.174, 0.547, 0.068
+    TimesFM 2.5 terkalibrasi     +0.223 [+0.156; +0.311] | +0.049 | 0.174, 0.545, 0.068
+    Moirai-2 mentah              +0.198 [+0.141; +0.276] | +0.037 | 0.168, 0.496, 0.065
+    Moirai-2 terkalibrasi        +0.193 [+0.139; +0.264] | +0.034 | 0.167, 0.492, 0.064
+    LightGBM + TimesFM           +0.221 [+0.143; +0.305] | +0.026 | 0.293, 0.179, 0.011
+    LightGBM (latih pra)         +0.205 [+0.131; +0.286] | +0.004 | 0.291, 0.171, 0.011
+  selisih (AUPRC; BSS) dengan CI95, indeks bootstrap sama:
+    TimesFM 2.5 terkalibrasi − LightGBM: AUPRC +0.010 [-0.030; +0.055]; BSS +0.038 [+0.001; +0.068]
+    TimesFM 2.5 terkalibrasi − momentum: AUPRC +0.063 [+0.041; +0.097]; BSS +0.031 [+0.015; +0.051]
+    TimesFM 2.5 terkalibrasi − klimatologi: AUPRC +0.117 [+0.071; +0.174]; BSS +0.049 [+0.023; +0.078]
+    LightGBM + TimesFM − LightGBM (latih pra): AUPRC +0.016 [+0.006; +0.025]; BSS +0.022 [+0.007; +0.040]
+    LightGBM + TimesFM − LightGBM: AUPRC +0.007 [-0.013; +0.024]; BSS +0.016 [-0.012; +0.040]
+    Chronos-2 terkalibrasi − LightGBM: AUPRC -0.008 [-0.061; +0.055]; BSS +0.028 [-0.013; +0.061]
+    Chronos-Bolt terkalibrasi − LightGBM: AUPRC -0.018 [-0.091; +0.054]; BSS +0.025 [-0.021; +0.063]
+    Moirai-2 terkalibrasi − LightGBM: AUPRC -0.021 [-0.071; +0.033]; BSS +0.024 [-0.017; +0.057]
+    Chronos-2 terkalibrasi − momentum: AUPRC +0.045 [+0.026; +0.078]; BSS +0.021 [+0.009; +0.038]
+    Chronos-Bolt terkalibrasi − momentum: AUPRC +0.035 [-0.006; +0.085]; BSS +0.018 [+0.002; +0.041]
+    Moirai-2 terkalibrasi − momentum: AUPRC +0.032 [+0.020; +0.058]; BSS +0.017 [+0.007; +0.030]
+    Chronos-2 terkalibrasi − Chronos-2 mentah: AUPRC -0.001 [-0.004; +0.002]; BSS -0.005 [-0.016; +0.002]
+    Chronos-Bolt terkalibrasi − Chronos-Bolt mentah: AUPRC -0.000 [-0.004; +0.005]; BSS +0.009 [-0.003; +0.019]
+    TimesFM 2.5 terkalibrasi − TimesFM 2.5 mentah: AUPRC -0.001 [-0.006; +0.005]; BSS +0.004 [-0.007; +0.016]
+    Moirai-2 terkalibrasi − Moirai-2 mentah: AUPRC -0.006 [-0.013; +0.002]; BSS -0.003 [-0.017; +0.006]
+  AUPRC per komoditas (kejadian uji):
+    bawang_merah           kejadian 132 (0.029): klimatologi 0.029, momentum 0.071, LightGBM 0.060, TimesFM 2.5 terkalibrasi 0.101, Chronos-2 terkalibrasi 0.050, LightGBM + TimesFM 0.079
+    bawang_putih           kejadian 9 (0.002): klimatologi 0.002, momentum 0.019, LightGBM 0.017, TimesFM 2.5 terkalibrasi 0.018, Chronos-2 terkalibrasi 0.005, LightGBM + TimesFM 0.008
+    beras_medium_1         kejadian 0: terlalu sedikit
+    cabai_merah_keriting   kejadian 389 (0.084): klimatologi 0.084, momentum 0.103, LightGBM 0.162, TimesFM 2.5 terkalibrasi 0.142, Chronos-2 terkalibrasi 0.140, LightGBM + TimesFM 0.157
+    cabai_rawit_merah      kejadian 507 (0.120): klimatologi 0.120, momentum 0.229, LightGBM 0.299, TimesFM 2.5 terkalibrasi 0.318, Chronos-2 terkalibrasi 0.312, LightGBM + TimesFM 0.316
+    daging_ayam_ras        kejadian 5 (0.001): klimatologi 0.001, momentum 0.001, LightGBM 0.018, TimesFM 2.5 terkalibrasi 0.231, Chronos-2 terkalibrasi 0.053, LightGBM + TimesFM 0.109
+    gula_pasir_lokal       kejadian 0: terlalu sedikit
+    minyak_goreng_curah    kejadian 1: terlalu sedikit
+    telur_ayam_ras         kejadian 2: terlalu sedikit
+
+===== h=7, ambang 10%: pasangan uji 40711, kejadian 0.063; latih 299904 (0.080), pra 58886 (0.084)
+  metode: AUPRC [CI95] | BSS terhadap klimatologi | pada ambang F1 latih: presisi, recall, laju alarm palsu
+    klimatologi                  +0.206 [+0.165; +0.248] | +0.000 | 0.174, 0.905, 0.291
+    momentum                     +0.262 [+0.204; +0.314] | +0.017 | 0.215, 0.761, 0.188
+    LightGBM                     +0.299 [+0.241; +0.366] | +0.019 | 0.315, 0.329, 0.048
+    Chronos-2 mentah             +0.308 [+0.247; +0.376] | +0.047 | 0.254, 0.637, 0.127
+    Chronos-2 terkalibrasi       +0.308 [+0.248; +0.376] | +0.047 | 0.255, 0.627, 0.124
+    Chronos-Bolt mentah          +0.286 [+0.228; +0.349] | +0.027 | 0.251, 0.622, 0.126
+    Chronos-Bolt terkalibrasi    +0.286 [+0.228; +0.349] | +0.036 | 0.254, 0.607, 0.121
+    TimesFM 2.5 mentah           +0.324 [+0.259; +0.392] | +0.057 | 0.263, 0.650, 0.124
+    TimesFM 2.5 terkalibrasi     +0.325 [+0.261; +0.391] | +0.061 | 0.264, 0.645, 0.122
+    Moirai-2 mentah              +0.304 [+0.245; +0.366] | +0.052 | 0.256, 0.643, 0.127
+    Moirai-2 terkalibrasi        +0.305 [+0.246; +0.366] | +0.049 | 0.249, 0.681, 0.139
+    LightGBM + TimesFM           +0.306 [+0.244; +0.374] | +0.026 | 0.340, 0.280, 0.037
+    LightGBM (latih pra)         +0.292 [+0.234; +0.361] | +0.008 | 0.324, 0.270, 0.038
+  selisih (AUPRC; BSS) dengan CI95, indeks bootstrap sama:
+    TimesFM 2.5 terkalibrasi − LightGBM: AUPRC +0.026 [-0.017; +0.055]; BSS +0.042 [-0.000; +0.077]
+    TimesFM 2.5 terkalibrasi − momentum: AUPRC +0.063 [+0.045; +0.092]; BSS +0.044 [+0.031; +0.062]
+    TimesFM 2.5 terkalibrasi − klimatologi: AUPRC +0.119 [+0.086; +0.155]; BSS +0.061 [+0.042; +0.083]
+    LightGBM + TimesFM − LightGBM (latih pra): AUPRC +0.014 [+0.002; +0.021]; BSS +0.018 [+0.004; +0.030]
+    LightGBM + TimesFM − LightGBM: AUPRC +0.007 [-0.022; +0.025]; BSS +0.007 [-0.018; +0.027]
+    Chronos-2 terkalibrasi − LightGBM: AUPRC +0.009 [-0.026; +0.038]; BSS +0.027 [-0.014; +0.063]
+    Chronos-Bolt terkalibrasi − LightGBM: AUPRC -0.013 [-0.046; +0.015]; BSS +0.017 [-0.016; +0.050]
+    Moirai-2 terkalibrasi − LightGBM: AUPRC +0.006 [-0.037; +0.035]; BSS +0.029 [-0.015; +0.064]
+    Chronos-2 terkalibrasi − momentum: AUPRC +0.046 [+0.028; +0.081]; BSS +0.029 [+0.017; +0.049]
+    Chronos-Bolt terkalibrasi − momentum: AUPRC +0.024 [-0.004; +0.064]; BSS +0.019 [+0.003; +0.043]
+    Moirai-2 terkalibrasi − momentum: AUPRC +0.042 [+0.028; +0.067]; BSS +0.031 [+0.022; +0.044]
+    Chronos-2 terkalibrasi − Chronos-2 mentah: AUPRC -0.000 [-0.003; +0.004]; BSS -0.001 [-0.009; +0.007]
+    Chronos-Bolt terkalibrasi − Chronos-Bolt mentah: AUPRC -0.000 [-0.002; +0.003]; BSS +0.009 [+0.001; +0.019]
+    TimesFM 2.5 terkalibrasi − TimesFM 2.5 mentah: AUPRC +0.001 [-0.002; +0.005]; BSS +0.004 [-0.003; +0.012]
+    Moirai-2 terkalibrasi − Moirai-2 mentah: AUPRC +0.001 [-0.002; +0.004]; BSS -0.003 [-0.015; +0.006]
+  AUPRC per komoditas (kejadian uji):
+    bawang_merah           kejadian 460 (0.100): klimatologi 0.100, momentum 0.211, LightGBM 0.201, TimesFM 2.5 terkalibrasi 0.243, Chronos-2 terkalibrasi 0.194, LightGBM + TimesFM 0.216
+    bawang_putih           kejadian 68 (0.015): klimatologi 0.015, momentum 0.033, LightGBM 0.026, TimesFM 2.5 terkalibrasi 0.052, Chronos-2 terkalibrasi 0.037, LightGBM + TimesFM 0.053
+    beras_medium_1         kejadian 1: terlalu sedikit
+    cabai_merah_keriting   kejadian 889 (0.193): klimatologi 0.193, momentum 0.225, LightGBM 0.282, TimesFM 2.5 terkalibrasi 0.270, Chronos-2 terkalibrasi 0.259, LightGBM + TimesFM 0.298
+    cabai_rawit_merah      kejadian 991 (0.235): klimatologi 0.235, momentum 0.348, LightGBM 0.393, TimesFM 2.5 terkalibrasi 0.431, Chronos-2 terkalibrasi 0.428, LightGBM + TimesFM 0.387
+    daging_ayam_ras        kejadian 139 (0.030): klimatologi 0.030, momentum 0.039, LightGBM 0.091, TimesFM 2.5 terkalibrasi 0.188, Chronos-2 terkalibrasi 0.168, LightGBM + TimesFM 0.118
+    gula_pasir_lokal       kejadian 1: terlalu sedikit
+    minyak_goreng_curah    kejadian 8 (0.002): klimatologi 0.002, momentum 0.005, LightGBM 0.137, TimesFM 2.5 terkalibrasi 0.265, Chronos-2 terkalibrasi 0.347, LightGBM + TimesFM 0.215
+    telur_ayam_ras         kejadian 28 (0.006): klimatologi 0.006, momentum 0.016, LightGBM 0.025, TimesFM 2.5 terkalibrasi 0.043, Chronos-2 terkalibrasi 0.032, LightGBM + TimesFM 0.037
+  cakupan selang 80 % (q0,1–q0,9) dan lebar relatif median, h=7: datar | lonjakan 20 % | lainnya
+    Chronos-2     0.993 / 0.016 (n 10569) | 0.267 / 0.386 (n 1045) | 0.732 / 0.089 (n 29097)
+    Chronos-Bolt  0.979 / 0.020 (n 10569) | 0.282 / 0.387 (n 1045) | 0.760 / 0.095 (n 29097)
+    TimesFM 2.5   0.993 / 0.014 (n 10569) | 0.381 / 0.429 (n 1045) | 0.754 / 0.097 (n 29097)
+    Moirai-2      0.959 / 0.014 (n 10569) | 0.254 / 0.384 (n 1045) | 0.739 / 0.092 (n 29097)
+
+===== h=28, ambang 20%: pasangan uji 39783, kejadian 0.083; latih 293506 (0.099), pra 56749 (0.101)
+  metode: AUPRC [CI95] | BSS terhadap klimatologi | pada ambang F1 latih: presisi, recall, laju alarm palsu
+    klimatologi                  +0.276 [+0.194; +0.337] | +0.000 | 0.237, 0.938, 0.275
+    momentum                     +0.358 [+0.251; +0.440] | +0.026 | 0.294, 0.685, 0.149
+    LightGBM                     +0.381 [+0.274; +0.467] | -0.019 | 0.397, 0.373, 0.052
+    Chronos-2 mentah             +0.385 [+0.292; +0.481] | +0.038 | 0.348, 0.576, 0.098
+    Chronos-2 terkalibrasi       +0.392 [+0.298; +0.487] | +0.044 | 0.350, 0.570, 0.096
+    Chronos-Bolt mentah          +0.361 [+0.256; +0.469] | +0.006 | 0.309, 0.556, 0.113
+    Chronos-Bolt terkalibrasi    +0.367 [+0.261; +0.475] | +0.020 | 0.304, 0.575, 0.120
+    TimesFM 2.5 mentah           +0.373 [+0.275; +0.462] | +0.048 | 0.343, 0.622, 0.108
+    TimesFM 2.5 terkalibrasi     +0.381 [+0.280; +0.468] | +0.052 | 0.348, 0.598, 0.102
+    Moirai-2 mentah              +0.356 [+0.270; +0.435] | +0.022 | 0.313, 0.677, 0.135
+    Moirai-2 terkalibrasi        +0.361 [+0.275; +0.437] | +0.032 | 0.311, 0.688, 0.139
+    LightGBM + TimesFM           +0.389 [+0.281; +0.484] | +0.005 | 0.439, 0.324, 0.038
+    LightGBM (latih pra)         +0.382 [+0.274; +0.473] | -0.004 | 0.430, 0.320, 0.038
+  selisih (AUPRC; BSS) dengan CI95, indeks bootstrap sama:
+    TimesFM 2.5 terkalibrasi − LightGBM: AUPRC +0.000 [-0.056; +0.069]; BSS +0.072 [-0.003; +0.145]
+    TimesFM 2.5 terkalibrasi − momentum: AUPRC +0.023 [-0.011; +0.075]; BSS +0.026 [+0.008; +0.060]
+    TimesFM 2.5 terkalibrasi − klimatologi: AUPRC +0.105 [+0.064; +0.158]; BSS +0.052 [+0.030; +0.090]
+    LightGBM + TimesFM − LightGBM (latih pra): AUPRC +0.008 [-0.005; +0.024]; BSS +0.009 [-0.009; +0.036]
+    LightGBM + TimesFM − LightGBM: AUPRC +0.008 [-0.014; +0.043]; BSS +0.024 [-0.009; +0.066]
+    Chronos-2 terkalibrasi − LightGBM: AUPRC +0.011 [-0.049; +0.090]; BSS +0.063 [-0.011; +0.148]
+    Chronos-Bolt terkalibrasi − LightGBM: AUPRC -0.014 [-0.073; +0.062]; BSS +0.039 [-0.032; +0.122]
+    Moirai-2 terkalibrasi − LightGBM: AUPRC -0.020 [-0.086; +0.059]; BSS +0.052 [-0.036; +0.140]
+    Chronos-2 terkalibrasi − momentum: AUPRC +0.034 [-0.004; +0.110]; BSS +0.017 [-0.006; +0.070]
+    Chronos-Bolt terkalibrasi − momentum: AUPRC +0.009 [-0.049; +0.101]; BSS -0.006 [-0.039; +0.056]
+    Moirai-2 terkalibrasi − momentum: AUPRC +0.003 [-0.030; +0.053]; BSS +0.006 [-0.011; +0.043]
+    Chronos-2 terkalibrasi − Chronos-2 mentah: AUPRC +0.007 [+0.000; +0.014]; BSS +0.006 [-0.014; +0.016]
+    Chronos-Bolt terkalibrasi − Chronos-Bolt mentah: AUPRC +0.006 [+0.002; +0.010]; BSS +0.014 [-0.016; +0.039]
+    TimesFM 2.5 terkalibrasi − TimesFM 2.5 mentah: AUPRC +0.008 [+0.002; +0.014]; BSS +0.004 [-0.009; +0.014]
+    Moirai-2 terkalibrasi − Moirai-2 mentah: AUPRC +0.005 [+0.000; +0.008]; BSS +0.011 [-0.018; +0.027]
+  AUPRC per komoditas (kejadian uji):
+    bawang_merah           kejadian 708 (0.157): klimatologi 0.157, momentum 0.148, LightGBM 0.302, TimesFM 2.5 terkalibrasi 0.258, Chronos-2 terkalibrasi 0.187, LightGBM + TimesFM 0.294
+    bawang_putih           kejadian 65 (0.014): klimatologi 0.014, momentum 0.031, LightGBM 0.014, TimesFM 2.5 terkalibrasi 0.017, Chronos-2 terkalibrasi 0.012, LightGBM + TimesFM 0.021
+    beras_medium_1         kejadian 2: terlalu sedikit
+    cabai_merah_keriting   kejadian 1106 (0.245): klimatologi 0.245, momentum 0.287, LightGBM 0.348, TimesFM 2.5 terkalibrasi 0.334, Chronos-2 terkalibrasi 0.366, LightGBM + TimesFM 0.345
+    cabai_rawit_merah      kejadian 1294 (0.314): klimatologi 0.314, momentum 0.476, LightGBM 0.550, TimesFM 2.5 terkalibrasi 0.491, Chronos-2 terkalibrasi 0.529, LightGBM + TimesFM 0.547
+    daging_ayam_ras        kejadian 114 (0.025): klimatologi 0.025, momentum 0.050, LightGBM 0.060, TimesFM 2.5 terkalibrasi 0.108, Chronos-2 terkalibrasi 0.122, LightGBM + TimesFM 0.064
+    gula_pasir_lokal       kejadian 1: terlalu sedikit
+    minyak_goreng_curah    kejadian 6 (0.001): klimatologi 0.001, momentum 0.017, LightGBM 0.072, TimesFM 2.5 terkalibrasi 0.220, Chronos-2 terkalibrasi 0.335, LightGBM + TimesFM 0.029
+    telur_ayam_ras         kejadian 17 (0.004): klimatologi 0.004, momentum 0.004, LightGBM 0.007, TimesFM 2.5 terkalibrasi 0.005, Chronos-2 terkalibrasi 0.005, LightGBM + TimesFM 0.008
+
+===== h=28, ambang 10%: pasangan uji 39783, kejadian 0.144; latih 293506 (0.176), pra 56749 (0.176)
+  metode: AUPRC [CI95] | BSS terhadap klimatologi | pada ambang F1 latih: presisi, recall, laju alarm palsu
+    klimatologi                  +0.347 [+0.274; +0.408] | +0.000 | 0.343, 0.786, 0.253
+    momentum                     +0.426 [+0.338; +0.495] | +0.028 | 0.340, 0.804, 0.262
+    LightGBM                     +0.452 [+0.369; +0.518] | +0.017 | 0.444, 0.470, 0.099
+    Chronos-2 mentah             +0.449 [+0.384; +0.525] | +0.051 | 0.394, 0.662, 0.171
+    Chronos-2 terkalibrasi       +0.455 [+0.387; +0.532] | +0.055 | 0.397, 0.660, 0.168
+    Chronos-Bolt mentah          +0.423 [+0.346; +0.505] | +0.019 | 0.372, 0.638, 0.181
+    Chronos-Bolt terkalibrasi    +0.426 [+0.347; +0.509] | +0.030 | 0.367, 0.652, 0.189
+    TimesFM 2.5 mentah           +0.443 [+0.369; +0.514] | +0.062 | 0.400, 0.700, 0.177
+    TimesFM 2.5 terkalibrasi     +0.449 [+0.372; +0.520] | +0.067 | 0.400, 0.698, 0.176
+    Moirai-2 mentah              +0.436 [+0.373; +0.500] | +0.045 | 0.383, 0.703, 0.190
+    Moirai-2 terkalibrasi        +0.438 [+0.374; +0.502] | +0.052 | 0.384, 0.703, 0.189
+    LightGBM + TimesFM           +0.456 [+0.372; +0.524] | +0.030 | 0.490, 0.395, 0.069
+    LightGBM (latih pra)         +0.455 [+0.371; +0.525] | +0.033 | 0.480, 0.420, 0.077
+  selisih (AUPRC; BSS) dengan CI95, indeks bootstrap sama:
+    TimesFM 2.5 terkalibrasi − LightGBM: AUPRC -0.003 [-0.049; +0.054]; BSS +0.050 [-0.006; +0.102]
+    TimesFM 2.5 terkalibrasi − momentum: AUPRC +0.023 [-0.005; +0.066]; BSS +0.039 [+0.019; +0.073]
+    TimesFM 2.5 terkalibrasi − klimatologi: AUPRC +0.102 [+0.070; +0.145]; BSS +0.067 [+0.047; +0.100]
+    LightGBM + TimesFM − LightGBM (latih pra): AUPRC +0.001 [-0.020; +0.021]; BSS -0.003 [-0.027; +0.026]
+    LightGBM + TimesFM − LightGBM: AUPRC +0.004 [-0.021; +0.033]; BSS +0.013 [-0.023; +0.054]
+    Chronos-2 terkalibrasi − LightGBM: AUPRC +0.003 [-0.038; +0.065]; BSS +0.038 [-0.015; +0.098]
+    Chronos-Bolt terkalibrasi − LightGBM: AUPRC -0.026 [-0.065; +0.024]; BSS +0.013 [-0.035; +0.066]
+    Moirai-2 terkalibrasi − LightGBM: AUPRC -0.014 [-0.061; +0.050]; BSS +0.035 [-0.026; +0.090]
+    Chronos-2 terkalibrasi − momentum: AUPRC +0.029 [-0.000; +0.085]; BSS +0.028 [+0.008; +0.070]
+    Chronos-Bolt terkalibrasi − momentum: AUPRC -0.000 [-0.041; +0.063]; BSS +0.002 [-0.023; +0.049]
+    Moirai-2 terkalibrasi − momentum: AUPRC +0.013 [-0.011; +0.054]; BSS +0.025 [+0.006; +0.058]
+    Chronos-2 terkalibrasi − Chronos-2 mentah: AUPRC +0.005 [+0.001; +0.010]; BSS +0.004 [-0.013; +0.016]
+    Chronos-Bolt terkalibrasi − Chronos-Bolt mentah: AUPRC +0.003 [+0.000; +0.004]; BSS +0.011 [-0.011; +0.028]
+    TimesFM 2.5 terkalibrasi − TimesFM 2.5 mentah: AUPRC +0.006 [+0.001; +0.009]; BSS +0.005 [-0.009; +0.015]
+    Moirai-2 terkalibrasi − Moirai-2 mentah: AUPRC +0.003 [-0.000; +0.005]; BSS +0.007 [-0.016; +0.021]
+  AUPRC per komoditas (kejadian uji):
+    bawang_merah           kejadian 1306 (0.290): klimatologi 0.290, momentum 0.310, LightGBM 0.538, TimesFM 2.5 terkalibrasi 0.458, Chronos-2 terkalibrasi 0.369, LightGBM + TimesFM 0.498
+    bawang_putih           kejadian 265 (0.059): klimatologi 0.059, momentum 0.102, LightGBM 0.066, TimesFM 2.5 terkalibrasi 0.064, Chronos-2 terkalibrasi 0.050, LightGBM + TimesFM 0.073
+    beras_medium_1         kejadian 53 (0.012): klimatologi 0.012, momentum 0.008, LightGBM 0.047, TimesFM 2.5 terkalibrasi 0.015, Chronos-2 terkalibrasi 0.024, LightGBM + TimesFM 0.026
+    cabai_merah_keriting   kejadian 1540 (0.342): klimatologi 0.342, momentum 0.401, LightGBM 0.482, TimesFM 2.5 terkalibrasi 0.434, Chronos-2 terkalibrasi 0.462, LightGBM + TimesFM 0.472
+    cabai_rawit_merah      kejadian 1652 (0.401): klimatologi 0.401, momentum 0.576, LightGBM 0.641, TimesFM 2.5 terkalibrasi 0.576, Chronos-2 terkalibrasi 0.630, LightGBM + TimesFM 0.644
+    daging_ayam_ras        kejadian 594 (0.132): klimatologi 0.132, momentum 0.203, LightGBM 0.174, TimesFM 2.5 terkalibrasi 0.292, Chronos-2 terkalibrasi 0.302, LightGBM + TimesFM 0.211
+    gula_pasir_lokal       kejadian 13 (0.003): klimatologi 0.003, momentum 0.018, LightGBM 0.005, TimesFM 2.5 terkalibrasi 0.140, Chronos-2 terkalibrasi 0.010, LightGBM + TimesFM 0.005
+    minyak_goreng_curah    kejadian 103 (0.025): klimatologi 0.025, momentum 0.023, LightGBM 0.041, TimesFM 2.5 terkalibrasi 0.088, Chronos-2 terkalibrasi 0.089, LightGBM + TimesFM 0.039
+    telur_ayam_ras         kejadian 196 (0.043): klimatologi 0.043, momentum 0.046, LightGBM 0.075, TimesFM 2.5 terkalibrasi 0.092, Chronos-2 terkalibrasi 0.079, LightGBM + TimesFM 0.123
+  cakupan selang 80 % (q0,1–q0,9) dan lebar relatif median, h=28: datar | lonjakan 20 % | lainnya
+    Chronos-2     0.989 / 0.044 (n 4382) | 0.385 / 0.640 (n 3313) | 0.759 / 0.136 (n 32088)
+    Chronos-Bolt  0.985 / 0.039 (n 4382) | 0.382 / 0.602 (n 3313) | 0.744 / 0.135 (n 32088)
+    TimesFM 2.5   0.999 / 0.038 (n 4382) | 0.459 / 0.691 (n 3313) | 0.758 / 0.134 (n 32088)
+    Moirai-2      0.990 / 0.037 (n 4382) | 0.390 / 0.653 (n 3313) | 0.749 / 0.134 (n 32088)
+
+===== aturan keputusan (rancangan, h 14, ambang 20 %): SETARA

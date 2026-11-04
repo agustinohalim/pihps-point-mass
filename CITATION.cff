@@ -3,8 +3,8 @@ message: "If you use this software, please cite it as below."
 title: "pihps-point-mass: a point-mass mixture for time-series foundation models on sticky daily food prices"
 type: software
 license: MIT
-version: 1.3.1
-date-released: 2026-11-03
+version: 1.4.0
+date-released: 2026-11-04
 authors:
   - given-names: Agustino
     family-names: Halim
